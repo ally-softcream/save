@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>audiosample</title>
+</head>
+<!--파일이나 폴더 이름은 되도록 영어로, 띄어쓰기 안하기(대신 언더바_하기)-->
+<body>
+    <!--재생할 오디오 파일은 이 html 파일과 동일한 위치에 있도록 할것!!-->
+    <audio src="sample_audio_symphony.mp3" autoplay controls loop>
+        당신의 브라우저는 오디오 요소를 지원하지 않습니다.
+    </audio>
+    <p>
+        <video src="../video/sample_video.mkv" autoplay controls loop>
+            당신의 브라우저는 오디오 요소를 지원하지 않습니다.
+            <!-- ../ 를 입력하면 이 html 파일이 있는 곳을 기준으로 한번 나가서 경로를 재설정한다.-->
+            <!--안할시 같은 경로에 있는 파일만 넣을 수 있어서 곤란해짐..-->
+            <!--현재 html파일이 있는 폴더와 다른 곳에 파일을 넣어뒀을 경우 꼭 할것!!-->
+        </video>
+    </p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_test_4</title>
+</head>
+<body>
+    <!--고객 정보 입력 칸-->
+    <p>고객 명: <input type="text" placeholder="이름을 입력하세요." 
+        autofocus required></p>
+    <p>전화번호: <input type="text" placeholder="전화번호를 입력하세요."
+        pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"
+        required></p>
+    <p>E-mail: <input type="text" placeholder="이메일을 입력하세요."
+        required></p>  
+    <!--토핑 선택 칸-->      
+    <div style="width: 30;">
+        <fieldset style="width: 400px;">
+    <form>
+            <legend>피자 사이즈</legend>
+                <!-- <form> -->
+                    <p></p>
+                    <input type="radio" name="size" value="최소">
+                    &nbsp;Small<br><p></p>
+                    <input type="radio" name="size" value="중간">
+                    &nbsp;Medium<br><p></p>
+                    <input type="radio" name="size" value="최대">
+                    &nbsp;Large<br><p></p>
+                    <p></p>
+                <!-- </form> -->
+        </fieldset>
+    </div>    
+        <p></p>
+        <fieldset style="width: 400px;">
+            <legend>토핑 선택</legend>
+                <!--label for~안의 값이랑 id 값이 같아야만 그 값 눌러도
+                선택됨!!-->
+                    <p></p>
+                    <input type="checkbox" name="topping" id="베이컨" value="베이컨">
+                    <label for="베이컨">&nbsp;베이컨</label><br><p></p>
+                    <input type="checkbox" name="topping" id="치즈" value="치즈">
+                    <label for="치즈">&nbsp;치즈</label><br><p></p>
+                    <input type="checkbox" name="topping" id="양파" value="양파">
+                    <label for="양파">&nbsp;양파</label><br><p></p>
+                    <input type="checkbox" name="topping" id="버섯" value="버섯">
+                    <label for="버섯">&nbsp;버섯</label>
+                    <p></p>
+        </fieldset>
+    <br>
+    <!-- <form> -->
+        희망 배송시간: <input type="time" name="time">
+        <p></p><p></p>
+        배송시 요청사항: <textarea name="feedback"
+        rows="2"
+        cols="15"></textarea>
+        <p></p>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시 선택하기">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label_practice</title>
+</head>
+<body>
+    <form action="proc_form.jsp">
+        <!--label의 for 속성은 레이블과 아이디가 매칭이 되어야 한다-->
+        <!--쉽게 말해 선택항목에서 무언가를 선택할 때
+            글자를 눌러도 해당 항목을 선택할 수 있도록 만드는 기능이다.
+            매칭방법이란
+            label for aa랑 id=aa의 값이 동일하면 된다-->
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="male" value="male"><br>
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+        <input type="submit" value="제출">
+    </form>
+        <br>
+    <form>
+        <label for="cass">카스</label>
+        <input type="checkbox" name="a1" id="cass">
+        <label for="terra">테라</label>
+        <input type="checkbox" name="a1" id="terra">
+        <label for="hanmac">한맥</label>
+        <input type="checkbox" name="a1" id="hanmac">
+        <!--아래 두개는 버튼--><br>
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+    </form>
+</body>
+</html>

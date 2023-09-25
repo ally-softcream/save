@@ -67,10 +67,20 @@
     <h1>입력 태그</h1>
     <form>
         <!--입력 태그-->
-        이메일: <input type="email" name="email"><br>
+        이메일: <input type="email" name="email" required><br>
         <!--나중에 자바스크립트로 배울거라 큰의미x-->
+        <!--required 쓰면 틀린 거 자동으로 잡아줌-->
         URL: <input type="url" name="url"><br>
-        전화번호: <input type="tel" name="tel"><br>
+        전화번호: 
+        <input 
+            type="tel" 
+            name="tel" 
+            required
+            pattern="[0-9]{3}-[0-9][가-힣]{3,4}-[0-9]{4}"
+            placeholder="010-1234-1234"><br>
+            <!--[0-9]는 0부터 9까지의 숫자, {n}은 n개의 숫자를 입력할 때에만
+            알맞게 입력했다고 함. {n,m}이라면 m도 맞는 값으로 침
+            대소문자를 구분한다.-->
         색상: <input type="color" name="color"><br>
         월: <input type="month" name="month"><br>
         날짜: <input type="date" name="date"><br>
@@ -78,7 +88,14 @@
         시간: <input type="time" name="time"><br>
         지역 시간: <input type="datetime-local" 
         name="localdatetime"><br>
-        숫자: <input type="number" name="number"><br>
+        숫자: <input 
+        type="number" 
+        name="number" 
+        min="1" max="20" step="2"
+        maxlength="5"
+        required><br>
+        <!--텍스트일때 길이 조절하려면 maxlength 명령어 쓰기-->
+        <!--min 최솟값 max 최댓값 step 증감단위(2면 2씩증가..등)으로 조절-->
         범위: <input type="range" name="range"><br>
         <input type="submit" value="제출">
         <input type="reset" value="초기화">

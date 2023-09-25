@@ -6,13 +6,42 @@
     <title>password_practice</title>
 </head>
 <body>
+    <h1>form 태그 항목 예제</h1>
     <form>
         패스워드: <input type="password" name="pass">
-        <input type="button" value="제출" name="button">
-        <!--위 코드는 버튼생성-버튼값만들기(이름적기)-버튼속성정하기 순서-->
+        <!-- <input type="button" value="제출" name="button"> -->
+        <!--주석처리 상태인 위 코드는 
+            버튼생성-버튼값만들기(이름적기)-버튼속성정하기 순서-->
         <!--input태그는 사이에 뭘 써도 텍스트로 나오기 때문에
         닫힘 태그(/붙은거)를 쓸 필요가 없다-->
         <input type="submit">
+    </form><br>
+
+    <form>
+        성별:<br>
+        <input type="radio" name="gender" value="male">남성
+        <input type="radio" name="gender" value="female">여성
+        <input type="radio" name="gender" value="other">기타
     </form>
+    <!--radio 태그: 중복선택 불가한 선택항목을 만드는 태그
+    name의 값이 같으면 중복선택 불가, 기존의 미선택 상태로 돌아가지 않고
+    최소 1개는 선택된 상태로 남음-->
+    <br>
+    <form>
+        과일 선택:<br>
+        <input type="checkbox" name="fruits" value="apple" checked>Apple
+        <!--checked를 입력하면 페이지를 로딩했을 때
+        checked가 쓰인 항목이 체크된 상태로 나온다-->
+        <input type="checkbox" name="fruits" value="grape">Grape
+        <input type="checkbox" name="fruits" value="banana">Banana
+        <input type="checkbox" name="fruits" value="Kiwi">Kiwi
+        <!--checkbox 태그는 중복선택 가능, 선택 취소도 가능-->
+    </form>
+
+    <!--초기화 태그-->
+    <input type="text" name="user"><br>
+    <input type="submit" value="제출">
+    <input type="reset" value="초기화">
+    
 </body>
 </html>

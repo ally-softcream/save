@@ -34,7 +34,9 @@
         checked가 쓰인 항목이 체크된 상태로 나온다-->
         <input type="checkbox" name="fruits" value="grape">Grape
         <input type="checkbox" name="fruits" value="banana">Banana
-        <input type="checkbox" name="fruits" value="Kiwi">Kiwi
+        <input type="checkbox" name="fruits" value="Kiwi">Kiwi<br>
+        <input type="checkbox" name="fruits" value="Grapefruit">Grapefruit
+        <input type="checkbox" name="fruits" value="Papaya">Papaya
         <!--checkbox 태그는 중복선택 가능, 선택 취소도 가능-->
     </form><br>
     <form>
@@ -47,9 +49,35 @@
         <!--submit처럼 작동하는 이미지 버튼을 만드는 코드-->        
         아이디: <input type="text" name="name" /><br>
         <input type="image" src="../resources/image/button.png" 
-        alt="제출 버튼" style="width: 40px; height: 40px">
+        alt="제출 버튼" style="width: 40px; height: 40px"><br><br>
         <!--제일 먼저 기준이 되는 경로는
         현재 이 파일(input.html)의 위치-->
+
+        <input type="file" accept="image/jpeg,image/png,image/gif">
+        <!--accpt를 쓰면 선택할 수 있는 파일을 제한할 수 있다-->
+        <input type="reset" value="초기화">
+        <!--이미 사용자가 입력한 데이터나 
+        사용자가 입력해야할 데이터 혹은 서버로 전송해야할 데이터를
+        굳이 화면에 표기할 필요 없을 때 쓴다
+        ~화면상에는 보이지 않지만 가지고 있어야 하는 데이터-->
+    </form>
+    <br>
+    <h1>입력 태그</h1>
+    <form>
+        <!--입력 태그-->
+        이메일: <input type="email" name="email"><br>
+        URL: <input type="url" name="url"><br>
+        전화번호: <input type="tel" name="tel"><br>
+        색상: <input type="color" name="color"><br>
+        월: <input type="month" name="month"><br>
+        날짜: <input type="date" name="date"><br>
+        주: <input type="week" name="week"><br>
+        시간: <input type="time" name="time"><br>
+        지역 시간: <input type="datetime-local" name="localdatetime"><br>
+        숫자: <input type="number" name="number"><br>
+        범위: <input type="range" name="range"><br>
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
     </form>
 
 </body>

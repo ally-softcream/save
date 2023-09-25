@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>password_practice</title>
 </head>
+            <!--모든 태그는 form 태그 내에서만 동작함
+            하나의 form 태그를 기준으로 돌아간다-->
 <body>
     <h1>form 태그 항목 예제</h1>
     <form>
@@ -22,12 +24,10 @@
         <input type="radio" name="gender" value="male">남성
         <input type="radio" name="gender" value="female">여성
         <input type="radio" name="gender" value="other">기타
-    </form>
     <!--radio 태그: 중복선택 불가한 선택항목을 만드는 태그
     name의 값이 같으면 중복선택 불가, 기존의 미선택 상태로 돌아가지 않고
     최소 1개는 선택된 상태로 남음-->
     <br>
-    <form>
         과일 선택:<br>
         <input type="checkbox" name="fruits" value="apple" checked>Apple
         <!--checked를 입력하면 페이지를 로딩했을 때
@@ -36,12 +36,21 @@
         <input type="checkbox" name="fruits" value="banana">Banana
         <input type="checkbox" name="fruits" value="Kiwi">Kiwi
         <!--checkbox 태그는 중복선택 가능, 선택 취소도 가능-->
+    </form><br>
+    <form>
+        <!--초기화 태그-->
+        <input type="text" name="user"><br>
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화"><br><br>
+
+        <!--이미지 버튼-->
+        <!--submit처럼 작동하는 이미지 버튼을 만드는 코드-->        
+        아이디: <input type="text" name="name" /><br>
+        <input type="image" src="../resources/image/button.png" 
+        alt="제출 버튼" style="width: 40px; height: 40px">
+        <!--제일 먼저 기준이 되는 경로는
+        현재 이 파일(input.html)의 위치-->
     </form>
 
-    <!--초기화 태그-->
-    <input type="text" name="user"><br>
-    <input type="submit" value="제출">
-    <input type="reset" value="초기화">
-    
 </body>
 </html>

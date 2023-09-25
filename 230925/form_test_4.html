@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form_test_4</title>
 </head>
+<style>
+    fieldset {
+        width: 400px;
+        height: auto;
+        border: 2px solid yellowgreen;
+    }
+    legend {
+        background-color: #000;
+        color: antiquewhite;
+        align: center;
+        border: 2px yellow;
+    }
+</style>
+<!--fieldset, legend 명령어로 된 칸 크기 한번에 바꾸기-->
+<!--soild가 선으로 그려진거,border가 선
+선 두께, 스타일, 컬러 순서대로 들어간다.-->
+
 <body>
     <!--고객 정보 입력 칸-->
     <p>고객 명: <input type="text" placeholder="이름을 입력하세요." 
@@ -15,11 +32,9 @@
     <p>E-mail: <input type="text" placeholder="이메일을 입력하세요."
         required></p>  
     <!--토핑 선택 칸-->      
-    <div style="width: 30;">
-        <fieldset style="width: 400px;">
     <form>
+        <fieldset>
             <legend>피자 사이즈</legend>
-                <!-- <form> -->
                     <p></p>
                     <input type="radio" name="size" value="최소">
                     &nbsp;Small<br><p></p>
@@ -28,11 +43,10 @@
                     <input type="radio" name="size" value="최대">
                     &nbsp;Large<br><p></p>
                     <p></p>
-                <!-- </form> -->
         </fieldset>
-    </div>    
+ 
         <p></p>
-        <fieldset style="width: 400px;">
+        <fieldset>
             <legend>토핑 선택</legend>
                 <!--label for~안의 값이랑 id 값이 같아야만 그 값 눌러도
                 선택됨!!-->
@@ -49,11 +63,12 @@
         </fieldset>
     <br>
     <!-- <form> -->
-        희망 배송시간: <input type="time" name="time">
-        <p></p><p></p>
+        <p>
+            희망 배송시간: <input type="time" name="time">
+        </p><p></p>
         배송시 요청사항: <textarea name="feedback"
         rows="2"
-        cols="15"></textarea>
+        cols="30"></textarea>
         <p></p>
         <input type="submit" value="주문하기">
         <input type="reset" value="다시 선택하기">

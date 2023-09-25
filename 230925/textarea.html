@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textarea</title>
+</head>
+<body>
+            <!--row는 세로 col은 가로-->
+    <form name="input" action="getfeedback.jsp" method="get">
+        고객의 의견<br>
+        <textarea name="feedback" 
+        rows="5" 
+        cols="50" 
+        placeholder="내용을 입력하세요"
+        required></textarea>
+        <input type="submit" value="제출">
+        <!--textarea는 닫기태그를 엔터치면 안된다!!-->
+    </form>
+</body>
+</html>

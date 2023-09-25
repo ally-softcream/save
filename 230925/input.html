@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>password_practice</title>
+    <title>input_practice</title>
 </head>
             <!--모든 태그는 form 태그 내에서만 동작함
             하나의 form 태그를 기준으로 돌아간다-->
@@ -56,6 +56,8 @@
         <input type="file" accept="image/jpeg,image/png,image/gif">
         <!--accpt를 쓰면 선택할 수 있는 파일을 제한할 수 있다-->
         <input type="reset" value="초기화">
+        <!--히든 태그-->
+        <input type="hidden" name="" value="">
         <!--이미 사용자가 입력한 데이터나 
         사용자가 입력해야할 데이터 혹은 서버로 전송해야할 데이터를
         굳이 화면에 표기할 필요 없을 때 쓴다
@@ -66,6 +68,7 @@
     <form>
         <!--입력 태그-->
         이메일: <input type="email" name="email"><br>
+        <!--나중에 자바스크립트로 배울거라 큰의미x-->
         URL: <input type="url" name="url"><br>
         전화번호: <input type="tel" name="tel"><br>
         색상: <input type="color" name="color"><br>
@@ -73,7 +76,8 @@
         날짜: <input type="date" name="date"><br>
         주: <input type="week" name="week"><br>
         시간: <input type="time" name="time"><br>
-        지역 시간: <input type="datetime-local" name="localdatetime"><br>
+        지역 시간: <input type="datetime-local" 
+        name="localdatetime"><br>
         숫자: <input type="number" name="number"><br>
         범위: <input type="range" name="range"><br>
         <input type="submit" value="제출">

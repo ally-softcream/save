@@ -11,15 +11,29 @@
         p.lower { text-transform: lowercase; }
         p.capit { text-transform: capitalize; }
 
+        #sleep {
+            color: #F96666;
+            text-align: left;
+            background-color: #545CFF;
+        }
+        #chantae {
+            color: red;
+            text-align: center;
+            background-color: black;
+        }
+        
+        form {
+            text-align: center;
+        }
         /* 앵커태그 만들어서 하이퍼링크 부여 */
         /* a {
             font-weight: normal;
-        }
+            }
         a:link {
             text-decoration: none;
             color: aliceblue;
             background-color: blue;
-        } */
+                } */
         legend, h1 {
             font-size: medium;
             font-family: 'Giants-Inline';
@@ -65,5 +79,19 @@
             <p class="capit style1">text_transform is capitalize.</p>
             <p class="style1">인천어쩌고 폰트 적용</p>
         </fieldset>
+        <!-- label for 연습 -->
+        <form>
+            <label for="sleep">자고싶다</label>
+            <input type="checkbox" name="checkbox" id="sleep" value="hope">
+            <label for="wakeup">일어나야해</label>
+            <input type="checkbox" name="checkbox" id="wakeup" value="task">
+            <label for="homework">과제해야됨</label>
+            <input type="checkbox" name="checkbox" id="homework" value="work">
+            <br>
+            <span>
+                <input type="submit" id="sleep" value="제출">
+                <input type="reset" id="chantae" value="초기화">
+            </span>
+        </form>
     </body>
 </html>

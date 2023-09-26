@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text_final_practice</title>
+    <style>
+        h1 {text-align: center; color: #ffbdbd;} /*중앙정렬*/
+        p.date {text-align: right; 
+            color: #FF69A2;
+            letter-spacing: -1px;
+            word-spacing: 20px;} /*우측정렬*/
+        /* letter spacing은 음수값도 가능(자간) */
+        p.post {text-align: left; color: #805B5B;
+        line-height: 10px;
+        text-indent: 50px;
+        } /*좌측정렬*/
+        h1 {
+            font-family: 'TTTtangsbudaejjigaeB';
+            text-decoration: dotted underline overline line-through;
+        }
+        /* a태그의 text-decoration의 기본값은 underline이다. */
+        @font-face {
+        font-family: 'omyu_pretty';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;}
+        @font-face {
+        font-family: 'TTTtangsbudaejjigaeB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;}
+
+        body > p {
+            font-family: 'omyu_pretty';
+        }
+        div {
+            text-align: center;
+        }
+        #dir {
+            /* text-align: right; */
+            background-color: #805B5B;
+            color: bisque;
+            direction: ltr;
+            /* ltr: right-to-left의 약자, rtl: left-to-right의 약자 */
+        }
+        .indent {
+            text-indent: 100px;
+            font-family: 'TTTtangsbudaejjigaeB';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>css 텍스트 정렬 예제</h1>
+    <p class="date">2023년 9월 26일</p>
+    <p class="post">힘들면 맛있는게 먹고 싶다</p>
+    <p class="indent"><em>눈누-오뮤 다예쁨체</em></p>
+    <!-- text indent는 자동 들여쓰기, 
+        해당 들여쓰기 부분은 드래그가 안된다. -->
+    <p id="dir">텍스트가 오른쪽부터 정렬된다.</p>
+    <div>
+        
+    </div>
+</body>
+</html>

@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo_class</title>
+    <style>
+        a {
+            font-size: 5em;
+        }
+        a:link {
+            text-decoration: none;
+            color: maroon;
+            background-color: wheat;
+        }
+        a:visited {
+            text-decoration: none;
+            color: rgb(195, 145, 243);
+            background-color: bisque;
+        }
+        a:hover {
+            /* text-decoration: none; */
+            /* text-decoration: underline wavy magenta; */
+            /* text-decoration: overline green; */
+            text-decoration: overline underline green;
+            color: blueviolet;
+            background-color: black;
+        }
+        a:active {
+            text-decoration: none;
+            color: rgb(185, 255, 23);
+            background-color: rgb(255, 171, 230);
+        }
+    </style>    
 </head>
 <body>
-    
+    <a href="https://daum.net" 
+    title="다음 홈페이지로 이동합니다.">다음</a>
+    <!-- 타이틀 태그를 사용해서 나오게 하는 건 툴팁이라고 부른다. -->
+    <div>
+        <br>
+        <a href="https://Roll20.net">roll20</a>
+    </div>
 </body>
 </html>

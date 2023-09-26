@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_at_home</title>
+
+    <style>
+        /* 스타일시트 만들어서 p태그에 속성 부여 */
+        p.upper { text-transform:uppercase; }
+        p.lower { text-transform: lowercase; }
+        p.capit { text-transform: capitalize; }
+
+        /* 앵커태그 만들어서 하이퍼링크 부여 */
+        /* a {
+            font-weight: normal;
+        }
+        a:link {
+            text-decoration: none;
+            color: aliceblue;
+            background-color: blue;
+        } */
+        legend, h1 {
+            font-size: medium;
+            font-family: 'Giants-Inline';
+            text-shadow: 3px 3px 3px #545CFF;
+        }
+        p.style1 {
+            font-family: 'iceJaram-Rg';
+            font-size: 50px;
+            text-align: center;
+        }
+        p.style2 {
+            font-family: 'TheJamsil';
+        }
+        @font-face {
+            font-family: 'Giants-Inline';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'iceJaram-Rg';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+            font-weight: 50;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TheJamsil';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+            font-weight: 30;
+            font-style: normal;
+        }
+    </style>
+</head>
+    <body>
+        <fieldset>
+            <legend class="style1">대소문자 연습</legend>
+            <!-- class에 스타일 두개 적용할 수도 있음 대박임 
+                스타일 사이에 띄어쓰기 해 주는 거 잊지 말기-->
+            <h1>연습용 텍스트</h1>
+            <!-- uppercase는 모두 대문자, lowercase는 모두 소문자 -->
+            <p class="upper style2">text_transform is uppercase.</p>
+            <p class="lower style2">text_transform is lowercase.</p>
+            <p class="capit style1">text_transform is capitalize.</p>
+            <p class="style1">인천어쩌고 폰트 적용</p>
+        </fieldset>
+    </body>
+</html>

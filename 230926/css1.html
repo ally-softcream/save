@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>csspractice</title>
+    <link type="text/css" rel="stylesheet" href="coffee.css">
     <style>
+        h1 {
+            border: 2px solid salmon;
+        }
+
         h3 {
             background-color: yellow;
             border: 2px solid salmon;
@@ -14,13 +19,14 @@
 </head>
 <body>
     <h1>Welcome to Web Coffee!</h1>
-    <img src="coffee.gif" width="100" height="100">
+    <img src="coffee.gif" width="100" height="100" alt="이미지 적용 안됨">
+    
     <p>
-        하우스 로스팅 원두의<span>신선한 커피</span>를 맛보세요!
-        <em>공인 1급 Barista</em>가
+        하우스 로스팅 원두의&ensp;<span>신선한 커피</span>를 맛보세요!
+        <em style="color: red;">공인 1급 Barista</em>가
         최고급 원두만을 직접 엄선하여 사용합니다.
     </p>
-    <h2>메뉴</h2>
+    <h3>메뉴</h3>
     <p>
         아메리카노,카페라떼,카푸치노,카페모카, ...
     </p>

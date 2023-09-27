@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal_list</title>
+    <style>
+        ul {
+            list-style: none; text-align: center;
+            border-top: 1px solid slateblue;
+            border-bottom: 1px solid slateblue; padding: 10px 0;
+        }
+        /* ul 리스트에만 적용되는 스타일 */
+        ul li { /* 자손 중에서 li 태그를 가리키는 명령어 */
+            display: inline; 
+            /* li 태그가 원래 블럭요소인데 이렇게 쓰면 인라인 태그가 된다 */
+            text-transform: uppercase;
+            padding: 0 10px; 
+            letter-spacing: 5px;
+        }
+        ul li a { text-decoration: none; color: #2e2aff; }
+        ul li a:hover { letter-spacing: 10px; 
+            color: rgb(255, 42, 142);
+            text-decoration-line: underline; 
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">공지</a></li>
+        <li><a href="#">패치노트</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">게시판</a></li>
+    </ul>
+    <ol>
+        <li>23.09.27 업데이트</li>
+    </ol>
+</body>
+</html>

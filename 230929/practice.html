@@ -39,9 +39,10 @@
             font-size: 30px;
             color: bisque;
         }
-        body > form {
+        body > form,fieldset {
             text-align: center;
         }
+        
     </style>
 </head>
     <body>
@@ -63,6 +64,38 @@
 
             <br><br><input type="reset" value="재선택">
             <input type="submit" value="제출">
-        </form>
+        </form><br>
+        <fieldset>
+            <legend>DND 속성에 따른 책의 분류</legend>
+            <table border="2">
+                <tr>
+                    <td>책이란 무엇인가?</td>
+                    <td>재료선: <p>종이로 만들어야 한다.</p></td>
+                    <td>재료중립: <p>필기의 역할이 가능한 것으로 만들어야 한다.</p></td>
+                    <td>재료악: <p>무엇으로 만들어도 상관없다.</p></td>
+                </tr>
+                <tr>
+                    <td>제작선: <p>여러 내용을 엮거나 포개거나 한 묶음으로 묶어야 한다.</p></td>
+                    <td>
+                        <img src="" alt="">
+                        책은 책이다.</td>
+                    <td>E-book은 책이다.</td>
+                    <td>아파트단지는 책이다.</td>
+                </tr>
+                <tr>
+                    <td>제작중립: <p>내용이 확인되기만 하면 된다.</p></td>
+                    <td>지폐는 책이다.</td>
+                    <td>보문산은 책이다.</td>
+                    <td>금괴는 책이다.</td>
+                </tr>
+                <tr>
+                    <td>제작악: <p>글자&#40;기호&#41;가 포함되어 있기만 하면 된다.</p></td>
+                    <td>맥도날드 감자튀김 포장지는 책이다.</td>
+                    <td>티셔츠는 책이다.</td>
+                    <td>ABC초콜릿은 책이다.</td>
+                </tr>
+            </table>
+            
+        </fieldset>
     </body>
 </html>

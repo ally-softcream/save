@@ -42,6 +42,15 @@
         body > form,fieldset {
             text-align: center;
         }
+
+        /* 테이블 표 안쪽 표끼리 여백 주기 */
+        /* table {
+            border-collapse: separate;
+            border-spacing: 0 1rem;
+        } */
+        td {
+            margin: 10px 10px 10px; padding: 10px;
+        }
         
     </style>
 </head>
@@ -65,36 +74,50 @@
             <br><br><input type="reset" value="재선택">
             <input type="submit" value="제출">
         </form><br>
-        <fieldset>
-            <legend>DND 속성에 따른 책의 분류</legend>
-            <table border="2">
-                <tr>
-                    <td>책이란 무엇인가?</td>
-                    <td>재료선: <p>종이로 만들어야 한다.</p></td>
-                    <td>재료중립: <p>필기의 역할이 가능한 것으로 만들어야 한다.</p></td>
-                    <td>재료악: <p>무엇으로 만들어도 상관없다.</p></td>
-                </tr>
-                <tr>
-                    <td>제작선: <p>여러 내용을 엮거나 포개거나 한 묶음으로 묶어야 한다.</p></td>
-                    <td>
-                        <img src="" alt="">
-                        책은 책이다.</td>
-                    <td>E-book은 책이다.</td>
-                    <td>아파트단지는 책이다.</td>
-                </tr>
-                <tr>
-                    <td>제작중립: <p>내용이 확인되기만 하면 된다.</p></td>
-                    <td>지폐는 책이다.</td>
-                    <td>보문산은 책이다.</td>
-                    <td>금괴는 책이다.</td>
-                </tr>
-                <tr>
-                    <td>제작악: <p>글자&#40;기호&#41;가 포함되어 있기만 하면 된다.</p></td>
-                    <td>맥도날드 감자튀김 포장지는 책이다.</td>
-                    <td>티셔츠는 책이다.</td>
-                    <td>ABC초콜릿은 책이다.</td>
-                </tr>
-            </table>
-        </fieldset>
+
+        <!-- 표만들기 복습 -->
+        <div>
+            <fieldset>
+                <legend>DND 속성에 따른 책의 분류</legend>
+                <table border="2">
+                    <tr>
+                        <td><strong>책이란 무엇인가?</strong></td>
+                        <td><strong>재료선</strong>
+                            <p>종이로 만들어야 한다.</p></td>
+                        <td><strong>재료중립</strong><p>필기의 역할이 가능한 것으로 만들어야 한다.</p></td>
+                        <td><strong>재료악</strong><p>무엇으로 만들어도 상관없다.</p></td>
+                    </tr>
+                    <tr>
+                        <td><strong>제작선</strong> <p>여러 내용을 엮거나 포개거나 한 묶음으로 묶어야 한다.</p></td>
+                        <td>
+                            <img src="../resources/image/book.jpg" width="100px" 
+                            alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
+                            책은 책이다.</td>
+                        <td>
+                            <img src="../resources/image/ebook.jpeg" width="100px" 
+                            alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
+                            E-book은 책이다.</td>
+                        <td>
+                            <br><img src="../resources/image/아파트.jpg" width="100px" 
+                            alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
+                            아파트단지는<br> 책이다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>제작중립</strong><p>내용이 확인되기만 하면 된다.</p></td>
+                        <td>지폐는 책이다.</td>
+                        <td>보문산은 책이다.</td>
+                        <td>금괴는 책이다.</td>
+                    </tr>
+                    <tr>
+                        <td>제작악: <p>글자&#40;기호&#41;가 포함되어 있기만 하면 된다.</p></td>
+                        <td>맥도날드 감자튀김 포장지는 책이다.</td>
+                        <td>티셔츠는 책이다.</td>
+                        <td>ABC초콜릿은 책이다.</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+        </div>
+        
     </body>
 </html>

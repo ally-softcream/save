@@ -10,26 +10,42 @@
             text-align: center;
             font-family: 'SUITE-Regular';
         }
+        #style3 {
+            font-family: 'TheJamsil5Bold';
+        }
         
         body > h1 {
             font-family: 'SUITE-Regular';
             text-align: center;
         }
-        @font-face {
-        font-family: 'SUITE-Regular';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
-        font-weight: 400;
-        font-style: normal;        
-        }
+            /* 폰트 영역 */
             @font-face {
-        font-family: 'TAEBAEKmilkyway';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
+            font-family: 'SUITE-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;        
+            }
+                @font-face {
+            font-family: 'TAEBAEKmilkyway';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'TheJamsil5Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'KyoboHandwriting2021sjy';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            }
 
         p.style2 {
-            border-radius: 30%;
+            border-radius: 50%;
             border-color: antiquewhite;
             border-width: 2px;
             border-style: solid;
@@ -50,7 +66,7 @@
         } */
         td {
             margin: 10px 10px 10px; padding: 10px;
-            font-family: 'TAEBAEKmilkyway';
+            font-family: 'KyoboHandwriting2021sjy';
         }
         
     </style>
@@ -66,11 +82,13 @@
             <p id="style1">↓ 꼭 피하고 싶은 상황은 ↓</p>
             <br>
         <!-- form태그 안에는 input태그를 사용해 선택가능한 목록을 만들 수 있다. -->
-        <form>
+        <form id="style3">
             <label for="할일">김종국이 나를 거칠게 구석구석 씻겨주기</label>
             <input type="radio" name="racoon" id="할일" value="할일1"><br>
             <label for="할일2">내가 힘없는 지석진을 구석구석 씻겨주기</label>
-            <input type="radio" name="racoon" id="할일2" value="할일2">
+            <input type="radio" name="racoon" id="할일2" value="할일2"><br>
+            <label for="할일3">이런거 왜 골라야하는지 모르겠기</label>
+            <input type="radio" name="racoon" id="할일3" value="할일3">
 
             <br><br><input type="reset" value="재선택">
             <input type="submit" value="제출">
@@ -91,28 +109,43 @@
                     <tr>
                         <td><strong>제작선</strong> <p>여러 내용을 엮거나 포개거나 한 묶음으로 묶어야 한다.</p></td>
                         <td>
-                            <img src="../resources/image/book.jpg" width="100px" 
+                            <img src="../resources/image/book.jpg" width="100px" height="70px"
                             alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
                             책은 책이다.</td>
                         <td>
-                            <img src="../resources/image/ebook.jpeg" width="100px" 
+                            <img src="../resources/image/ebook.jpeg" width="100px" height="70px"
                             alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
                             E-book은 책이다.</td>
                         <td>
-                            <br><img src="../resources/image/아파트.jpg" width="100px" 
+                            <br><img src="../resources/image/아파트.jpg" width="100px" height="70px"
                             alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
                             아파트단지는<br>책이다.</td>
                     </tr>
                     <tr>
                         <td><strong>제작중립</strong><p>내용이 확인되기만 하면 된다.</p></td>
-                        <td>지폐는 책이다.</td>
-                        <td>보문산은 책이다.</td>
-                        <td>금괴는 책이다.</td>
+                        <td>
+                            <img src="../resources/image/bills.jpg" width="100px" height="70px" 
+                            alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
+                            지폐는 책이다.</td>
+                        <td>
+                            <img src="../resources/image/용문산.jpg" width="100px" height="70px"
+                            alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
+                            용문산은 책이다.</td>
+                        <td>
+                            <img src="../resources/image/금괴.jpg" width="100px" height="70px"
+                            alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
+                            금괴는 책이다.</td>
                     </tr>
                     <tr>
                         <td><strong>제작악</strong><p>글자&#40;기호&#41;가 포함되어 있기만 하면 된다.</p></td>
-                        <td>맥도날드 감자튀김 포장지는 책이다.</td>
-                        <td>티셔츠는 책이다.</td>
+                        <td>
+                            <img src="../resources/image/감자튀김.jpg" width="100px" height="70"
+                            alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
+                            맥도날드 감자튀김 포장지는 책이다.</td>
+                        <td>
+                            <img src="../resources/image/티셔츠.jpg" width="100px" height="70"
+                            alt="오류로 인해 이미지가 로드되지 않았습니다."><br>
+                            티셔츠는 책이다.</td>
                         <td>ABC초콜릿은 책이다.</td>
                     </tr>
                 </table>

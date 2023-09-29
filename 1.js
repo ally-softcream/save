@@ -4,3 +4,5 @@ for(let i = 0; i < 5; i++) {
     }
     document.write('br');
 }
+
+// ctrl shift n을 누르면 코드가 실행된다.

@@ -5,24 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice</title>
     <style>
+        #style1 {
+            background-color: rgb(184, 252, 252);
+            text-align: center;
+            font-family: 'SUITE-Regular';
+        }
+        
         body > h1 {
             font-family: 'SUITE-Regular';
+            text-align: center;
         }
         @font-face {
         font-family: 'SUITE-Regular';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
         font-weight: 400;
+        font-style: normal;        
+        }
+            @font-face {
+        font-family: 'TAEBAEKmilkyway';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+        font-weight: normal;
         font-style: normal;
-        
-        #style {
-            background-color: aqua;
+    }
+
+        p.style2 {
+            border-radius: 30%;
+            border-color: antiquewhite;
+            border-width: 2px;
+            border-style: solid;
+            background-color: brown;
+            text-align: center;
+            font-family: 'TAEBAEKmilkyway';
+            font-size: 30px;
+            color: bisque;
+        }
+        body > form {
             text-align: center;
         }
-}
     </style>
 </head>
-<body>
-    <h1>welcome to the web programming!</h1>
-    <p>이걸 해야 먹고살지...</p>
-</body>
+    <body>
+        <h1>💙&nbsp;Say hello to Racoon!&nbsp;💙</h1>
+        <div style="text-align: center;">
+            <img src="https://www.olchiolchi.com/wp-content/uploads/2022/03/%EB%9D%BC%EC%BF%A4.jpg" 
+            width="350px" alt="이미지 로딩에 실패했습니다.">
+            <!-- alt는 이미지 로딩이 안될때 출력되는 텍스트 -->
+        </div>
+        <p class="style2">안 아 줘 요</p>
+            <p id="style1">↓ 꼭 피하고 싶은 상황은 ↓</p>
+            <br>
+        <!-- form태그 안에는 input태그를 사용해 선택가능한 목록을 만들 수 있다. -->
+        <form>
+            <label for="할일">김종국이 나를 거칠게 구석구석 씻겨주기</label>
+            <input type="radio" name="racoon" id="할일" value="할일1"><br>
+            <label for="할일2">내가 힘없는 지석진을 구석구석 씻겨주기</label>
+            <input type="radio" name="racoon" id="할일2" value="할일2">
+
+            <br><br><input type="reset" value="재선택">
+            <input type="submit" value="제출">
+        </form>
+    </body>
 </html>

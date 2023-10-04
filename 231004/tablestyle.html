@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table_style</title>
+    <style>
+        /* border-collapse는 
+        줄 하나짜리 표를 만들 수 있게 해준다 */
+        table {
+            border-collapse: collapse;
+            color: 2px solid white;
+            width: 100%;
+        }
+        tr, th, td {
+            border: 2px solid rgb(255, 255, 255);
+        }
+        /* th, td {
+            color: antiquewhite;
+            background-color: brown;
+        } */
+        /* #header {
+            background-color: brown;
+            color: antiquewhite;
+            border: 2px solid brown;
+        } */
+        /* td {
+            background-color: brown;
+            color: antiquewhite;
+        } */
+        td {
+            text-align: center;
+        }
+        caption {
+            caption-side: bottom;
+            /* css 기본적으로 안 넣었을때 캡션은 위에 달린다 */
+        }
+        @font-face {
+        font-family: 'Orbit-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+        #list {
+            font-family: 'Orbit-Regular'; width: 100%;
+        }
+        #list td, #list th {
+            border: 2px dotted gray;
+            text-align: center;
+        }
+        #list th {
+            color: rgb(134, 49, 49);
+            background-color: yellow;
+        }
+        /* #list tr .alt td {
+            background-color: aquamarine;
+        } */
+        /* 아래는 직접 자식태그 지정해서 색 바꿔주기 */
+        tr:nth-child(odd) {
+            background-color: rgb(196, 255, 250);
+            /* 홀수번째 선택 명령어  */
+        }
+        tr:nth-child(even) {
+            background-color: rgb(255, 224, 253);
+            /* 짝수번째 선택 명령어  */
+        }
+    </style>
+</head>
+<body>
+    <table id="list">
+        <!-- 테이블에다가 보더를 주면 테이블 안에잇는.. 
+            tr태그 안의 모든것에 보더가 걸린다
+        스타일을 주는 것과는 달라진다 -->
+        <!-- <tr id="header"> -->
+        <tr>
+            <th>종류</th><th>예시</th>
+            <!-- tr보다 th가 더 가까이 보인다
+            즉 th가 tr을 덮은 형태 -->
+        </tr>
+        <tr>
+            <td>한식</td><td>불고기</td>
+        </tr>
+        <tr class="alt">
+            <td>중식</td><td>짜장면</td>
+        </trㅊ>
+        <tr>
+            <td>일식</td><td>마제소바</td>
+        </tr>
+        <tr class="alt">
+            <td>양식</td><td>스파게티</td>
+        </tr>
+        <caption>~오늘은 뭐먹지~</caption>
+    </table>
+</body>
+</html>

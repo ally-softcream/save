@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_ptc_1</title>
+    <style>
+        #un {
+            background-color: cyan;
+            width:  200px;
+            height: 50px;
+        }
+        #deux {
+            position: static;
+            background-color: rgb(83, 83, 255);
+            width: 200px;
+            height: 50px;
+        }
+        #trois {
+            background-color: lightblue;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="un">블록1</p>
+    <div id="deux">블록2<br>
+        position:static;<br>
+        <!-- 쓰나 안쓰나 동일하다(기본값임) -->
+    </div>
+    <p id="trois">블록3</p>
+</body>
+</html>  

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_ptc_1</title>
+    <style>
+        #un {
+            background-color: cyan;
+            width:  400px;
+            height: 400px;
+            left: 30px;
+            top: 30px;
+            position: relative;
+            /* 포지션은 기본적으로 부모태그를 기준으로 한다
+            포지션이 하나라도 있어야 앱솔루트가 잘 적용된다
+            근데 부모태그중에 포지션이 하나도 없으면
+            바디태그를 기준으로 한다 */
+        }
+        #deux {
+            position:absolute;
+            left: 30px;
+            top: 20px;
+            background-color: rgb(83, 83, 255);
+            width: 300px;
+            height: 50px;
+        }
+         #trois {
+            position:absolute;
+            background-color: lightblue;
+            left: 30px;
+            top: 20px;
+            width: 200px;
+            height: 50px;
+            /* 부모태그가 없으므로 바디태그를 기준으로 
+            위치가 설정됨 */
+        } 
+    </style>
+</head>
+<body>
+    <div id="un">
+        <div id="deux">블록2<br>
+            &nbsp;position: absolute;
+        </div>    
+    </div>
+    <!-- <p id="trois">블록3</p> -->
+    <div id="trois"></div>
+</body>
+</html>  

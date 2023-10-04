@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_ptc_1</title>
+    <style>
+        /* position에 따른 컨테이너 요소의 고정 현황 */
+        div {
+            width: 50px;
+            height: 50px;
+            margin: 100px;
+            display: inline-block;
+        }
+        #un {
+            background-color: cyan;
+            left: 0px;
+            top: 20px;
+            position: sticky;
+            /* 포지션은 기본적으로 부모태그를 기준으로 한다
+            포지션이 하나라도 있어야 앱솔루트가 잘 적용된다
+            근데 부모태그중에 포지션이 하나도 없으면
+            바디태그를 기준으로 한다 */
+        }
+        #deux {
+            position:static;
+            background-color: rgb(83, 83, 255);
+        }
+         #trois {
+            position:fixed;
+            background-color: lightblue;
+            top: 10px;
+            /* 부모태그가 없으므로 바디태그를 기준으로 
+            위치가 설정됨 */
+        } 
+    </style>
+</head>
+<body>
+    <div id="un">sticky</div>
+    <div id="deux">static</div>
+    <div id="trois">fixed</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!-- <div id="deux">블록2<br>
+            &nbsp;position: absolute;
+        </div>     -->
+
+    <!-- <p id="trois">블록3</p> -->
+    <!-- <div id="trois"></div> -->
+
+</body>
+</html>  

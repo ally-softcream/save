@@ -8,7 +8,6 @@
         .wrap {
             width: 900px;
             border: 2px solid brown;
-            float: left;
         }
         .box1 {
             width: 300px;
@@ -29,9 +28,9 @@
             float: left;
         }
         .wrap::after {
-            content: "가상요소를 생성합니다.";
+            content: "";
             display: block;
-            /* clear: both; */
+            clear: both;
         }
     </style>
 </head>
@@ -40,6 +39,7 @@
     <div class="box1">1</div>
     <div class="box2">2</div>
     <div class="box3">3</div>
+
 </div>
     <!-- .wrap 하면 div class가 wrap인 걸 자동완성 -->
     <!-- <div id="wrap"></div> -->

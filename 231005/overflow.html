@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow_prc</title>
+    <style>
+        p {
+            background-color: greenyellow;
+            width: 200px;
+            height: 50px;
+            opacity: 0.3;
+        }
+        #target {
+            border: 1px solid brown;
+            width: 300px;
+            height: 200px;
+            overflow: auto;
+            /* overflow는 자식태그가 부모태그의 범위를 벗어났을 때 
+            영역을 침범당하지 않는 특성 */
+        }
+    </style>
+</head>
+<body>
+    <div id="target">
+        <p>block #1</p>
+        <p>block #2</p>
+        <p>block #3</p>
+        <p>block #4</p>
+        <p>block #5</p>
+    </div>
+</body>
+</html>

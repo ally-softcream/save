@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z_index_test_1</title>
+    <style>
+        /* z-index가 높을수록 요소가 앞에 배치된다 */
+        #box1 {
+            position: absolute;
+            top: 0px;
+            left: 8px;
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            z-index: 200;
+        }
+        #box2 {
+            position: absolute;
+            top: 30px;
+            left: 38px;
+            width: 100px;
+            height: 100px;
+            background-color: slateblue;
+            z-index: 20;
+        }
+        #box3 {
+            position: absolute;
+            top: 60px;
+            left: 68px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+</body>
+</html>

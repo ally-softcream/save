@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float_2</title>
+    <style>
+        .inner {
+            border: 1px solid slateblue;
+            color: greenyellow;
+            width: 100px;
+            height: 200px;
+            margin: 5px;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .margenta {
+            background-color: magenta;
+        }
+        .cyan { background-color: cyan; }
+        .yellow { background-color: yellow; }
+        .black { background-color: black; }
+    </style>
+</head>
+<body>
+    <div class="inner cyan left">1스택</div>
+    <div class="inner yellow left">2스택</div>
+    <!-- <div class="inner margenta left" style="float: right;">3스택</div> -->
+    <div class="inner margenta left" style="clear: both;">3스택</div>
+    <!-- clear both 하면 바로 옆에 이어지는 걸 취소하고 밑에 붙인다 
+    위에 있던 float속성이 다 날아간거-->
+    <div class="inner black left">4스택</div>
+    <!-- alt누르고 입력하면 여러개 동시 선택 가능 -->
+    <div class="inner cyan right">1스택</div>
+    <div class="inner yellow right">2스택</div>
+    <div class="inner margenta right">3스택</div>
+    <div class="inner black right">4스택</div>
+</body>
+</html>

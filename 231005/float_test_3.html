@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float_3</title>
+    <style>
+        .wrap {
+            width: 900px;
+            border: 2px solid brown;
+            float: left;
+        }
+        .box1 {
+            width: 300px;
+            box-sizing: border-box;
+            background-color: cyan;
+            float: left;
+        }
+        .box2 {
+            width: 300px;
+            box-sizing: border-box;
+            background-color: magenta;
+            float: left;
+        }
+        .box3 {
+            width: 300px;
+            box-sizing: border-box;
+            background-color: yellow;
+            float: left;
+        }
+        .wrap::after {
+            content: "가상요소를 생성합니다.";
+            display: block;
+            /* clear: both; */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+    <!-- .wrap 하면 div class가 wrap인 걸 자동완성 -->
+    <!-- <div id="wrap"></div> -->
+    <!-- #wrap 하면 id가 wrap인 걸 자동완성 -->
+
+</body>
+</html>

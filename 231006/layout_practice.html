@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout_ans</title>
+    <style>
+        #header {
+            /* 크기 설정 */
+            width: 100%;
+            height: 50px;
+            /* 색 설정 */
+            background-color: yellow;
+        }
+        #nav {
+            /* 크기 설정 */
+            width: 30px;
+            height: 100px;
+            /* 색 설정 */
+            background-color: brown;
+            /* 왼쪽 아래로 내려오게 하기 */
+            float: left;
+        }
+        #content {
+            /* 크기 설정 */
+            width: 70%;
+            height: 100px;
+            /* 색 설정 */
+            background-color: slateblue;
+            /* 오른쪽 아래로 내려오게 하기 */
+            float: left;
+            /* 이거 right로 했더니 중간이 붕 뜸 이상하다.. 
+                연휴끝나고 물어보자... */
+        }
+        #footer {
+            width: 100%;
+            height: 50px;
+            background-color: chartreuse;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- .nnn 치면 div class "nnn"이 된다 -->
+    <div id="wrapper">
+        <div id="header">header</div>
+        <div id="nav">nav</div>
+        <div id="content">content</div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout_2</title>
+    <style>
+        /* border-radius로 둥글기 주고
+            (초록색 네모는 둥글기가 다른 것에 유의)
+            아래로 내려가야 하거나 옆에 쌓여야 하는 것에
+            float-left 명령어 넣어주고
+            padding이랑 margin 적당히 넣어주면 끝
+            마지막 footer는 위의 float를 끊어야하므로 
+            clear:both 써 주면 됨 */
+            
+        .style {
+            border-radius: 10px;
+            padding: 5px;
+            margin: 8px;
+        }
+        .style3 {
+            float: left;
+            border-radius: 30px;
+            padding: 5px;
+            margin: 8px;
+        }
+        .style4 {
+            float: left;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 8px;
+        }
+        #un {
+            width: 400px;
+            height: 40px;
+            background-color: #ffef66;
+            text-align: center;
+        }
+        #deux {
+            width: 50px;
+            height: 200px;
+            background-color: #ff7c80;
+            float: left;
+            text-align: left;
+        }
+        #trois {
+            width: 320px;
+            height: 200px;
+            background-color: #92d050;
+            text-align: left;
+        }
+        #quatre {
+            width: 400px;
+            height: 40px;
+            background-color: #ff99ff;
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="style" id="un">header</div>
+    <div class="style" id="deux">&nbsp;nav</div>
+    <div class="style3" id="trois">&nbsp;&nbsp;content</div>
+    <div class="style4" id="quatre">footer</div>
+</body>
+</html>

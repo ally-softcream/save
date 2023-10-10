@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* float를 안쓰고도 예제처럼 만드는 방법
+        float는 생각보다 잘 안 쓴다 */
+        .style {
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px;
+        }
+        #wrapper {
+            width: 700px;
+            height: 500px;
+            border: 3px soild black;
+        }
+        #header {
+            width: 100%;
+            height: 20%;
+            background-color: #ffef66;
+            text-align: center;
+        }
+        #nav {
+            width: 20%;
+            height: 60%;
+            background-color: #ff7c80;
+        }
+        #content {
+            width: auto;
+            height: 60%;
+            background-color: #92d050;
+        }
+        #footer {
+            width: 100%;
+            height: 20%;
+            background-color: #ff99ff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="style" id="header">header</div>
+        <div class="style" id="nav">nav</div>
+        <div class="style" id="content">context</div>
+        <div class="style" id="footer">footer</div>
+    </div>
+</body>
+</html>

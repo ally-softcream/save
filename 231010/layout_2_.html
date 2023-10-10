@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* float를 안쓰고도 예제처럼 만드는 방법
+        float는 생각보다 잘 안 쓴다 */
+        html,body, #wrapper {
+            width: 700px;
+            height: 500px;
+            border: 3px solid black;
+        }
+        body { margin: 0px; }
+        * {
+            box-sizing: border-box;
+        }
+        div { padding: 5px; }
+        #header {
+            width: 100%;
+            height: 20%;
+            background-color: #ffef66;
+            text-align: center;
+        }
+        #nav {
+            width: 20%;
+            height: 60%;
+            background-color: #ff7c80;
+            float: left;
+        }
+        /* 이쯤에 float-left 먹이면
+        따로 float 값 줄 필요없이 컨텐츠들이
+        알아서 보더(겉 테두리 선)안으로 들어간다 */
+        #content {
+            width: auto;
+            /* 또는 100% */
+            height: 60%;
+            background-color: #92d050;
+        }
+        #footer {
+            width: 100%;
+            height: 20%;
+            background-color: #ff99ff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">header</div>
+        <div id="nav">nav</div>
+        <div id="content">context</div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>

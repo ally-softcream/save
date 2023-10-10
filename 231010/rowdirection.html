@@ -13,8 +13,40 @@
         }
         ul {
             display: flex;
+            /* flex-direction: row-reverse; */
+            /* row가 flex-direction의 기본값 */
+            /* flex-direction: column; */
+            /* 원래는 있을 수 없는 일이지만
+            flex-direction을 줘서 세로가 됐다
+            (저렇게 하면 세로로 나옴) */
+            flex-direction: column-reverse;
+            /* 이렇게 하면 세로인데 반대로 되어 정렬됨
+            주축의 방향이 세로 방향이면서
+            방향이 반대로 쓰임 */
+            list-style-type: none;
+            /* 이렇게 해서 플렉스 컨테이너를 만들고
+                안의 아이템들(리스트 안에 들어가있는걸
+                리스트 아이템이라고 한다)은
+                수평 정렬을 하게 된다 */
             /* 현업들은 flex를 자주 쓴댔음 */
         }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            /* 반응형에 쓸만해서
+            현업들도 거의 flex만 사용함 */
+            /* flex-wrap: wrap; */
+            background-color: greenyellow;
+        }
+        #container > div {
+            background-color: orange;
+            flex-wrap: wrap;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            padding: 5px;
+        }
+        /* id > ㅁㅁ 하면 id 밑의 자식들 ㅁㅁ이 전체 선택됨 */
     </style>
 </head>
 <body>
@@ -27,5 +59,18 @@
         <li>군청</li>
         <li>보라</li>
     </ul>
+    <div id="container">
+        플렉스 컨테이너 안에 있는 플렉스 아이템이다.
+        <!-- <div>FLEX</div>
+        <div>FLEX</div>
+        <div>FLEX</div>
+        <div>FLEX</div>
+        <div>FLEX</div>
+        <div>FLEX</div>
+        <div>FLEX</div>
+        <div>FLEX</div>
+        <div>FLEX</div>
+        <div>FLEX</div> -->
+    </div>
 </body>
 </html>

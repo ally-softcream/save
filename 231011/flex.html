@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>flex_sort</title>
     <style>
         body { margin: 0; }
         ul {
             display: flex;
             list-style-type: none;
             border: 5px solid salmon;
-            
+            padding: 0;
+            font-size: 48px;
+            /* justify-content: flex-start; */
+            /* 주축의 시작점부터 정렬 */
+            /* justify-content: flex-end; */
+            /* 주축의 끝점부터 정렬 */
+            /* 주축의 순서를 바꾸는 게 아니라
+            배치 순서만 바꾸는 것 */
+            /* justify-content: center; */
+            /* 위에는 중앙정렬 */
+            /* justify-content: space-between; */
+            /* 앞뒤를 양끝에 배치한 다음에 알아서 간격맞춰
+                배치해줌 */
+            /* justify-content: space-around; */
+            /* 요소의 각각 양옆이 같게 배치 */
+            justify-content: space-evenly;
+            /* 걍 각각의 여백이 같도록 배치 */
         }
     </style>
 </head>

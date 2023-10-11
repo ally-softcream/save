@@ -11,3 +11,12 @@
 flex나 grid를 배우게 된대..
 우와..
 쩐다
+
+justify 명령어 {
+    justify-content {
+        주축에서 사용하는거
+    }
+}
+align 명령어 {
+    교차축에서 사용하는거
+}

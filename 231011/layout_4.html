@@ -14,11 +14,18 @@
         * { box-sizing: border-box; }
         /* *(아스터리스크) < 전체 태그에 대해서 보더의 박스 크기를 정해주는
             명령어 */
+            h1 {
+                margin: 0;
+            }
+            /* 마진을 없애지 않으면 기본적으로 주어지는
+            마진 영역만큼 글자가 밀려남 */
         #one {
             /* 보더 사이 칸 없애주기 */
-            width: 100%;
+            width: 98%;
             height: 15%;
             background-color: #B37C78;
+            border-radius: 10px;
+            margin: 1%;
         }
         #two {
             width: 30%;

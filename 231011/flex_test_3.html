@@ -33,8 +33,13 @@
             /* align-items: flex-end; */
             /* 교차축의 끝점부터 시작방향으로 가는거 */
             /* align-items: center; */
-            align-items: stretch;
-            
+            /* align-items: stretch; */
+            /* flex-direction: column; */
+            /* 이거 쓰면 세로 정렬됨 */
+            flex-wrap: wrap;
+            /* align-content: flex-end; */
+            align-content: space-around
+            /* 두개는 같이 써야 한다!! */
         }
         li {
             border: 2px solid blue;
@@ -44,14 +49,14 @@
             display: flex;
             width: 200px;
             height: 100px;
-            align-self: flex-start;
+   
             /* flex 컨테이너 안에서 개별 요소를 움직이고 싶을 때
             준다 id="li" */
         }
         #container > div {
             background-color: aqua;
         }
-        #li1 {
+        /* #li1 {
             align-self: flex-start;
         }
         #li2 {
@@ -71,11 +76,25 @@
         }
         #li7 {
             align-self: flex-end;
-        }
+        } */
     </style>
 </head>
 <body>
     <ul>
+        <li id="li1">빨강</li>
+        <li id="li2">주황</li>
+        <li id="li3">노랑</li>
+        <li id="li4">초록</li>
+        <li id="li5">파랑</li>
+        <li id="li6">군청</li>
+        <li id="li7">보라</li>
+        <li id="li1">빨강</li>
+        <li id="li2">주황</li>
+        <li id="li3">노랑</li>
+        <li id="li4">초록</li>
+        <li id="li5">파랑</li>
+        <li id="li6">군청</li>
+        <li id="li7">보라</li>
         <li id="li1">빨강</li>
         <li id="li2">주황</li>
         <li id="li3">노랑</li>

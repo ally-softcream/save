@@ -11,12 +11,25 @@
             height: 100%;
             border: 1px solid #331D1B;
         }
+        #wrapper {
+            position: relative;
+            /* display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center; */
+        }
         * { box-sizing: border-box; }
+        #wrap2 {
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            justify-content: center;
+        }
         /* *(아스터리스크) < 전체 태그에 대해서 보더의 박스 크기를 정해주는
             명령어 */
             h1, p {
                 margin: 1%;
-                           }
+            }
             /* 마진을 없애지 않으면 기본적으로 주어지는
             마진 영역만큼 글자가 밀려남 */
         #one {
@@ -39,6 +52,21 @@
             border-radius: 10px;
             background-color: #E6736B;
         }
+        #box1 {
+            width: 55%;
+            height: 12%;
+            float: right;
+            /* margin: 1%; */
+            margin-left: 0;
+            border-radius: 30px;
+            background-color: #331D1B;
+            border: 2px dotted wheat;
+            /* 영역 겹치기(2) */
+            top: 200px;
+            right: 60px;
+            position: relative;
+            z-index: 2;
+        }
         #three {
             width: 67%;
             height: 60%;
@@ -47,10 +75,13 @@
             margin-left: 0;
             border-radius: 10px;
             background-color: #80706F;
+            /* 영역 겹치기(1) */
+            position: relative;
+            z-index: 1;
         }
         #four {
             width: 98%;
-            height: 13%;
+            height: 19%;
             margin: 1%;
             border-radius: 10px;
             background-color: #4C3938;
@@ -64,8 +95,9 @@
             <h1>My Blog Page</h1>
             <p>시맨틱 태그로 만들어진 페이지입니다.</p>
         </div>
-        <div id="two">ㅇ</div>
-        <div id="three">d</div>
+            <div id="two">ㅇ</div>
+            <div id="box1">d</div>
+            <div id="three">d</div>
         <div id="four">d</div>
     </div>
 </body>

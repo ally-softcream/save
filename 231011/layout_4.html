@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout_4_blog</title>
+    <style>
+        html, body, #wrapper {
+            margin: 0;
+            width: 850px;
+            height: 450px;
+            border: 1px solid #331D1B;
+        }
+        * { box-sizing: border-box; }
+        /* *(아스터리스크) < 전체 태그에 대해서 보더의 박스 크기를 정해주는
+            명령어 */
+        #one {
+            /* 보더 사이 칸 없애주기 */
+            width: 100%;
+            height: 15%;
+            background-color: #B37C78;
+        }
+        #two {
+            width: 30%;
+            height: 60%;
+            float: left;
+            background-color: #E6736B;
+        }
+        #three {
+            width: 70%;
+            height: 60%;
+            float: right;
+            background-color: #80706F;
+        }
+        #four {
+            background-color: #4C3938
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="one">
+            <h1>My Blog Page</h1>
+            시맨틱 태그로 만들어진 페이지입니다.
+        </div>
+        <div id="two">ㅇ</div>
+        <div id="three">d</div>
+    </div>
+</body>
+</html>

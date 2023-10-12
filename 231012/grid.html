@@ -34,7 +34,12 @@
             /* 저걸 repeat의 m자리에 넣을 수도 있다 */
             /* grid-template-columns: repeat(2, minmax(200px, 1fr)); */
             /* grid-template-columns: repeat(auto-fill, minmax(20%, auto)); */
-            grid-template-columns: 10% 20% 10% 30%;
+            
+            /* grid-template-columns: repeat(2, 2fr 3fr);
+            grid-template-rows: 30px 30px 30px; */
+
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            grid-template-columns: 1fr 2fr 1fr;
             
             /* fr를 여러개 쓰고 싶을 때 */
             /* fr라는 단위를 제일 많이 쓴다 */
@@ -51,7 +56,12 @@
     <ul class="container">
         <li class="item">1</li>
         <li class="item">2</li>
-        <li class="item">3222222222222222222222222222222222222222222222222222222222222222222</li>
+        <li class="item">
+            3 
+            <!-- 단어 사이 띄어쓰기 하지 않으면
+                그 단어를 통으로 1개로 인식해서
+            오버플로우 되어서 칸 밖으로 넘어간다 -->
+        </li>
         <li class="item">4</li>
         <li class="item">5</li>
         <li class="item">6</li>

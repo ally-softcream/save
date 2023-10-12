@@ -11,20 +11,7 @@
             height: 100%;
             border: 1px solid #331D1B;
         }
-        #wrapper {
-            position: relative;
-            /* display: flex;
-            flex-direction: column;
-            align-items: left;
-            justify-content: center; */
-        }
         * { box-sizing: border-box; }
-        #wrap2 {
-            display: flex;
-            flex-direction: row;
-            align-items: left;
-            justify-content: center;
-        }
         /* *(아스터리스크) < 전체 태그에 대해서 보더의 박스 크기를 정해주는
             명령어 */
             h1, p {
@@ -33,6 +20,7 @@
             /* 마진을 없애지 않으면 기본적으로 주어지는
             마진 영역만큼 글자가 밀려남 */
         #one {
+            /* 중앙 정렬 */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -40,7 +28,7 @@
             width: 98%;
             height: 17%;
             background-color: #B37C78;
-            border-radius: 10px;
+            border-radius: 30px;
             margin: 1%;
             margin-bottom: 0;
         }
@@ -49,23 +37,23 @@
             height: 60%;
             margin: 1%;
             float: left;
-            border-radius: 10px;
+            /* 꾸미기 */
+            border-radius: 30px;
             background-color: #E6736B;
         }
+        /* 글자를 입력햇는데 박스뒤로 간다면
+        크기가 너무 작은건 아닌지 확인해보기 */
         #box1 {
-            width: 55%;
-            height: 12%;
-            float: right;
-            /* margin: 1%; */
-            margin-left: 0;
+            width: 86%;
+            height: 35%;
+            float: left;
+            margin: 7%;
+            /* 꾸미기 */
             border-radius: 30px;
             background-color: #331D1B;
             border: 2px dotted wheat;
-            /* 영역 겹치기(2) */
-            top: 200px;
-            right: 60px;
-            position: relative;
-            z-index: 2;
+            text-indent: 20px;
+            color: aliceblue;
         }
         #three {
             width: 67%;
@@ -73,17 +61,14 @@
             float: right;
             margin: 1%;
             margin-left: 0;
-            border-radius: 10px;
+            border-radius: 30px;
             background-color: #80706F;
-            /* 영역 겹치기(1) */
-            position: relative;
-            z-index: 1;
         }
         #four {
             width: 98%;
             height: 19%;
             margin: 1%;
-            border-radius: 10px;
+            border-radius: 30px;
             background-color: #4C3938;
             clear: both;
         }
@@ -96,8 +81,22 @@
             <p>시맨틱 태그로 만들어진 페이지입니다.</p>
         </div>
             <div id="two">ㅇ</div>
-            <div id="box1">d</div>
-            <div id="three">d</div>
+            <div id="three">
+                <div id="box1">
+                    <h3>Semantic Tags</h3>
+                    <p>시맨틱 요소(Semantic elements)들은 브라우저에게
+                        요소의 의미나 목적을 명확하게 알려주는 요소이다. 
+                        레이아웃을 만들 때 쓰는 것. 의미가 있는 요소라면 div보다는
+                        시맨틱 태그를 사용해주자.
+                    </p>
+                </div>
+                
+                <div id="box1">d</div>
+                <!-- 상자를 겹칠때.
+                div 안에 div를 만들어서
+                감싸주면 됨
+                굳이 z-index를 사용할 필요가 없다 -->
+                </div>
         <div id="four">d</div>
     </div>
 </body>

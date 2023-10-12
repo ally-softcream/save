@@ -12,25 +12,52 @@
         ul {
             padding: 0px;
             list-style-type: none;
-            border: 5px solid brown;
+            border: 5px dashed brown;
         }
         li {
             background-color: beige;
             border: 5px solid tomato;
+            border-radius: 5px;
+            /* 중앙 정렬 */
+            /* 알아서 맞춰주니까 flex를 쓰면 좋다 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
             display: grid;
             height: 500px;
+            /* grid-template-columns: 10% 20% 10%; */
+            /* grid-template-columns: repeat(2, 1fr 3fr 2fr); */
+            /* repeat(n, m)라는 함수를 사용, n번 m단위를 반복한다는 뜻 */
+            /* minmax는 앞이 최소, 뒤가 최댓값으로 지정하는 함수 */
+            /* 저걸 repeat의 m자리에 넣을 수도 있다 */
+            /* grid-template-columns: repeat(2, minmax(200px, 1fr)); */
+            /* grid-template-columns: repeat(auto-fill, minmax(20%, auto)); */
+            grid-template-columns: 10% 20% 10% 30%;
+            
+            /* fr를 여러개 쓰고 싶을 때 */
+            /* fr라는 단위를 제일 많이 쓴다 */
+            /* 저 위에거중에 제일 편한 걸로 사용하면 된다 */
+            /* grid template columns는 
+            각각의 columns(가로)를 
+            우리가 정한 수치만큼 주겟다는 뜻 */
+            /* grid container를 기준으로 나뉘는데
+            width값을 조정해주는 명령어 */
         }
     </style>
 </head>
 <body>
-    <ul>
+    <ul class="container">
         <li class="item">1</li>
         <li class="item">2</li>
-        <li class="item">3</li>
+        <li class="item">3222222222222222222222222222222222222222222222222222222222222222222</li>
         <li class="item">4</li>
         <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+        <li class="item">9</li>
     </ul>
 </body>
 </html>

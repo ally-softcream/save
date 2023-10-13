@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_practice_3</title>
+    <style>
+        * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+    ul {
+      padding: 0px;
+      list-style-type: none;
+      border: 5px solid rgb(153, 25, 25);
+    }
+    li {
+      background-color: beige;
+      border: 5px solid tomato;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      height: 500px;
+
+      grid-template-columns: 1fr 1fr 1fr;
+      
+    }
+    li:nth-child(1) {
+      
+    }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li class="item">Header</li>
+        <li class="item">Main</li>
+        <li class="item">Aside</li>
+        <li class="item">Footer</li>
+    </ul>
+</body>
+</html>

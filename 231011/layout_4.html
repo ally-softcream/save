@@ -9,7 +9,7 @@
             margin: 0;
             width: 100%;
             height: 100%;
-            border: 1px solid #331D1B;
+            border: 2px solid #9b0e44;
         }
         * { box-sizing: border-box; }
         /* *(아스터리스크) < 전체 태그에 대해서 보더의 박스 크기를 정해주는
@@ -34,15 +34,22 @@
         }
         #two {
             width: 30%;
-            height: 60%;
+            height: 70%;
             margin: 1%;
             float: left;
             /* 꾸미기 */
             border-radius: 30px;
             background-color: #E6736B;
+            /* 글자 내용 */
+            text-indent: 10%;
+            /* 글자를 입력햇는데 박스뒤로 간다면
+            지정 크기가 너무 작은건 아닌지 확인해보기 */
         }
-        /* 글자를 입력햇는데 박스뒤로 간다면
-        크기가 너무 작은건 아닌지 확인해보기 */
+        /* a태그로 링크걸고 바꿔주기 */
+        a:link { color: white; }
+        a:visited{ color: Yellow; }
+        a { text-decoration: none; }
+        /* 3번박스 안의 박스 */
         #box1 {
             width: 86%;
             height: 35%;
@@ -57,7 +64,7 @@
         }
         #three {
             width: 67%;
-            height: 60%;
+            height: 70%;
             float: right;
             margin: 1%;
             margin-left: 0;
@@ -66,10 +73,17 @@
         }
         #four {
             width: 98%;
-            height: 19%;
+            height: 9%;
             margin: 1%;
+            /* 중앙 정렬 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* 가장자리 */
             border-radius: 30px;
             background-color: #4C3938;
+            color: antiquewhite;
             clear: both;
         }
     </style>
@@ -80,7 +94,14 @@
             <h1>My Blog Page</h1>
             <p>시맨틱 태그로 만들어진 페이지입니다.</p>
         </div>
-            <div id="two">ㅇ</div>
+            <div id="two">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/"><strong>W3schools</strong></a></li>
+                    <li><a href="https://www.naver.com/"><strong>Naver</strong></a></li>
+                    <li><a href="https://www.daum.net/"><strong>Daum</strong></a></li>
+                </ul>
+            </div>
             <div id="three">
                 <div id="box1">
                     <h3>Semantic Tags</h3>
@@ -90,14 +111,19 @@
    시맨틱 태그를 사용해주자.
                     </pre>
                 </div>
-                
-                <div id="box1">d</div>
+                <div id="box1">
+                    <h3>Div와 Span</h3>
+                    <pre>div는 &quot;divide&quot;의 약자로서 페이지를 논리적인 섹션으로 분리하는데
+   사용되는 태그이다. span요소는 인라인 요소로서 텍스트를 위한 컨테이너로
+   사용할 수 있다.
+                    </pre>
+                </div>
                 <!-- 상자를 겹칠때.
                 div 안에 div를 만들어서
                 감싸주면 됨
                 굳이 z-index를 사용할 필요가 없다 -->
                 </div>
-        <div id="four">d</div>
+        <div id="four">Copyright ⒞ 2023 Hwang</div>
     </div>
 </body>
 </html>

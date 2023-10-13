@@ -27,12 +27,31 @@
     .container {
       display: grid;
       height: 500px;
-
-      grid-template-columns: 1fr 1fr 1fr;
-      
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
+      /* 화면을 최소 단위로 쪼갰을 때 화면을 몇개로 나눠야하는지를
+      먼저 생각하기 */
+      grid-template-areas:
+        "header header header header header header"
+        "aside main main main main main"
+        "aside main main main main main"
+        "aside main main main main main"
+        "aside footer footer footer footer footer"
+        "aside footer footer footer footer footer";
+        gap: 10px;
+        /* ↑ */
     }
     li:nth-child(1) {
-      
+      grid-area: header;
+    }
+    li:nth-child(2) {
+      grid-area: main;
+    }
+    li:nth-child(3) {
+      grid-area: aside;
+    }
+    li:nth-child(4) {
+      grid-area: footer;
     }
     </style>
 </head>

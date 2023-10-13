@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0147)file://192.168.0.72/%EA%B3%B5%EC%9C%A0%ED%8F%B4%EB%8D%94/%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/DW_501_Web/20231013/grid-test3.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드 연습3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+    ul {
+      padding: 0px;
+      list-style-type: none;
+      border: 5px solid teal;
+    }
+    li {
+      background-color: beige;
+      border: 5px solid tomato;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      height: 500px;
+
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "header header header"
+        "main . ."
+        "main . aside"
+        "footer footer footer";
+      gap: 10px;
+    }
+    li:nth-child(1) {
+      grid-area: header;
+    }
+    li:nth-child(2) {
+      grid-area: main;
+    }
+    li:nth-child(3) {
+      grid-area: aside;
+    }
+    li:nth-child(4) {
+      grid-area: footer;
+    }
+  </style></head>
+  
+  <body>
+    <ul class="container">
+      <li class="item">HEADER</li>
+      <li class="item">MAIN</li>
+      <li class="item">ASIDE</li>
+      <li class="item">FOOTER</li>
+    </ul>
+  
+
+</body></html>

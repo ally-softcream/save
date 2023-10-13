@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이아웃을 grid로 나누는 연습</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    div {
+      /* padding: 5px; */
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    #wrapper {
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+    body {
+      margin: 0px;
+    }
+    #header {
+       background-color: yellow;
+    }
+    #nav {
+       background-color: pink;
+    }
+    #main {
+        background-color: beige;
+    }
+    #content {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+       background-color: greenyellow;
+    }
+    #footer {
+       background-color: purple;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header">header</div>
+      <div id="content">
+        <div id="nav"></div>
+        <div id="main"></div>
+      </div>
+      <div id="footer">footer</div>
+    </div>
+  </body>
+</html>

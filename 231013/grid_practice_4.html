@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_practice_3</title>
+    <style>
+        * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+    ul {
+      padding: 0px;
+      list-style-type: none;
+      border: 5px solid rgb(153, 25, 25);
+    }
+    li {
+      background-color: beige;
+      border: 5px solid tomato;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      height: 500px;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
+      /* 화면을 최소 단위로 쪼갰을 때 화면을 몇개로 나눠야하는지를
+      먼저 생각하기 */
+      grid-template-areas:
+        "header header header header header header"
+        "aside main main main main main"
+        "aside main main main main main"
+        "aside main main main main main"
+        "aside footer footer footer footer footer"
+        "aside footer footer footer footer footer";
+        gap: 10px;
+        /* ↑ */
+    }
+    li:nth-child(1) {
+      grid-area: header;
+    }
+    li:nth-child(2) {
+      grid-area: main;
+    }
+    li:nth-child(3) {
+      grid-area: aside;
+    }
+    li:nth-child(4) {
+      grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li class="item">Header</li>
+        <li class="item">Main</li>
+        <li class="item">Aside</li>
+        <li class="item">Footer</li>
+    </ul>
+</body>
+</html>

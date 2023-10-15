@@ -24,13 +24,19 @@
         font-style: normal;
         }
         .one {
-            line-height: 1.5; /*자간 설정*/
+            /*자간 설정*/
+            line-height: 1.5; 
         }
         #center {
             /* 위치 선정 */
+            /* display: grid를 사용해서 비율에 맞춰 위치하도록 설정한다 */
             display: grid;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr;
+        }
+        /* div 두개를 인라인 요소로 넣어서 한 줄에 오도록 배치*/
+        div {
+            display: inline-block;
         }
     </style>
 </head>
@@ -40,24 +46,37 @@
             <form action="test_practice_1.html">
                 <fieldset>
                     <legend>회원정보입력</legend>
-                        <label for="input">아이디</label>
+                    <!-- 항목명 -->
+                    <div>
+                        <label for="input">아이디</label><br>
+                        <label for="input">패스워드</label><br>
+                        <label for="input">패스워드 확인</label><br>
+                        <label for="input">이름</label><br>
+                        <label for="input">휴대폰 번호</label><br>
+                        <label for="input">이메일</label><br>
+                        <label for="input">생일</label><br>
+                        <label for="input">홈페이지</label>
+                    </div>
+                    <!-- 칸 -->
+                    <div>
                         <input type="text" name="id">
                         <input type="submit" value="중복검사"><br>
-                        패스워드 <input type="text2" name="password"><br>
-                        패스워드 확인 <input type="text3" name="confirm"><br>
-                        이름 <input type="text4" name="name"><br>
-                        휴대폰 번호 <input type="number" name="number"><br>
-                        이메일 <input type="email" name="email"><br>
-                        생일 <input type="date" name="date" 
+                         <input type="text2" name="password"><br>
+                         <input type="text3" name="confirm"><br>
+                         <input type="text4" name="name"><br>
+                         <input type="number" name="number"><br>
+                         <input type="email" name="email"><br>
+                         <input type="date" name="date" 
                         style="width: 170px;" min="1900-01-01" max="2023-12-31"><br>
-                        홈페이지 <input type="url" name="url"><br>
-                    <!-- 성별 선택 -->
-                <span id="center">   
-                    <input type="radio" male="radio"> 
+                         <input type="url" name="url"><br>
+                    </div>
+                <!-- 성별 선택 -->
+                <span id="center">
+                    <input type="radio" name="male" id="male">
                     <label for="male">남성</label>
-                    <input type="radio" female="radio"> 
+                    <input type="radio" name="female" id="female">
                     <label for="female">여성</label>
-                </span>        
+                </span>
                 </fieldset>
         </span>
         <span>
@@ -65,9 +84,6 @@
             <input type="reset" value="초기화" style="width: 170px;">
         </form>
         </span>
-        
     </div>
-    
-
 </body>
 </html>

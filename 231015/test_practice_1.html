@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_practice</title>
+    <style>
+        html, body {
+            margin-top: 0;
+            margin-left: 1;
+            font-family: 'JeonjuCraftGoR';
+        }
+        #backgr {
+            background-color: rgb(238, 233, 226);
+        }
+        fieldset {
+            width: 400px;
+            height: auto;
+        }
+        @font-face {
+        font-family: 'JeonjuCraftGoR';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+        .one {
+            line-height: 1.5; /*자간 설정*/
+        }
+        #center {
+            /* 위치 선정 */
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" id="backgr">
+        <span>
+            <form action="test_practice_1.html">
+                <fieldset>
+                    <legend>회원정보입력</legend>
+                        <label for="input">아이디</label>
+                        <input type="text" name="id">
+                        <input type="submit" value="중복검사"><br>
+                        패스워드 <input type="text2" name="password"><br>
+                        패스워드 확인 <input type="text3" name="confirm"><br>
+                        이름 <input type="text4" name="name"><br>
+                        휴대폰 번호 <input type="number" name="number"><br>
+                        이메일 <input type="email" name="email"><br>
+                        생일 <input type="date" name="date" 
+                        style="width: 170px;" min="1900-01-01" max="2023-12-31"><br>
+                        홈페이지 <input type="url" name="url"><br>
+                    <!-- 성별 선택 -->
+                <span id="center">   
+                    <input type="radio" male="radio"> 
+                    <label for="male">남성</label>
+                    <input type="radio" female="radio"> 
+                    <label for="female">여성</label>
+                </span>        
+                </fieldset>
+        </span>
+        <span>
+            <input type="submit" value="제출" style="width: 170px;">
+            <input type="reset" value="초기화" style="width: 170px;">
+        </form>
+        </span>
+        
+    </div>
+    
+
+</body>
+</html>

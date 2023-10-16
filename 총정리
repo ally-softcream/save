@@ -20,3 +20,39 @@ justify 명령어 {
 align 명령어 {
     교차축에서 사용하는거
 }
+<<주축을 가로로 했을 경우>> {
+    수평정렬이 justify
+    수직정렬이 align
+    }
+<<주축을 세로로 했을 경우>> {
+    수직정렬이 justify
+    수평정렬이 align
+    }
+
+form 태그 {
+    내부에 iframe 태그 같은걸 써서
+    내부 홈페이지 만들 때 쓴다
+    input 태그도 form 태그 안에서만 작동한다
+}
+
+input 태그 {
+    무언가를 입력받을 때 쓰는 태그.
+    태그의 타입에 따라 속성이 달라지고 기능도 달라진다
+    address-주소
+    datetime-연월일
+    submit은 제출 reset은 초기화
+}
+
+checkbox과 radio {
+    선택항목에 체크박스나 동그라미 만드는 거
+    checkbox는 복수선택이 되고 radio는 중복선택이 불가능하다
+    laber for의 값과 id의 값이 같으면 값을 눌러도 선택이 된다
+}
+
+
+iframe 태그 {
+    inner 페이지를 따로 만들고
+    해당 페이지가 iframe에 표시되도록 만든다
+}
+
+

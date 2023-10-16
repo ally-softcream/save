@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_tag_hompage_layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 전체 선택해서 사이즈 조정하기 */
+        }
+        #wrapper {
+            display: grid;
+            /* 그리드로 만들거라서 이거 넣어줘야 됨 */
+            grid-template-rows: 1.5fr 5fr 1fr;
+            gap: 10px;
+        }
+        html, body, #wrapper {
+            width: 100%;
+            height: 100%;
+            /* 이렇게 해야 안에 아무것도 없어도 영역을 줄 수 있음 */
+        }
+        body {
+            margin: 0;
+        }
+        div {
+            border-radius: 20px;
+            text-indent: 10px;
+        }
+        #header {
+            background-color: #7BA9E0;
+            display: flex;
+            justify-content: center; /* 수직정렬 */
+            flex-direction: column;
+            align-items: center;
+        }
+        #content {
+            /* background-color: #ffff00; */
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+        }
+        #nav {
+            background-color: #8772E0;
+        }
+        #main {
+            display: grid;
+            background-color: #82CAE0;
+            grid-template-rows: 1fr 1fr;
+        }
+        /* #sel1 {
+            background-color: black;
+        }
+        #sel2 {
+            background-color: blue;
+        } */
+        #footer {
+            background-color: #B990E0;
+        }
+        .section {
+            margin: 30px;
+            background-color: #88b0b6;
+            border-style: dotted;
+            border-color: #7B88E0;
+            /* 상자 두개 각각 마진 주기 */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>My Blog Page</h1>
+            <p>grid와 div로 만들어진 페이지입니다&#46;</p>
+        </div>
+        <div id="content">
+            <div id="nav">
+                <h3>Links</h3>
+                
+            </div>
+            <div id="main">
+                <div id="sel1" class="section"></div>
+                <div id="sel2" class="section"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

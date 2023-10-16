@@ -24,7 +24,7 @@
             margin: 0;
         }
         div {
-            border-radius: 20px;
+            border-radius: 30px;
             text-indent: 10px;
         }
         #header {
@@ -42,6 +42,9 @@
         }
         #nav {
             background-color: #8772E0;
+            font-size: 17px;
+            padding-left: 25px;
+            padding-right: 15px;
         }
         #main {
             display: grid;
@@ -56,6 +59,10 @@
         } */
         #footer {
             background-color: #B990E0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
         }
         .section {
             margin: 30px;
@@ -63,7 +70,19 @@
             border-style: dotted;
             border-color: #7B88E0;
             /* 상자 두개 각각 마진 주기 */
+            padding-left: 3%;
+            padding-right: 3%;
+            font-size: 18px;
         }
+        a:link {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            /* 가상 클래스 */
+            color: red;
+        }
+        
     </style>
 </head>
 <body>
@@ -75,14 +94,39 @@
         <div id="content">
             <div id="nav">
                 <h3>Links</h3>
-                
+                <ul>
+                    <!-- _blank는 새로운 탭으로 새 창을 열도록 만드는 명령어 -->
+                    <li><a href="w3schools.com" target="_blank">W3SCHOOLS</a></li>
+                    <li><a href="naver.com" target="_blank">Naver</a></li>
+                    <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+                </ul>
+                <img src="../resources/image/abc초콜릿.jpg" width="90%">
             </div>
             <div id="main">
-                <div id="sel1" class="section"></div>
-                <div id="sel2" class="section"></div>
+                <div id="sel1" class="section">
+                    <h3>Semantic tags</h3>
+                    <p>
+                        시맨틱 요소들은 브라우저에게 요소나 의미나 목적
+                        을 명확하게 알려주는 요소이다. 레이아웃을 만들 때 쓰는 것이
+                        일반적으로, 의미가 있는 요소라면 div보다는 시맨틱 태그를
+                        사용해 주는 것을 권장한다.
+                    </p>
+                </div>
+                <div id="sel2" class="section">
+                    <h3>Div와 Span</h3>
+                    <p>
+                        div는 &quot;divide&quot; target="_blank"의 약자로서 페이지를 논리적인 섹션으로 분리하는데
+                        사용되는 태그이다. span요소는 인라인 요소로서 텍스트를 위한
+                        컨테이너로 사용할 수 있다.
+                    </p>
+                </div>
             </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <p>
+                Copyright ⒞ 2023 Hwang
+            </p>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_practice</title>
+    <style>
+        html, body {
+            margin-top: 0;
+            margin-left: 1;
+            font-family: 'JeonjuCraftGoR';
+        }
+        #backgr {
+            background-color: rgb(238, 233, 226);
+        }
+        fieldset {
+            width: 400px;
+            height: auto;
+        }
+        @font-face {
+        font-family: 'JeonjuCraftGoR';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+        .one {
+            /*자간 설정*/
+            line-height: 1.5; 
+        }
+        #center {
+            /* 위치 선정 */
+            /* display: grid를 사용해서 비율에 맞춰 위치하도록 설정한다 */
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        /* div 두개를 인라인 요소로 넣어서 한 줄에 오도록 배치*/
+        div {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" id="backgr">
+        <span>
+            <form action="test_practice_1.html">
+                <fieldset>
+                    <legend>회원정보입력</legend>
+                    <!-- 항목명 -->
+                    <div>
+                        <label for="input">아이디</label><br>
+                        <label for="input">패스워드</label><br>
+                        <label for="input">패스워드 확인</label><br>
+                        <label for="input">이름</label><br>
+                        <label for="input">휴대폰 번호</label><br>
+                        <label for="input">이메일</label><br>
+                        <label for="input">생일</label><br>
+                        <label for="input">홈페이지</label>
+                    </div>
+                    <!-- 칸 -->
+                    <div>
+                        <input type="text" name="id">
+                        <input type="submit" value="중복검사"><br>
+                         <input type="text2" name="password"><br>
+                         <input type="text3" name="confirm"><br>
+                         <input type="text4" name="name"><br>
+                         <input type="number" name="number"><br>
+                         <input type="email" name="email"><br>
+                         <input type="date" name="date" 
+                        style="width: 170px;" min="1900-01-01" max="2023-12-31"><br>
+                         <input type="url" name="url"><br>
+                    </div>
+                <!-- 성별 선택 -->
+                <span id="center">
+                    <input type="radio" name="male" id="male">
+                    <label for="male">남성</label>
+                    <input type="radio" name="female" id="female">
+                    <label for="female">여성</label>
+                </span>
+                </fieldset>
+        </span>
+        <span>
+            <input type="submit" value="제출" style="width: 170px;">
+            <input type="reset" value="초기화" style="width: 170px;">
+        </form>
+        </span>
+    </div>
+</body>
+</html>

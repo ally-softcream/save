@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html_평가_1교시</title>
+    <style>
+        fieldset {
+            width: 280px;
+            height: auto;
+            border: 2px soild red;
+        }
+        legend {
+            background-color: black;
+            color: aliceblue;
+            border: 2px soild red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        고객명 : <input type="text" name="name" placeholder="홍길동"><br>
+        <p>전화번호 : <input type="number" name="number" 
+            placeholder="010-1234-1234"
+            pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" required></p>
+        <p>Email : <input type="email" name="email" placeholder="○○○○○@○○○.com"></p>
+            <fieldset>
+                <legend>피자 사이즈</legend>
+                <input type="radio" name="size" id="Small">
+                <label for="Small">Small</label><br>
+                <input type="radio" name="size" id="Medium">
+                <label for="Medium">Medium</label><br>
+                <input type="radio" name="size" id="Large">
+                <label for="Large">Large</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>토핑 선택</legend>
+                <input type="checkbox" name="topping" id="베이컨">
+                <label for="베이컨">베이컨</label><br>
+                <input type="checkbox" name="topping" id="치즈">
+                <label for="치즈">치즈</label><br>
+                <input type="checkbox" name="topping" id="양파">
+                <label for="양파">양파</label><br>
+                <input type="checkbox" name="topping" id="버섯">
+                <label for="버섯">버섯</label><br>
+            </fieldset>
+
+        <p>희망배송시간 <input type="time" name="time"></p>
+        배송시 요청사항<br>
+        <textarea name="feedback" rows="2" cols="30"></textarea>
+        <p>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="다시 선택하기">
+        </p>
+    </form>
+</body>
+</html>

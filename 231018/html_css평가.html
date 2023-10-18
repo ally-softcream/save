@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_css_평가</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        html, body, #wrapper {
+            width: 100%;
+            height: 100%;
+        }
+        #wrapper {
+            display: grid;
+            grid-template-rows: 1fr 1fr 6fr 1fr;
+            gap: 1%;
+        }
+        #header {
+            background-color: #ffd65c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 맨왼쪽에 리스트 만드는거 */
+        #category {
+            background-color: #e6b3b3;
+            list-style-type: none;
+            padding: 0;
+        }
+        #category li {
+            padding: 8% 8%;
+            border-bottom: 1px solid #d1a3a3;
+        }
+        #category li:nth-child(1) {
+            border-top: 1px solid #d1a3a3;
+        }
+        /* 리스트 설정 */
+        li {
+            color: white;
+            font-weight: 600;
+        }
+        li a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #content {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            /* grid-template-rows: 1fr 6fr 1fr; */
+            gap: 1%;
+        }
+        /* 리스트 뒷배경 */
+        .aside {
+            background-color: #faebeb;
+            border-radius: 60px 60px 0px 0px;
+            /* 위아래 보더랑 패딩 따로 주기 */
+            padding: 15% 8%;
+        }
+        /* 옆 사진 들어가는 곳 */
+        #main {
+            background-color: #fafafa;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1%;
+            padding: 3%;
+            border-radius: 60px 60px 0px 0px;
+        }
+        .item {
+            display: grid;
+            grid-template-rows: 5fr 4fr 1fr;
+            gap: 1%;
+            border: 1px solid #e5e5e5;
+            padding: 5%;
+        }
+        #footer {
+            background-color: #ccccf2;
+            height: 100%;
+            border-radius: 40px;
+        }
+        div:not(div#content div) {
+            border-radius: 60px;
+        }
+        div#header > div {
+            display: flex;
+            width: 30%;
+            align-items: center;
+        }
+        div#header > div > img {
+            width: inherit;
+        }
+        a {
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+      <div id="header1">
+        <div id="header">
+            <span><h1>관리자 페이지</h1></span>
+        </div>
+      </div>
+      <div id="content">
+        <div class="aside">
+          <ul id="category">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">상품</a></li>
+            <li><a href="#">게시판</a></li>
+            <li><a href="#">리뷰</a></li>
+            <li><a href="#">고객관리</a></li>
+            <li><a href="#">설정</a></li>
+          </ul>
+      </div>
+        <div id="main">
+            <div class="item">
+                <a href="#"><img src="../resources/image/ebook.jpeg" width="100%" height="250px"></a>
+                <a href="#" target="_self">홈</a>
+                <a href="#"><img src="../resources/image/book.jpg" width="100%" height="250px"></a>
+                <a href="#">상품목록 바로가기</a>
+                <a href="#"><img src="../resources/image/book.jpg" width="100%" height="250px"></a>
+                <a href="#">게시판 바로가기</a>
+                <a href="#"><img src="../resources/image/book.jpg" width="100%" height="250px"></a>
+                <a href="#">리뷰 모음 바로가기</a>
+                <a href="#"><img src="../resources/image/book.jpg" width="100%" height="250px"></a>
+                <a href="#">고객관리 바로가기</a>
+                <a href="#"><img src="../resources/image/book.jpg" width="100%" height="250px"></a>
+                <a href="#">설정 바로가기</a>
+            </div>
+        </div>
+        <div id="footer"></div>
+</body>
+</html>

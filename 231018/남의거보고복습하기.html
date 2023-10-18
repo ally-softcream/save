@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+          }
+          #wrapper,html,body{
+            width: 100%;
+            height: 100%;
+          }
+          body{
+            margin: 0;
+          }
+#wrapper{
+  gap: 10px;
+  display: grid;
+  grid-template-rows: 1fr 7fr 0.5fr;
+}
+#header{
+  border-radius: 20px;
+  background-color: #748957;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#left{
+  display: grid;
+  grid-template-rows:6fr 4fr;
+  border-radius: 20px 20px 0 0;
+  background-color: #746d5d;
+}
+#main{
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  gap: 10px;
+}
+#right{
+  background-color: #a9a58d;
+  border-radius: 20px;
+}
+#footer{
+  background-color: #55514a;
+  border-radius: 20px;
+}
+ul{
+  display: grid;
+  grid-template-rows: repeat(1fr,6);
+  background-color: #93755d;
+  list-style-type: none;
+  margin: 25px;
+  color: white;
+  align-items: center;
+  border-bottom:2px solid white;
+  border-top: 2px solid white;
+  padding: 0 10%;
+}
+li{
+  padding: 8% 8%;
+      border-bottom: 1px solid white;
+  font-weight: 500;
+}
+li:nth-child(6){
+  border-bottom: 1px solid #93755d;
+}
+.content{
+  gap: 50px;
+  display: grid;
+ grid-template-rows: 1fr 1fr ;
+ grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px;
+}
+.content>div{
+  border: 0.5px solid gray;
+  padding: 4%;
+ }
+ 
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header"><h1>대전지방병무청사이트</h1></div>
+    <div id="main">
+      <div id="left">
+        <ul>
+          <li>육군</li>
+          <li>해군</li>
+          <li>공군</li>
+          <li>공익</li>
+          <li>면제</li>
+          <li>부사관</li>
+        </ul>
+      </div>
+      <div id="right">
+        <div class="content">
+          <div>
+            <a href="https://www.mma.go.kr/daejeon/index.do"><img src="../resources/img/army pepe.png" width="100%" height="250px"></a>
+          <span>육군지원</span>
+          </div>
+          <div>
+            <a href="https://www.mma.go.kr/board/boardList.do?mc=usr0000156&gesipan_id=119"><img src="../resources/img/해군페페.png" width="100%" height="250px"></a>
+            <span>해군지원</span>
+          </div>
+          <div>
+            <a href="https://www.mma.go.kr/contents.do?mc=usr0000292"><img src="../resources/img/부사관페페.png" width="100%" height="250px"></a>
+            <span>부사관지원</span>
+          </div>
+          <div>
+            <a href="https://www.mma.go.kr/board/boardList.do?mc=mma0002277&gesipan_id=314"><img src="../resources/img/헌병페페.jpg" width="100%" height="250px"></a>
+            <span>헌병지원</span>
+          </div>
+          <div>
+            <a href="https://www.mma.go.kr/contents.do?mc=usr0000292"><img src="../resources/img/대대장페페.jpg" width="100%" height="250px"></a>
+            <span>간부지원</span>
+          </div>
+          <div>
+            <a href="../resources/img/sunpepe.gif"><img src="../resources/img/godpepe.jpg" width="100%" height="250px"></a>
+            <span>면제</span>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+    <div id="footer"></div>
+  </div>
+</body>
+</html>

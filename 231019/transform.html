@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: yellow;
+    }
+    .rotateTest:hover {
+      /* 
+        rotate 단위는 deg 를 사용하고,
+        주어진 각도가 양수이면 시계방향,
+        음수이면 반시계방향으로 회전한다.
+      */
+      /* transform: rotate(45deg); */
+      /* transform: rotate(90deg); */
+      /* transform: rotate(0.5turn); */
+      /* transform: rotate(-45deg); */
+      /* transform: rotateZ(-45deg); */
+      /* transform: rotateX(-45deg); */
+      transform: rotateY(180deg);
+    }
+    .scaleTest:hover {
+      /* 
+       scale 은 해당 요소의 크기를 주어진 배율만큼
+       늘리거나 줄인다.
+    */
+      /* transform: scale(1.5, 2); */
+      /* transform: scale(0.7, 0.7); */
+      /* transform: scaleX(2); */
+      transform: scaleY(2);
+    }
+    .skewTest:hover {
+      /* 
+        skew 는 해당 요소를 주어진 각도만큼 x축, y축
+        방향으로 기울인다.
+    */
+      /* transform: skew(45deg, 45deg); */
+      transform: skewX(45deg);
+      /* transform: skewY(45deg); */
+    }
+    .translateTest:hover {
+      /* 
+        translate 는 현재 위치에서 해당 요소를
+        x축과 y축의 거리만큼 이동시킨다.
+    */
+      /* transform: translate(400px, 400px); */
+      /* transform: translateX(400px); */
+      transform: translateY(400px);
+    }
+    .matrixTest:hover {
+      /* 
+        matrix 는 모든 transform 메서드를 한 줄에
+        설정할 수 있도록 해준다.
+        matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+    */
+      transform: matrix(2, 0, 0, 2, 200, 200);
+    }
+  </style>
+  <body>
+    <!-- 
+        transform 속성을 사용하여 HTML 요소의 모양, 크기, 위치
+        등을 자유롭게 변경할 수 있다.        
+     -->
+    <h1>Transform Test</h1>
+    <h3>rotate</h3>
+    <div class="rotateTest">rotate(45deg)</div>
+    <h3>scale</h3>
+    <div class="scaleTest">scale</div>
+    <h3>skew</h3>
+    <div class="skewTest">skew</div>
+    <h3>translate</h3>
+    <div class="translateTest">translate</div>
+    <h3>matrix</h3>
+    <div class="matrixTest">matrix</div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

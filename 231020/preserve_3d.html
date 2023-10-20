@@ -40,35 +40,53 @@
             position: absolute;
             top: 0;
             left: 0;
+            box-shadow: 0px 0px 40px 5px cornsilk;
+            border: 3px solid white;
+            /* box-shadow: none |
+            x-position
+            y-position
+            blur
+            spread
+            color
+            spread color
+            inset << 안쪽에 그림자 생겨서 잘 안씀
+            initial
+            inherit(부모의 스타일을 그대로 상속밭기) */
         }
         #wrap .card > div:nth-child(1) {
             /* 첫번째 div 선택 */
-            background-color: tomato;
+            background-color: hsla(0, 100%, 50%, 0.5);
             transform: translateZ(100px);
+            /* hsla() 함수를 사용
+            h는 hue(색조 / 0~360), 
+            s는 saturation(색의 정도, 음영 / 0~100%)
+            l은 lightness(명도, 밝기 / 0~100%. 디폴트값 50)
+            a는 alpha(불투명도 / 0.0~1.0)
+             */
         }
         #wrap .card > div:nth-child(2) {
             /* 두번째 div 선택 */
-            background-color: teal;
+            background-color: hsla(60, 100%, 50%, 0.5);
             transform: translateX(-100px) rotateY(-90deg);
         }
         #wrap .card > div:nth-child(3) {
             /* 두번째 div 선택 */
-            background-color: chartreuse;
+            background-color: hsla(120, 100%, 50%, 0.5);
             transform: translateX(100px) rotateY(-90deg);
         }
         #wrap .card > div:nth-child(4) {
             /* 두번째 div 선택 */
-            background-color: goldenrod;
+            background-color: hsla(180, 100%, 50%, 0.5);
             transform: translateZ(-100px);
         }
         #wrap .card > div:nth-child(5) {
             /* 두번째 div 선택 */
-            background-color: palevioletred;
+            background-color: hsla(240, 100%, 50%, 0.5);
             transform: translateY(-100px) rotateX(90deg);
         }
         #wrap .card > div:nth-child(6) {
             /* 두번째 div 선택 */
-            background-color: orangered;
+            background-color: hsla(320, 100%, 50%, 0.5);
             transform: translateY(100px) rotateX(-90deg);
         }
         /* 돌리는 부분 */
@@ -78,6 +96,8 @@
             rotateY(90deg)
             rotatez(-90deg);
         }
+        @keyframes rotateCube
+        /* 하나의 애니메이션을 만드는 것 */
     </style>
 </head>
 <body>

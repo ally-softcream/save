@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<script>
+    s1 = "hello";
+    s1 += "&nbsp";
+    let s2 = "world!";
+    let s3 = s1 + s2;
+    document.write(s3 +"<br>");
+
+    let x =  + 1;
+    let y = "tea" + 1;
+    document.write(`<h1>${x}</h1><button>click</button>`); // = > "2<br>" 이랑 같다
+    document.write(`<h1>${y}</h1>`); // ``안에 들어가는 것도 문자열로 취급한다
+    // = ("<h1>" + x + "<h1>");
+</script>
+<body>
+</body>
+</html>

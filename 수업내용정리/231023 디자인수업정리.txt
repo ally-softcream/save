@@ -1,0 +1,25 @@
+디자인방법론
+
+사용 글꼴
+글꼴 고딕류(나눔, 코펍, 노토산스)
+글자는 무조건 작게(9~10px정도)
+자간도 작게(letter-spacing: -0.01em, 한글만 해당)
+색은 무조건 3개 이하, 보색대비 사용금지
+메인컬러, 서브컬러
+그리드 반드시 준수
+
+메인페이지 첫번째 이름은 반드시 index로 할 것
+index는 목차라는 뜻
+
+
+보고서
+여기서부터 대제목임
+서론(여기까지제목임) << 태그
+hyper text mark up-language(html)
+
+meta는 정해지지 않았다는 뜻
+< /> <<닫을 필요가 없다는 말
+contents delivery network
+bootstrap 
+
+href=hyperlink reference H REF

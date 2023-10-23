@@ -18,13 +18,27 @@
     let y;
     document.write(y + "<br>");
     y = 10;
-    document.write(y);
+    document.write(y + "<br>");
     const z = 0;
     // 이걸로 선언하는 변수는 값을 바꿀 수 없다!
+    // 값 재할당이 안된다.
     document.write(z);
-    z = 10;
-    document.write(z);
+    // z = 10;
+    // document.write(z);
     // const는 반드시 선언과 동시에 초기화가 되어야한다.
+
+    function add(a, b) {
+        let sum = 0;
+    }
+    function sub(a, b) {
+        let res = a-b;
+    }
+    window.onload = function() {
+        add(4, 5);
+        document.write("add=" + sum);
+        sub(10, 4);
+        document.write("sub=" + res);
+    }
 </script>
 <body>
     

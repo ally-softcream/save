@@ -22,23 +22,36 @@
     const z = 0;
     // 이걸로 선언하는 변수는 값을 바꿀 수 없다!
     // 값 재할당이 안된다.
-    document.write(z);
+    document.write(z + "<br>");
     // z = 10;
     // document.write(z);
     // const는 반드시 선언과 동시에 초기화가 되어야한다.
 
+    let sum;
+    let res;
+    // 밖에다가 선언한 변수는 전역변수
+    // (전체 지역에서 사용가능한 변수)라고 부른다
     function add(a, b) {
-        let sum = 0;
+        // let sum = a + b;   <- 지역변수로 선언
+        // 위처럼 보통 앞에 뭔가 붙으면 지역변수다.
+        // 지역변수란 블록 안에 선언한 변수를 의미
+        sum = a + b;
     }
     function sub(a, b) {
-        let res = a-b;
+        res = a - b;
     }
-    window.onload = function() {
+    // window.onload = function() {
         add(4, 5);
-        document.write("add=" + sum);
+        document.write("add=" + sum + "<br>");
         sub(10, 4);
-        document.write("sub=" + res);
-    }
+        document.write("sub=" + res + "<br>");
+    // }
+
+    let str;
+    str = "hello world!";
+    alert(str);
+    // 화면에 경고창 띄우는거
+    // str을 선언후 str에 문자열을 할당, 화면에 str이라는 문자열 출력
 </script>
 <body>
     

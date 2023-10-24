@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star</title>
+    <style>
+        .star-container {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .star {
+            display: block;
+            width: 200px;
+            height: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: coral;
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="star-container">
+        <script>
+            function drawStars(rows) {
+                for (let i = 1; i <= rows; i++) {
+                    let stars = '*'.repeat(i); // i개의 별을 만드는 코드
+                    let starElement = document.createElement('div');
+                    starElement.classList.add('star');
+                    starElement.textContent = stars;
+                    // document.body.appendChild(starElement);
+                    document.querySelector(".star-container").appendChild(starElement).appendChild(document.createElement('br'));
+                    // document.body.appendChild(document.createElement('br'))
+                }
+            }
+            drawStars(20);
+        </script>
+    </div>
+</body>
+</html>

@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Object_study</title>
 </head>
-<body>
+<script>
+    let name = "지선";
+    let age = 25;
+    let gender = "Female";
+    let address = "Seo-gu";
+
+    let name2 = "지우";
+    let age2 = 25;
+    let gender2 = "Female";
+    let address2 = "Jung-gu";
+
+    // 객체 선언 방법
+    // 1. 비어있는 오브젝트 만들기. 오브젝트는 중괄호로 선언한다
+    let person1 = {};
+    let person2 = new Object();
+    // 객체 안에 들어간 것들은 속성인데 다른말로 프로퍼티라고 한다
+    // 프로퍼티를 여러개 추가할 경우엔 끝에 ,<쉼표 를 반드시 붙여줘야만 한다
+
+    // 객체 생성 후 프로퍼티 추가 1방법
+    // 점을 찍는다
+    person1.name = "지선"; // 대입 연산자가 있으니 우변의 값을 좌변에 대입하는 원리가 같다.
+    // 값 대신 속성에다가 우변의 속성을 추가하는 것이다
+    person1.age = "25";
+    person1.gender = "Female";
+    person1.address = "Seo-gu";
+    console.log(person1);
+    // 오브젝트를 썼기 때문에 일일이 쓰지 않아도 한번에 다 뜬다
+
+    // 객체 생성 후 프로퍼티 추가 2방법
+    // 대괄호 써서 문자열로 작성해 준다
+    // ""를 쓰지 않으면 뭔지 모르겠는 값으로 나오기 때문에 반드시 써줄 것
+    person2["name2"] = "지우";
+    person2["age2"] = "25";
+    person2["gender2"] = "Female";
+    person2["address2"] = "Jung-gu";
+    console.log(person2);
     
+    // 객체 선언과 동시에 프로퍼티를 추가하는 방법
+    let person3 = {
+        name: "김밥",
+        age: 34,
+        gender: "male",
+        address: "벨기에",
+        child: person1,
+            // 오브젝트 안에는 모든 자료형이 다 들어갈 수 있다.
+            // 오브젝트 안에 오브젝트도 들어갈 수 있다!
+        
+    };
+    console.log(person3);
+
+    // 객체의 속성(프로퍼티) 값을 가져오는 방법1
+    console.log(person3.age);
+    console.log(person3.child.name);
+
+    // 객체의 속성(프로퍼티) 값을 가져오는 방법2
+    console.log(person3["name"]);
+    // 가져올 속성의 이름을 저렇게 쓰기
+    // 저의 이름은 name 이고 나이는 age 이며 성별은 gender 입니다. 
+    // 그리고 주소는 address 입니다.
+    document.write(`저의 이름은&nbsp;&quot;${name}&quot;이고&nbsp;나이는&nbsp;&quot;${age}&quot;이며&nbsp;성별은&nbsp;&quot;${gender}&quot;입니다.<br> 그리고&nbsp;주소는&nbsp;&quot;${address}&quot;입니다.`)
+</script>
+<body>
+    <!-- <div>
+        <span>
+            <form>
+                <fieldset>
+                <legend>빈자리 채우기</legend>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                </fieldset>
+            </form>
+        </span>
+    </div> -->
 </body>
 </html>

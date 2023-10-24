@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum_practice</title>
+</head>
+<script>
+    let x, y;
+    let input;
+    input = prompt("정수를 입력하세요", "정수로");
+    // prompt는 결과를 string으로 반환해준다
+    console.log(input, typeof input);
+    // 두번째 넣어준 문자열이 placeholder 같은 역할을 하니까 없어도 상관없다!
+    x = parseInt(input);
+    console.log(x, typeof x);
+    //parseInt() 함수 = input으로 받은 값이 string등으로
+    // 숫자가 아닐 때 소숫점 앞자리까지 숫자로 바꿔주는 함수
+    // 문자열을 숫자(정수형)로 변환해준다
+    input = prompt("정수를 입력하세요", "정수로");
+    y = parseInt(input);
+    document.write(x + y + "<br>");
+</script>
+<body>
+    
+</body>
+</html>

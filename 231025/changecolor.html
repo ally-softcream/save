@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change_color</title>
+</head>
+<body>
+    <h1>폰트 색상 바꾸기</h1>
+    <button onclick="changeColor()">색바꾸기</button>
+</body>
+<script>
+    // 함수를 정의하는 문법은 아래와 같다
+    function changeColor() {
+        // getelementbyid 는 id만 가지고 올 수 있어서
+        // 없을 때는 요소명 id class를 다 가지고올수잇는
+        // queryselector를 사용
+        const h1 = document.querySelector("h1");
+        h1.style.color = "blue";
+    }
+</script>
+</html>

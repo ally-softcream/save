@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 1. if문
+    // 크아아악 이걸 진짜 하게되는구나
+    // if(조건식) {
+    //     조건식이 참일 경우 실행할 코드;
+    //     거짓일 경우 이 부분은 실행되지 않는다;
+    //  조건식이라는 것은 반환되는 값이 true 혹은 false여야 한다
+    // }
+    // if(3 < 5) {
+    //     alert("true 입니다.")
+    // }
+    // const x = 5;
+    // const y = 3;
+    // const z = 10;
+    // 위쪽에 있을수록 우선순위가 높다.
+    // 위쪽이 실행되면 아래쪽은 실행이 안되고
+    // 위쪽이 실행 안될시 아래쪽이 true라면 실행ㄴ된다.
+    // if(x < y) {
+    //     alert("x는 y보다 큽니다.");
+    // } else if(y > z) {
+    //     alert("y는 z보다 작습니다.");
+    // } else if(x > z) {
+    //     alert("x는 z보다 작습니다.");
+    // } else {
+    //     alert("위 조건을 모두 만족하지 못했습니다.")
+    // }
+    // 밑에부터 별개의 조건문
+    // 위의 조건과 상관없이 별개의 조건문으로 실행된다.
+    // if(y < z) {
+    //     alert("y는 z보다 작습니다. ");
+    // }
+
+    // 1. 사용자에게 점수를 입력받는다.
+    // 프롬프트(prompt()) 함수 사용하기 -> 받은 결과값을 숫자로 변환
+    // const num = prompt();
+    // 2. 입력받은 점수별로
+    // 0~59: F      if(0 <= num && num <= 59) // 조건이 두개 이상이면 이렇게 찢어야 됨
+    // 60~69: D      if(60 <= num && num <= 69)
+    // 70~79: C      if(70 <= num && num <= 79)
+    // 80~89: B      if(80 <= num && num <= 89)
+    // 90~99: A      if(90 <= num && num <= 99)
+    
+    score = prompt("0에서 100점 사이의 점수를 입력하세요.","점수");
+    // const input = 85;
+    if(90 <= score && score <= 100) {
+        alert("학점: A")
+    } else if(80 <= score && score <= 89) {
+        alert("학점: B")
+    } else if(70 <= score && score <= 79) {
+        alert("학점: C")
+    } else if(60 <= score && score <= 69) {
+        alert("학점: D")
+    } else {
+        alert("학점: F")
+    }
+</script>
+</html>

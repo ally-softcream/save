@@ -51,8 +51,16 @@
         width: 200px;
         height: 100px;
         background-color: yellowgreen;
-        text-align: center;
-        vertical-align: middle;
+        position: relative;
+        /* text-align: center;
+        vertical-align: middle; */
+    }
+
+    #box1 span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* 위치 중앙정렬 */
     }
 
     /* .small {
@@ -68,6 +76,15 @@
     /* 박스의 높이도 특정하고 싶고 */
     /* 정확히 정중앙에도 놓고 싶을 때 쓰는 방법 */
 
+    #box3 {
+        width: 600px;
+        height: 400px;
+        background-color: yellowgreen;
+        margin-left: 100px;
+        margin-top: 50px;
+        position: relative;
+    }
+
     #box2 {
         width: 300px;
         /* height: 200px; */
@@ -76,5 +93,19 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, -50%);
     }
+
+    /* position 설명
+    static < 기본
+    relative < 상대적으로.. 본거지(???) 기준
+    absolute < 기준이 되는 위치가 따로 없고 본인임 .. 공중에 떠있는 느낌
+    쓸 때 조심할 것은 . . 공중에 뜨기 때문에 위치에 뭐가 없고 사라진다
+    이동할 때 기준이 원래 있던 곳 기준이 아니라 공간의 최끝단이 기준이 되므로 주의
+    (부모 오브젝트도 무시한다)
+    하지만 부모 오브젝트에게 포지션 static을 제외한 포지션이 있다면
+    부모 오브젝트를 기준으로 움직이게 된다
+    정확히는 가장 가까운 조상 중에 static이 아닌 조상의 안쪽을 기준으로 감
+    fixed < 스크롤이 돌아도 안 따라가고 고정됨 
+    무조건 화면 기준으로 고정됨
+    */

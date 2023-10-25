@@ -24,10 +24,57 @@
     /* 글줄이 여러줄이어도 괜찮고 정확히 정중앙에 오게할수잇다 */
     /* 단점: 박스의 높이를 콕 집어 얼마라고 정의x */
 
-    #box1 {
+    /* #box1 {
         width: 200px;
         /* height: 100px; */
-        background-color: yellowgreen;
+        /* background-color: yellowgreen;
         text-align: center;
         padding: 40px 0;
+    } */
+
+    /* line-height를 이용하는 방법 */
+    /* 장점: 박스의 높이를 말할 수 있음
+    정확히 정중앙에 위치
+    박스 높이가 달라져도 쉽게 수정 */
+    /* 단점: 한줄밖에 못씀, 두줄이상 쓸 수 없다 */
+    
+    /* p { */
+        /* line-height: 0.5em; em: 글자 수 대비 몇px라는 뜻 */
+    /* } */
+
+    #box1 {
+        /* width: 200px;
+        height: 300px;
+        background-color: yellowgreen;
+        text-align: center;
+        line-height: 300px; */
+        width: 200px;
+        height: 100px;
+        background-color: yellowgreen;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    /* .small {
+        font-size: 0.5em;
+        vertical-align: -20px; 음수도 된다!
+    } */
+    /* .big {
+        font-size: 2em;
+        vertical-align: -30px;
+    } */
+
+    /* 두줄 이상 글도 쓰고 싶고 */
+    /* 박스의 높이도 특정하고 싶고 */
+    /* 정확히 정중앙에도 놓고 싶을 때 쓰는 방법 */
+
+    #box2 {
+        width: 300px;
+        /* height: 200px; */
+        background-color: #06c;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 50%);
     }

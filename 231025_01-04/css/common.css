@@ -1,0 +1,33 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    /* 전체 크기 조정 */
+    box-sizing: border-box;
+}
+
+/* #box1 {
+    width: 200px;
+    height: 300px;
+    background-color: yellowgreen;
+    text-align: center;
+    /* padding-top을 이용해 글자를 아래로 내리는 방법 */
+    /* box-sizing 명령어를 통해 전체 크기 조정하면
+    전체 크기가 변하지 않고 패딩값으로 정렬만 된다 */
+    /* 단점: 박스의 높이가 변하거나 글줄 갯수가 늘어나면 패딩값을 바꿔야한다. */
+    /* padding-top: 35px; */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; 
+} */
+
+    /* 글줄이 여러줄이어도 괜찮고 정확히 정중앙에 오게할수잇다 */
+    /* 단점: 박스의 높이를 콕 집어 얼마라고 정의x */
+
+    #box1 {
+        width: 200px;
+        /* height: 100px; */
+        background-color: yellowgreen;
+        text-align: center;
+        padding: 40px 0;
+    }

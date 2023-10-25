@@ -7,5 +7,5 @@
 
 // ctrl shift n을 누르면 코드가 실행된다.
 
-var now = new Date();
-    document.write(`<h1>${now}</h1>`);
+    // let now = new Date();
+    // document.write(`<h1>${now}</h1>`);

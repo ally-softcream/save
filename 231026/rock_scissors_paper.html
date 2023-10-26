@@ -6,34 +6,13 @@
     <title>안내면 진거 가위바위보</title>
 </head>
 <body>
-    <h1>가위바위보 놀이</h1>
+    <h1>가위바위보 놀이 프로그램</h1>
 </body>
 <script>
-    // ~실패의 흔적~
-    // const hand1 = prompt("안내면 진거 가위바위보","가위, 바위, 보 중 하나 입력");
-    // const hand2 = prompt("안내면 진거 가위바위보","가위, 바위, 보 중 하나 입력");
-
-    // function RockScissorsPaper(hand1, hand2) {
-    //     // 두개 내서 같으면 출력
-    //     if (hand1 === hand2) {
-    //         return "비겼습니다.";
-    //     }
-    //     else if (
-    //         (hand1 === "바위" && hand2 === "가위") ||
-    //         (hand1 === "가위" && hand2 === "보") ||
-    //         (hand1 === "보" && hand2 === "바위") ||
-    //     ) {
-    //         document.write("첫번째 사람의 승리");
-    //     }
-    //     else {
-    //         return
-    //     }
-    // }
-
     // 1. 첫번째 사람의 값(가위바위보 중 1)을 입력받는다.
-    const hand1 = prompt("첫번째 사람 - 가위바위보 중 1 입력","가위바위보");
+    const hand1 = prompt("첫번째 사람 - 가위바위보 중 하나를 입력","가위바위보");
     // 2. 두번째 사람의 값(가위바위보 중 1)을 입력받는다.
-    const hand2 = prompt("두번째 사람 - 가위바위보 중 1 입력","가위바위보");
+    const hand2 = prompt("두번째 사람 - 가위바위보 중 하나를 입력","가위바위보");
     // 3. 비교한다
     //  1) 첫번째 사람이 가위를 냈을 경우
     //      두번째 사람이 가위일 경우= 무승부
@@ -47,13 +26,43 @@
     //      두번째 사람이 보일 경우= 무승부
     //      두번째 사람이 가위일 경우= 두번째 사람 승
     //      두번째 사람이 바위일 경우= 첫번째 사람 승
+    let result = ""; // 비어있는 문자열 생성
     if(hand1 == "가위") {
+        // if문 안에 또 if문이 들어갈 수 있다!
         if(hand2 == "가위") {
+            result = "무승부";
         }
         else if(hand2 == "바위") {
+            result = "두번째 사람의 승리";
         }
         else if(hand2 == "보") {
+            result = "첫번째 사람의 승리";
         }
+    } else if(hand1 == "바위") {
+        if(hand2 == "바위") {
+            result = "무승부";
+        }
+        else if(hand2 == "보") {
+            result = "두번째 사람의 승리";
+        }
+        else if(hand2 == "가위") {
+            result = "첫번째 사람의 승리";
+        }
+    } else if(hand1 == "보") {
+        if(hand2 == "보") {
+            result = "무승부";
+        }
+        else if(hand2 == "가위") {
+            result = "두번째 사람의 승리";
+        }
+        else if(hand2 == "바위") {
+            result = "첫번째 사람의 승리";
+        }
+    } else {
+        result = "잘못된 값을 입력했습니다. 다시 입력하세요."
     }
+    document.write(`<strong>첫번째 사람: ${hand1}</strong>` + "<br>");
+    document.write(`<strong>두번째 사람: ${hand2}</strong>` + "<br>");
+    document.write(result);
 </script>
 </html>

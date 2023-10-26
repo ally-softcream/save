@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333333;
+  font-size: 0.95em;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+nav ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* header 관련 스타일 */
+header {
+  background-color: lavender;
+  height: 120px;
+}
+/* 컨테이너를 만드는 것이 반응형 웹사이트의 시작이다! */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+header h1 {
+  float: left;
+  margin-top: 10px;
+}
+
+#header_right {
+  float: right;
+}
+
+#gnb {
+    margin-top: 10px;
+    float: right;
+}
+
+#gnb > ul > li {
+    float: left;
+    margin-left: 6px;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 3px 5px;
+}
+
+#gnb a{
+    color: #ff5a5a;
+}
+
+.gnb_sub {
+    display: none;
+    position: absolute;
+    width: 100px;
+    padding: auto;
+}
+
+.gnb_sub a{
+    display: block;
+    text-align: right;
+}
+
+#lnb {
+    clear: both;
+}

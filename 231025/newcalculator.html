@@ -11,19 +11,40 @@
 </body>
 <script>
     // 1. 첫번째 prompt를 띄우고 숫자를 입력받는다.
+    // const num1 = parseInt(prompt("숫자를 입력하세요.","첫번째 숫자"));
+    const num1 = +prompt("숫자를 입력하세요.","첫번째 숫자");
+    // parseint는 정수형으로 바꿔주는 것이다
     // 2. 두번째 prompt를 띄우고 연산자를 입력받는다.
+    // +, -, *, /, % 이렇게 5개
+    const opr = prompt("연산자를 입력하세요.","+, -, *, /, %");
     // 3. 세번째 prompt를 띄우고 두번째 숫자를 입력받는다.
+    const num2 = +prompt("숫자를 입력하세요.","두번째 숫자");
     // 4. 입력받은 연산자가 어떤 연산자인지 조건문으로 확인후
-    // 5. 첫번째 숫자와 두번째 숫자를 계산한다.
-    // (연산자 == "+")
-    // 6. 입력받은 두 숫자와 연산자, 계산한 결과를 화면에 출력한다.
-
-    num1 = prompt("숫자를&nbsp;입력하세요.","첫번째&nbsp;숫자");
-    opr = prompt("연산자를&nbsp;입력하세요.","연산자");
-    num3 = prompt("숫자를&nbsp;입력하세요.","두번째&nbsp;숫자");
-
-    if num1(x >= 0) {
-        
+    let result = 0; // <- 전역변수
+    // 변하는 결과를 담을 변수 선언, 첫번째 숫자와 두번째 숫자를 계산한다.
+    if(opr == "+") {
+        result = num1 + num2; // <- 여기서 let 붙이면 지역변수(변수 앞에 let을 선언한다는 건 새로 선언한다는 뜻)
     }
+    else if(opr == "-") {
+        result = num1 - num2;
+    }
+    else if(opr == "*") { 
+        result = num1 * num2;
+    }
+    else if(opr == "/") {
+        result = num1 / num2;
+    }
+    else if(opr == "%") {
+        result = num1 % num2;
+    }
+    else {
+        alert("연산자를 잘못 입력하셨습니다.");
+        location.reload();
+        // 이 메소드를 넣어둔 상태에서 연산자를 잘못 입력하면 페이지가 새로고침되면서 재로딩된다.
+    }
+    // 5. 입력받은 두 숫자와 연산자, 계산한 결과를 화면에 출력한다.
+    document.write(`<h1>${num1} ${opr} ${num2} = ${result}`);
+    // (연산자 == "+")의 형식
+    result.value = parseInt(num1.value)+parseInt(num2.value);
 </script>
 </html>

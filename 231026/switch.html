@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학점계산기 ver.2</title>
+</head>
+<body>
+    <!-- <input id="grade"> -->
+</body>
+<script>
+    // 값을 숫자로 받기, 프롬프트 앞에 +를 붙이면 됨(parseint는 정수만 해당하므로 +가 좀더 범용적인듯)
+    const grade = +prompt("성적을 입력하시오: ","0 ~ 100사이의 정수");
+    const input = parseInt(grade / 10);
+    switch(input) {
+        case 10: 
+        // alert("최고의 A학점");
+        // break;
+        // 조건이 같을 경우 그냥 케이스만 적어줘도 된다
+        case 9: 
+        alert("최고의 A학점");
+        break;
+        case 8: 
+        alert("조금 더 잘합시다 B학점");
+        break;
+        case 7: 
+        alert("분발하세요 C학점");
+        break;
+        case 6: 
+        alert("드랍더수업 D학점");
+        break;
+        // case 'F': alert("재수강확정 F학점");
+        // break;
+        default: 
+        alert("F학점. 재수강 확정!");
+    }
+</script>
+</html>

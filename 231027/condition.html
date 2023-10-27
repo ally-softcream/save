@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문연습</title>
+</head>
+<script>
+    // 1. 사용자에게 좋아하는 숫자를 입력받고 그 숫자가 짝수라면
+    // 당신이 좋아하는 숫자는 짝수입니다. 라고 출력되게 하고(document.write사용)
+    // 아니라면 당신이 좋아하는 숫자는 홀수입니다. 라고 출력되게 하는 프로그램 작성
+
+    // 숫자 입력칸
+    const likenum = +parseInt(prompt("좋아하는 숫자(정수)를 입력","정수로만 입력할 것"));
+    // result 변수를 빈 문자열로 초기화시킴(이렇게 해야만 나중에 짝수나 홀수 문자열 저장 가능)
+    let result = "";
+    // 짝수는 2로 나눈 나머지가 0, 홀수는 1인 조건으로 조건문 작성
+    // if (likenum % 2 == 0) {
+    //     result = "짝수";
+    // } else {
+    //     result = "홀수";
+    // };
+    // // 결과 출력
+    // document.write(`당신이 좋아하는 숫자는 <strong>${result}</strong>입니다.<br>`);
+    // 또는 아래와 같이 삼항 연산자 사용~~~ 삼항연산자 많이 사용하니까 외울것!!
+    likenum % 2 == 0 ? (str = "짝수") : (str = "홀수");
+    document.write(`당신이 좋아하는 숫자는 <strong>${str}</strong>입니다.<br>`);
+
+    // 사용자에게 아이디와 비밀번호를 입력받고 확인하는 조건문을 작성하기
+    // 예: const id = "softcream"
+    // const pwd = "1234"
+    // 아이디가 틀렸을 경우 => 아이디가 틀렸습니다 alert 창 팝업
+    // 아이디는 맞고 비밀번호가 틀렸을 경우 => id + 님 비밀번호가 틀렸습니다. 를 출력
+    // 아이디와 비밀번호가 모두 맞을경우 => id + 님 환영합니다! 라는 메세지의 alert 창 출력
+
+    // 아이디 확인
+    const id = "softcream";
+    // 패스워드 확인
+    const pwd = "12345";
+    const userId = prompt("id를 입력하세요.","id 입력");
+    const userPwd = prompt("비밀번호를 입력하세요.","비밀번호 입력");
+
+    if (id == userId) {
+        if (pwd == userPwd) {
+            document.write(`${id} 님 환영합니다!`);
+        } else {
+            alert(`${id} 님의 비밀번호가 틀렸습니다.`);
+        }
+    } else {
+        result = "아이디가 틀렸습니다.";
+        alert(result);
+    }
+    
+
+</script>
+<body>
+    
+</body>
+</html>

@@ -26,6 +26,7 @@
     likenum % 2 == 0 ? (str = "짝수") : (str = "홀수");
     document.write(`당신이 좋아하는 숫자는 <strong>${str}</strong>입니다.<br>`);
 
+    // ~로그인 로직~
     // 사용자에게 아이디와 비밀번호를 입력받고 확인하는 조건문을 작성하기
     // 예: const id = "softcream"
     // const pwd = "1234"
@@ -37,18 +38,18 @@
     const id = "softcream";
     // 패스워드 확인
     const pwd = "12345";
+    // 아이디랑 비밀번호 입력
     const userId = prompt("id를 입력하세요.","id 입력");
     const userPwd = prompt("비밀번호를 입력하세요.","비밀번호 입력");
 
     if (id == userId) {
         if (pwd == userPwd) {
-            document.write(`${id} 님 환영합니다!`);
+            alert(`${id} 님 환영합니다!`);
         } else {
             alert(`${id} 님의 비밀번호가 틀렸습니다.`);
         }
     } else {
-        result = "아이디가 틀렸습니다.";
-        alert(result);
+        alert("존재하지 않는 아이디입니다.");
     }
     
 

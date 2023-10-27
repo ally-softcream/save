@@ -9,6 +9,7 @@
     <!-- 메뉴 깊이가 있는 메뉴바(네비게이션 바)를 제작할 수 있다. -->
     <meta name="description" content="메뉴바 만들기">
     <link href="../231025_01-04/css/menu.css" rel="stylesheet">
+    <script src="../231025_01-04/script/menu.js"></script>
 
     <meta
     name="og:description"
@@ -24,7 +25,7 @@
     <header>
         <div class="container">
             <h1>
-                사이트 제목
+                종합병원
                 <!-- <a href="index_2.html">
                     <img src="../231025_01-04/imgs/me.png" alt="로고">
                 </a> -->
@@ -47,30 +48,90 @@
                 </nav>
                 <nav id="lnb">
                     <!-- local navigation bar의 약자 -->
-                    <!-- d as das fas g asf f asd sad d as das fas g asf f asd sad d as das fas g asf f asd sad d as das fas g asf f asd sad d as das fas g asf f asd sad d as das fas g asf f asd sad  -->
+                    <div id="panel"></div>
+                    <ul>
+                        <li class="main">
+                            <a href="#">진료안내</a>
+                            <ul class="sub">
+                                <li><a href="#">진료과/의료진</a></li>
+                                <li><a href="#">전문센터</a></li>
+                                <li><a href="#">클리닉</a></li>
+                                <li><a href="#">외래진료안내</a></li>
+                                <li><a href="#">입/퇴원안내</a></li>
+                                <li><a href="#">진료지원</a></li>
+                                <li><a href="#">의약품정보</a></li>
+                                <li><a href="#">건강정보</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="#">진료예약</a>
+                            <ul class="sub">
+                                <li><a href="#">예약안내</a></li>
+                                <li><a href="#">예약확인</a></li>
+                                <li><a href="#">증명서발급</a></li>
+                                <li><a href="#">비급여진료비</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="#">이용안내</a>
+                            <ul class="sub">
+                                <li><a href="#">고객지원</a></li>
+                                <li><a href="#">원내배치도</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                                <li><a href="#">정보공개</a></li>
+                            </ul>
+                        </li>
+                        <li class="main">
+                            <a href="#">병원소개</a>
+                            <ul class="sub">
+                                <li><a href="#">병원소개</a></li>
+                                <li><a href="#">병원소식</a></li>
+                                <li><a href="#">홍보동영상</a></li>
+                                <li><a href="#">서비스헌장</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
-    <!-- <nav>
-        <ul>
-            <li class="main"><a href="#"></a></li>
-            <li class="main">
-                <a href="#"></a>
-                <ul>
-                    <li><a href="#">d</a></li>
-                    <li><a href="#">d</a></li>
-                </ul>
-            </li>
-        </ul>
-        <p>싸늘하다.. 가슴에 하늘색이 날아와 꽂힌다</p>
-        <table border="1">
-            <td>d</td>
-            <td>d</td>
-            <td>d</td>
-        </table>
-    </nav> -->
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula mi vitae tellus condimentum, non ultricies velit porta. Cras in ex et enim cursus blandit. Proin dui lorem, fringilla nec gravida vel, pulvinar eu augue. In ultricies justo odio, faucibus consectetur erat ornare quis. Cras malesuada libero a erat tempor, tempus rutrum massa iaculis. In eu ullamcorper leo. Quisque ut quam dui. Vivamus vel odio ac sapien semper gravida eu ut metus. Mauris fermentum, arcu a molestie semper, enim purus consectetur enim, ac imperdiet turpis metus ac massa. Suspendisse a facilisis justo.</p>
+        <p>Ut vulputate, lorem vel mollis dictum, nibh diam vehicula nunc, a convallis lorem lectus ut nisl. Morbi arcu augue, eleifend at nunc venenatis, facilisis scelerisque libero. Cras mauris massa, sagittis nec lacus sit amet, lobortis vehicula magna. Maecenas a blandit purus. Integer sollicitudin nulla ac nulla sagittis eleifend. Proin condimentum pellentesque ante, sed efficitur magna pretium vel. Nunc in ipsum dignissim, pulvinar nisi ut, semper ex. Fusce rutrum nisi vel nibh mollis porta. Pellentesque eu sollicitudin mauris. Praesent ac elementum odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+    </main>
+    <footer>
+        <div id="footer_top">
+            <div class="container">
+                <a href="#">비급여 진료비</a>
+                <a href="#">환자관리장전</a>
+                <a href="#">고객헌장</a>
+                <a href="#">정보공개</a>
+                <a href="#">청렴센터</a>
+                <a href="#">청렴도측정결과공개</a>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <div class="container">
+                <div id="footer_bottom_left">
+                    <div>
+                        <a href="#">이용약관</a>
+                        <a href="#" class="yellow">개인정보처리방침</a>
+                        <a href="#">이메일무단수집거부</a>
+                        <a href="#">고객의 소리</a>
+                    </div>
+                    <div>
+                        <p>대표전화 : 1599-7123 말로거는전화 : 
+                            1636 + "충남대학교병원"이라고 말하세요!
+                        </p>
+                        <p>(35015)대전광역시 중구 문화로 282 
+                            충남대학교병원 사업자번호 : 305-82-08811</p>
+                        <p>COPYRIGHT BY CHUNGNAM NATIONAL 
+                            UNIVERSITY HOSPITAL ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+                <div id="footer_bottom_right"></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

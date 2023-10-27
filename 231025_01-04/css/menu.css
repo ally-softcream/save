@@ -28,7 +28,7 @@ table {
 
 /* header 관련 스타일 */
 header {
-  background-color: lavender;
+  background-color: #945F48;
   height: 120px;
 }
 /* 컨테이너를 만드는 것이 반응형 웹사이트의 시작이다! */
@@ -42,6 +42,7 @@ header {
 header h1 {
   float: left;
   margin-top: 10px;
+  color: bisque;
 }
 
 #header_right {
@@ -62,7 +63,7 @@ header h1 {
 }
 
 #gnb a{
-    color: #ff5a5a;
+    color: wheat;
 }
 
 .gnb_sub {
@@ -77,6 +78,146 @@ header h1 {
     text-align: right;
 }
 
+/* 
+.gnb_main에 마우스를 올렸을때
+마우스 올린 컨텐츠 의 자식 .gnb_sub가
+보여진다.
+ */
+ .gnb_main:hover > .gnb_sub {
+  display: block;
+}
+
 #lnb {
-    clear: both;
+  clear: both;
+  float: right;
+  margin-top: 10px;
+}
+.main {
+  float: left;
+}
+/* 메인 클래스에 링크 걸린 컨텐츠를 대상으로
+하는 디자인 */
+.main > a {
+  display: block;
+  width: 120px;
+  padding: 20px 10px;
+  text-align: center;
+  color: #5a2104;
+  font-weight: bold;
+  font-size: 1.1em;
+  position: relative;
+}
+.main > a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0px;
+  /* 마우스오버 시 애니메이션 효과 주려면
+  원래 너비가 0이었다가 100까지 늘어나는 것으로
+  설정해야 한다
+  그래서 여기서 0이고 밑에 오버 시
+  100으로 설정 */
+  background-color: #F9723F;
+  /* x축 가운데로 보내기 */
+  position: absolute;
+  left: 50%;
+  /* 글자 밑에 선 주기 */
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: all 0.3s;
+}
+.main > a:hover::after {
+  width: 100px;
+}
+
+#panel {
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  /* absolute인데 출발위치를 설정을
+  안 하면 absolute가 아닌 곳에서
+  시작한다 */
+  position: absolute;
+  left: 0;
+  top: 135px;
+  display: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* 완성 다 되면 아래것은 지우기! */
+.sub {
+  position: absolute;
+  background-color: c7643a;
+  max-width: 1200px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 40%;
+  padding-top: 10px;
+  display: none;
+}
+.main:first-of-type .sub {
+  display: none;
+}
+.sub li {
+  width: 100px;
+  float: left;
+}
+.sub a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 3px 5px;
+}
+
+#lnb:hover #panel {
+  display: block;
+}
+.main:hover .sub {
+  display: block;
+}
+
+/* footer 디자인 */
+#footer_top {
+  background-color: #455464;
+  padding: 30px 10px;
+}
+#footer_top a {
+  font-size: 0.7em;
+  color: white;
+  margin-right: 16px;
+}
+/* 가상클래스에서 :콜론 앞에는 띄어쓰기 x */
+#footer_top a::after {
+  content: "";
+  display: inline-block;
+  margin-left: 24px;
+  height: 0.8em;
+  width: 1px;
+  background-color: white;
+}
+.yellow {
+  color: yellow;
+  font-weight: bold;
+}
+/* 맨 끝의 항목에 컨텐츠가 없다는 것을 나타냄
+(맨끝 글자 지울 때 쓰기 */
+#footer_top a:last-of-type::after {
+  content: none;
+}
+#footer_bottom {
+  background-color: #313c49;
+  /* 순서대로 패딩 상하좌우 */
+  padding: 30px 0 50px 0;
+  /* 이거 쓰면 글자가 넘어가더라도 배경이 잘 잡아준다! */
+  overflow: auto;
+  color: rgba(255, 255, 255, 0.6);
+}
+#footer_bottom_left {
+  float: left;
+}
+#footer_bottom_right {
+  float: right;
+}
+#footer-bottom a {
+  color: rgba(255, 255, 255, 0.6);
 }

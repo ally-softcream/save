@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보_mk2</title>
+</head>
+<body>
+    <h1>가위바위보 놀이 프로그램</h1>
+</body>
+<script>
+
+    // 가위 1, 바위 2, 보 3
+    // 이기는 경우: 가위(1)-보(3), 바위(2)-가위(1), 보(3)-바위(2)
+    //                    -2          1             1
+    // 지는 경우: 가위(1)-바위(2), 바위(2)-보(3), 보(3)-가위(1)
+    //                  -1              -1          2
+    // 비기는 경우:       0
+
+    // 1. 첫번째 사람의 값(가위바위보 중 1)을 입력받는다.
+    const hand1 = +prompt("첫번째 사람 - 가위(1) 바위(2) 보(3) 중 하나를 입력",
+    "예: 2 라고 입력하면 가위로 인식합니다");
+    // 2. 두번째 사람의 값(가위바위보 중 1)을 입력받는다.
+    const hand2 = +prompt("두번째 사람 - 가위바위보 중 하나를 입력","가위바위보");
+    // 3. 비교한다
+    //  1) 첫번째 사람이 가위를 냈을 경우
+    //      두번째 사람이 가위일 경우= 무승부
+    //      두번째 사람이 바위일 경우= 두번째 사람 승
+    //      두번째 사람이 보일 경우= 첫번째 사람 승
+    //  2) 첫번째 사람이 바위를 냈을 경우
+    //      두번째 사람이 바위일 경우= 무승부
+    //      두번째 사람이 보일 경우= 두번째 사람 승
+    //      두번째 사람이 가위일 경우= 첫번째 사람 승
+    //  3) 첫번째 사람이 보를 냈을 경우
+    //      두번째 사람이 보일 경우= 무승부
+    //      두번째 사람이 가위일 경우= 두번째 사람 승
+    //      두번째 사람이 바위일 경우= 첫번째 사람 승
+    let result = ""; // 비어있는 문자열 생성
+    const sub = hand1 - hand2;
+    console.log
+    // 비교 OR 연산자 사용, 둘 중 하나라면 참이라서 값을 출력한다
+    if(sub == -2 || sub == 1) {
+        result = "첫번째 사람의 승리!";
+    } else if(sub == -1 || sub == 2) {
+        result = "두번째 사람의 승리!";
+    } else if(sub == 0){
+        result = "비겼습니다.";
+    } else {
+        result = "잘못된 입력값입니다.";
+    };
+
+    let str1 = "";
+    let str2 = "";
+    if(hand1 == 1) {
+        str1 = "가위";
+    }else if(hand1 == 2) {
+        str2 = "바위";
+    } else {
+        str1 = "보";
+    }
+    // 두번째 사람의 입력값
+    if(hand2 == 1) {
+        str1 = "가위";
+    }else if(hand2 == 2) {
+        str2 = "바위";
+    } else {
+        str1 = "보";
+    }
+    document.write(`<strong>첫번째 사람: ${str1}</strong>` + "<br>");
+    document.write(`<strong>첫번째 사람: ${str2}</strong>` + "<br>");
+    document.write(`<h3>${result}<h3>`);
+
+    // document.write(`<strong>첫번째 사람: ${hand1}</strong>` + "<br>");
+    // document.write(`<strong>두번째 사람: ${hand2}</strong>` + "<br>");
+    // document.write(`<h3>${result}<h3>`);
+
+    // if(조건식1){
+    //     조건식 1이 참일 경우 실행시킬 코드;
+    // } else if(조건식2){
+    //     조건식 1이 거짓일 경우 실행시킬 코드
+    // } else if(조건식3){
+    //     조건식 1과 2가 거짓일 경우 실행시킬 코드
+    // } else {
+    //     조건식 1 2 3이 다 거짓일 경우 실행시킬 코드
+    // }
+</script>
+</html>

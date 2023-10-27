@@ -1,3 +1,4 @@
+/* css는 원래 head 태그 안에 있어야 하는 게 원칙임 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap");
 
 * {

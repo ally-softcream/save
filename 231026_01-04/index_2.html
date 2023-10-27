@@ -15,11 +15,18 @@
     name="og:description"
     property="헌신과 사랑으로 고객을 대하는 DW종합병원입니다.">
     <link href="../231025_01-04/imgs/favicon.ico" rel="icon shortcut">
-</head>
-<script
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <!-- 로딩 순서 주의 -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
     src="https://kit.fontawesome.com/42ea0f5874.js"
     crossorigin="anonymous"
-></script>
+    ></script>
+</head>
 <body>
     <i class="fas fa-bars"></i>
     <header>
@@ -96,6 +103,27 @@
         </div>
     </header>
     <main>
+        <div class="container">
+            <div id="slider">
+                <img src="../resources/image/pixel_background.jpg" width="30%" alt="슬라이더 이미지">
+                <img src="../resources/image/ebook.jpeg" width="30%" alt="슬라이더 이미지">
+                <img src="../resources/image/감자튀김.jpg" width="30%" alt="슬라이더 이미지">
+                <!-- <img src="../resources/image/button.png" width="30%" alt="슬라이더 이미지"> -->
+                <img src="../resources/image/book.jpg" width="30%" alt="슬라이더 이미지">
+            </div>
+            <script>
+                $("#slider").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    dots: true,
+                    centerMode: true,
+                    autoplay: true,
+                    autoplaySpeed: 1200,  
+                });
+            </script>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula mi vitae tellus condimentum, non ultricies velit porta. Cras in ex et enim cursus blandit. Proin dui lorem, fringilla nec gravida vel, pulvinar eu augue. In ultricies justo odio, faucibus consectetur erat ornare quis. Cras malesuada libero a erat tempor, tempus rutrum massa iaculis. In eu ullamcorper leo. Quisque ut quam dui. Vivamus vel odio ac sapien semper gravida eu ut metus. Mauris fermentum, arcu a molestie semper, enim purus consectetur enim, ac imperdiet turpis metus ac massa. Suspendisse a facilisis justo.</p>
         <p>Ut vulputate, lorem vel mollis dictum, nibh diam vehicula nunc, a convallis lorem lectus ut nisl. Morbi arcu augue, eleifend at nunc venenatis, facilisis scelerisque libero. Cras mauris massa, sagittis nec lacus sit amet, lobortis vehicula magna. Maecenas a blandit purus. Integer sollicitudin nulla ac nulla sagittis eleifend. Proin condimentum pellentesque ante, sed efficitur magna pretium vel. Nunc in ipsum dignissim, pulvinar nisi ut, semper ex. Fusce rutrum nisi vel nibh mollis porta. Pellentesque eu sollicitudin mauris. Praesent ac elementum odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
     </main>

@@ -4,20 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gugudan_2~9</title>
-    <script>
-        for (let i = 2; i <= 9; i++) {
-            // 단수
-            for (let j = 1; j <= 9; j++) {
-                // 곱해질 수
-                document.write(`<h4>${i} × ${j} = ${i * j}<h4>`);
-            }
+    <style>
+        table {
+            margin: 20px;
+            float: left;
         }
-    </script>
+        table, th {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px 15px;
+        }
+        th {
+            background-color: #eee;
+        }
+        td {
+            border: 1px dotted #222;
+        }
+    </style>
 </head>
 <body>
     <h1>구구단</h1>
-    <table>
-
-    </table>
+    <!-- <table>
+        <tr>
+            <th>2단</th>
+        </tr>
+        <tr>
+            <td>ㅇ</td>
+        </tr>
+        <tr>
+            <td>()</td>
+        </tr>
+        <tr>
+            <td>()</td>
+        </tr>
+        <tr>
+            <td>()</td>
+        </tr>
+        <tr>
+            <td>()</td>
+        </tr>
+        <tr>
+            <td>()</td>
+        </tr>
+        <tr>
+            <td>()</td>
+        </tr>
+        <tr>
+            <td>()</td>
+        </tr>
+    </table> -->
 </body>
+<script>
+    // 2단
+    // for (let i = 2; i <= 2; i++) {
+    //     // 단수
+        // document.write(`
+        //     <table>
+        //         <tr>
+        //             <th>2단</th>
+        //         </tr>
+        //     </table>
+        //         `);
+        document.write(`<table>`);
+        document.write(`<tr>`);
+        document.write(`<th>2단</th>`);
+        for (let i = 1; i <= 9; i++) {
+            // 곱해질 수
+            document.write(`
+                <tr>
+                    <td>${2} × ${i} = ${2 * i}</td>
+                </tr>
+                `);
+        }
+        document.write(`</tr>`);
+        document.write(`</table>`);
+    
+        // document.write(`<table>`);
+        // document.write(`<tr>`);
+        // document.write(`<th>2단</th>`);
+        
+        
+            for (let i = 2; i <= 9; i++) {
+                // 곱해질 수
+                document.write(`<table>`);
+                document.write(`<tr>`);
+                document.write(`
+                        <th>
+                            ${i}단
+                        </th>
+                    `);
+                    for (let j = 1; j <= 9; j++) {
+                        document.write(`
+                            <tr>
+                                <td>${i} × ${j} = ${i * j}</td>
+                            </tr>
+                `)
+                    }
+            }
+        document.write(`</tr>`);
+        document.write(`</table>`);
+
+    // for (let i = 2; i <= 9; i++) {
+    //     // 단수
+    //     for (let j = 1; j <= 9; j++) {
+    //         // 곱해질 수
+    //         // document.write(`<h4>${i} × ${j} = ${i * j}<h4>`);
+    //     }
+    // }
+    // for (let k = 2; k <= 9; k++) {
+    //     // 단수
+    //     for (let j = 1; j <= 9; j++) {
+    //         // 곱해질 수
+    //         // document.write(`<h4>${i} × ${j} = ${i * j}<h4>`);
+    //     }
+    // }
+</script>
 </html>

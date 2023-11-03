@@ -1,0 +1,17 @@
+div {
+    width: 300px;
+    height: 500px;
+    border: 2px solid #c5c5c5;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    padding: 0 10px;
+    overflow: auto;
+}
+
+p {
+    background-color: thistle;
+    padding: 10px 10px;
+    border-radius: 10px;
+}

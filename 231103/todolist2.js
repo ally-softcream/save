@@ -34,7 +34,8 @@ function clickFunc() {
     * randomColors[1] + 0.0722 
     * randomColors[2];
     console.log(luma);
-    // 삼항 연산자 사용. 앞이 조건, 참:거짓. 참일경우 앞이고 거짓일경우 뒤 값이 나온다
+    // 삼항 연산자 사용. 
+    // 물음표 앞의 값이 조건, 참:거짓. 참일경우 앞이고 거짓일경우 뒤 값이 나온다
     p.style.color = parseInt(luma) <= 155 ? "white" : "black";
     // 5. div 요소를 가져온다.
     const div = document.querySelector("div");

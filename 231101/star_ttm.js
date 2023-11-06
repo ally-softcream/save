@@ -11,7 +11,7 @@ for (let i = 0; i < 5; i++){
     document.write(`<br>`);
 }
 
-document.write(`<hr>`);
+document.write(`<hr>`); // 
 
 let y = 9;
 

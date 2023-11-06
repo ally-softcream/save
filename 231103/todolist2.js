@@ -8,7 +8,7 @@ function clickFunc() {
     if (inputVal == "") {
         alert("내용을 입력해주세요.");
         return;
-        // 결과값을 보내주는 역할도 하지만 함수를 종료시키는 역할도 한다.
+        // return은 결과값을 보내주는 역할도 하지만 함수를 종료시키는 역할도 한다.
     } 
     // 3. p태그를 만든다. <p></p> 까지 만드는거임
     const p = document.createElement("p");

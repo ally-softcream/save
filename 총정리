@@ -90,3 +90,11 @@ var 대신 let 또는 const를 사용하는 추세
 getElementById = 무조건 id로만 가져올 수 있다
 querySelector = 뭐든 다 가져올수잇는데 id는 #써야하고 class는 .써야됨
 그냥 이름을 적으면 그 이름인 태그를 가져온다
+
+함수를 호출할 때는 괄호까지 붙여줘야 한다
+예: 함수이름 one << x
+함수이름 one() << 이렇게 선언하기
+함수 눌렀을때 호출하는 단어(메소드): onclick(예: button onclick)
+
+단어가 2개 이상 되면 앞글자를 대문자로 써줘야 한다!
+예: querySelector (query 는 소문자 Selector는 맨앞이 대문자)

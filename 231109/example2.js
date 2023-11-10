@@ -27,5 +27,40 @@
     //    버튼에 쓰여진 내용대로 동작할 수 있도록 함수를 작성해보세요.
     //    (각 버튼에 onclick 속성 부여하여 함수 연결)
     function changeP1() {
-        alert("changeP1 함수입니다.");
+        const p1 = document.getElementById("p1");
+        p1.innerHTML = "변경된 텍스트입니다.";
+      }
+  
+      function changeP2() {
+        const p2 = document.getElementById("p2");
+        p2.style.color = "blue";
+      }
+  
+      function changeP3() {
+        const p3 = document.getElementById("p3");
+        p3.style.backgroundColor = "yellow";
+      }
+  
+      function changeP4() {
+        const p4 = document.getElementById("p4");
+        p4.style.fontSize = "20px";
+        p4.style.border = "3px dashed red";
+        p4.style.display = none;
+      }
+
+      function getInput1() {
+        const input1 = document.getElementById("input1");
+        alert(input1.value);
+      }
+  
+      function getInput2() {
+        const input1 = document.getElementById("input1");
+        input1.value = "변경된 텍스트입니다.";
+      }
+  
+      function getInput3() {
+        const input1 = document.getElementById("input1");
+        const p1 = document.getElementById("p1");
+        // input.value ==> string
+        p1.style.backgroundColor = input1.value;
       }

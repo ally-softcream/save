@@ -89,7 +89,7 @@ button {
     font-family: 'JeonjuCraftGoR';
     /* 오버플로우: 
     자식요소가 부모요소를 넘어가면 자동으로 스크롤이 생기게 해 주는 코드 */
-    overflow: hidden;
+    overflow: auto;
 }
 
 .bubble {

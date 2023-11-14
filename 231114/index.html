@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>messenger</title>
+    <link rel="stylesheet" href="messenger.css">
+</head>
+<body>
+    <img class="background" src="../resources/image/source/background.png">
+    <div class="container">
+        <div class="header">
+            <button class="back-btn">
+                <!-- 여기에다가는 px같은 단위 붙이면 안먹는다! -->
+                <img src="../resources/image/source/left-arrow.png" width="30" height="30">
+            </button>
+            <img class="profile-pic"
+            src="../resources/image/source/profile.png"
+            width="40"
+            height="40">
+            <div class="info-block">
+                <p class="username">블루베리곰</p>
+                <p class="status">1시간 전에 활동</p>
+            </div>
+            <div class="call-box">
+                <button>
+                    <img src="../resources/image/source/phone-call.png"
+                    width="20"
+                    height="20">
+                </button>
+                <button>
+                    <img src="../resources/image/source/video-call.png"
+                    width="20"
+                    height="20">
+                </button>
+            </div>
+        </div>
+        <!-- 대화 내용 표시부 -->
+        <div id="chat-box">
+            <div class="bubble friend-bubble">쏟아지는 비</div>
+            <div class="bubble friend-bubble">찬란하게 괴롭게 살아가는 우리들의
+            </div>
+            <div class="bubble friend-bubble">슬픔마저도 물에 흘러 가</div>
+            <div class="bubble my-bubble">녹슨 자전거를 몰고 너에게로 향해</div>
+            <div class="bubble my-bubble">비에 젖어가면서 돌아가자</div>
+        </div>
+        <!-- 대화 내용 작성부 -->
+        <div class="footer">
+            <textarea id="input" placeholder="메세지를 입력하세요."></textarea>
+            <button id="send">
+                <img src="../resources/image/source/send.png" width="20" height="20">
+            </button>
+        </div>
+    </div>
+</body>
+</html>

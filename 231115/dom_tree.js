@@ -20,10 +20,15 @@ console.log(ul.lastElementChild.innerHTML); // 노드 아니고 요소만 찾는
 console.log(ul.parentElement);
 ul.parentElement.style.border = "2px solid tomato";
 
+//부모 요소 & 조상 요소
+console.log(ul.closest("div#content")); // 어떤 선택자를 써야됨. id나 class나.. 요소이름이나.. 그런 선택자들
+// == ul.parentElement.parentElement 쓴 거랑 같고, 더 간단하게 접근할 수 있는 방법이다.
+
 // 형제 요소
 console.log(ul.previousElementSibling);
 console.log(ul.nextElementSibling);
 console.log(ul.nextElementSibling.nextElementSibling);
 // 또는 ul.nextElementSibling.nextElementSibling.lastElementChild.style.backgroundColor = "색";
+
 
 li.lastElementChild.style.backgroundColor = "teal";

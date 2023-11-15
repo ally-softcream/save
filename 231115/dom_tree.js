@@ -32,3 +32,4 @@ console.log(ul.nextElementSibling.nextElementSibling);
 
 
 li.lastElementChild.style.backgroundColor = "teal";
+console.log(li.lastElementChild);

@@ -29,9 +29,20 @@
             align-items: center;
         }
 
+        /* id가 imgwrapper이면서 class가 on인 녀석만 선택한다 */
+        #imgWrapper.on {
+            border: 20px solid black;
+        }
+
         img {
             width: 70%;
             height: 70%;
+            filter: contrast(0%);
+        }
+
+        img.on {
+            /* 트릭 쓰기 */
+            filter: opacity(0.5) drop-shadow(0 0 0 red) saturate(1000%) blur(3px);
         }
 
         img:hover {
@@ -41,9 +52,10 @@
 </head>
 <body>
     <div id="wrapper">
-        <div id="imgWrapper">
-            <img src="../resources/image/power.png">
+        <div id="imgWrapper" class="">
+            <img src="../resources/image/power.png" class="on">
         </div>
     </div>
 </body>
+<script src="changepowerbutton.js"></script>
 </html>

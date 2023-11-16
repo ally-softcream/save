@@ -4,7 +4,7 @@
     background-color: #d9d9d9;
     /* border-radius를 50% 주면 네모가 원이 된다! */
     border-radius: 50%;
-    display: flex;
+        display: flex;
     justify-content: center;
     align-items: center;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼조지기예시</title>
+
+    <style>
+        #wrapper {
+            width: 500px;
+            height: 500px;
+            /* background-color: #d9d9d9; */
+            background: linear-gradient(135deg, #1b1b1b, white);
+            /* 그라데이션 넣는 함수
+            각도를 주지 않으면 기본 90도다! */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #imgWrapper {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 70%;
+            height: 70%;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="imgWrapper">
+            <img src="../resources/image/power.png">
+        </div>
+    </div>
+</body>
+</html>

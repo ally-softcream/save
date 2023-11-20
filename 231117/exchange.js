@@ -6,16 +6,31 @@
 //       });
 //     });
 
-const divs = document.querySelector(".holder1, .holder2");
+const divs = document.querySelectorAll(".holder1:nth-child(odd)");
 console.log(divs);
 
     const holder1 = document.querySelector(".holder1");
 
     // holder1 의 첫번째 자식요소 가져오기
     const firstDiv = holder1.firstElementChild;
+    firstDiv.addEventListener("click", function(e) {
+        console.log(e.target, e.target.tagName);
+        // 여기 P 대문자여야 한다!
+        if(e.target.tagName == "P") {
+            e.target.classList.toggle("selected");
+        }
+    });
 
     // holder1 의 마지막 자식요소 가져오기
     const lastDiv = holder1.lastElementChild;
+    lastDiv.addEventListener("click", function(e) {
+        console.log(e.target, e.target.tagName);
+        // 여기도 P 대문자여야 한다!
+        if(e.target.tagName == "P") {
+            e.target.classList.toggle("selected");
+        }
+    });
+    
 
     function leftToRight() {
       const selectedPtags = firstDiv.querySelectorAll("p[class=selected]");
@@ -59,7 +74,8 @@ console.log(divs);
       const inputNum =  document.querySelector("input[type=number]").value;
       // p태그 생성
       const pTag = document.createElement("p"); // <p></p> 이렇게 된 상태
-      pTag.innerHTML = inputNum
+      pTag.innerHTML = inputNum;
+      firstDiv.append(pTag);
     }
 
-    firstDiv.append(pTag);
+    // 

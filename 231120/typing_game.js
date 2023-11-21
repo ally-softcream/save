@@ -33,16 +33,25 @@ function init() {
 
 function wordRain() {
     const words = document.querySelectorAll(".word");
-    words[0].style;
-    words[0].getBoundingClientRect(); 
-    // getBoundingClientRect 함수란? 안의 내용 정보를 알려주는 함수다
-    setInterval(function(){
+    console.log(words[0].getBoundingClientRect().bottom);
+    // words[0].style;
+    // words[0].getBoundingClientRect(); 
+    // // getBoundingClientRect 함수란? 안의 내용 정보를 알려주는 함수다
+    setInterval(function () {
         words.forEach(function (el) {
-            const reactTop = el.getBoundingClientRect().top;
-            el.style.top = `${reactTop - 75}px`;
-            if (el.style.bottom == "0px") {
-                alert("클리어 실패!");
+          const rectTop = el.getBoundingClientRect().top;
+          el.style.top = `${rectTop - 75}px`;
+          console.log(el.style.top);
+          if (el.getBoundingClientRect().bottom > 810) {
+            // alert("game Over");
+            el.remove();
+          }
+          // 색바꾸기
+          const colorSort = []; // 빈 배열 선언
+            for(let i = 0; i < 3; i++) {
+                colorSort.push(Math.floor(Math.random() * 256));
             }
+            el.style.color = `rgb(${colorSort.toString()})`; // 랜덤색상(255가 최대)
         })
     }, 1000);
 }
@@ -86,3 +95,4 @@ input.addEventListener("change", function(){
 });
 init();
 wordRain();
+input.focus();

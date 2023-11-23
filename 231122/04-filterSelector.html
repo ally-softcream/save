@@ -9,6 +9,9 @@
     * {
       font-size: 32px;
     }
+    table {
+      border-collapse: collapse;
+    }
   </style>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <body>
@@ -23,6 +26,23 @@
       <li>eight</li>
       <li>nine</li>
     </ul>
+    <table border="1px">
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>b</td>
+        <td>c</td>
+      </tr>
+    </table>
   </body>
   <script>
     // $("li:lt(4)").css("font-size", "48px");
@@ -32,5 +52,10 @@
 
     $("li:even").css("backgroundColor", "tomato");
     $("li:odd").css("backgroundColor", "teal");
+
+    // 스크립트의 코드읽는 방식을 활용하여 코드 순서를 잘 고려해 배치해 주기
+    $("tr:odd").css("backgroundColor","gray");
+    $("tr:even").css("backgroundColor","teal");
+    $("tr:first").css("backgroundColor", "black").css("color","white");
   </script>
 </html>

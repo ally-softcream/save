@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_selector</title>
+    <link rel="stylesheet" href="formselector.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<body>
+    <form>
+        <!-- disabled: 드래그는 되지만 선택은 안 되는 상태 -->
+        <input type="text" name="id" value="아이디" disabled><br>
+        <input type="password" name="pass"><br>
+        <select name="mySelect">
+            <option>Option1</option>
+            <option selected>Option2</option>
+            <option>Option3</option>
+            <option>Option4</option>
+        </select>
+        <br>
+        <textarea name="enTextArea" 
+        rows="10"
+        cols="20"></textarea><br>
+        취미:
+        <input type="checkbox" value="여행" checked>
+        <input type="checkbox" value="게임">
+        <input type="checkbox" value="요리">
+        <input type="checkbox" value="독서">
+        <input type="checkbox" value="보드게임"><br><br>
+        <input type="button" value="확인" disabled><br>
+    </form>
+</body>
+<script src="form_selector.js"></script>
+</html>

@@ -12,5 +12,7 @@ $("#user").val("이름");
 
 $("#btnChange").on("click", function () {
     const newName = prompt("새로운 이름을 입력해주세요.");
-    $("#user").val(newName);
+    $("#user").val(newName).alert({
+        
+    });
   });

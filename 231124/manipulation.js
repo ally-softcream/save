@@ -19,24 +19,21 @@ $("#container").on("click", function(){
 const imgPlus = ["감자튀김.jpg","용문산.jpg","티셔츠.jpg","bills.jpg"];
 $(function() {
     $(`p`).on("click", (function(){
+        // idx를 선언해서 각각의 태그에 다른 사진이 담기도록 만들기
         const idx = $(this).index();
-        // const clickEvent = $(this).attr("id");
-        // switch(clickEvent) {
-        //     case "#image1":
-        //         $(`#image1`).append(`<img src="../resources/image/감자튀김.jpg"><br>`);
-        //         break;
-        //     case "#image2":
-        //         $(`#image2`).append(`<img src="../resources/image/용문산.jpg"><br>`);
-        //         break;
-        //     case "#image3":
-        //         $(`#image3`).append(`<img src="../resources/image/티셔츠.jpg"><br>`);
-        //         break;
-        //     case "#image4":
-        //         $(`#image4`).append(`<img src="../resources/image/bills.jpg"><br>`);
-        //         break;
-        //     default:
-        // }
-        // 젠장 안되잖아 개자식아~!~!
+        // 요소 내부에 추가하는 메소드
+        // $(this).append(`<img src="../resources/image/${imgPlus[idx]}">`);
+        // 위아래는 각 태그에 사진을 추가한다는 동일한 기능을 가진 메소드다!
+        // $(`<img src="../resources/image/${imgPlus[idx]}">`).appendTo(this);
+        // $(this).prepend(`<img src="../resources/image/${imgPlus[idx]}">`);
+        // $(`<img src="../resources/image/${imgPlus[idx]}">`).prependTo(this);
+
+        // 요소 외부에 추가하는 메소드
+        // $(this).after(`<img src="../resources/image/${imgPlus[idx]}">`);
+        // $(`<img src="../resources/image/${imgPlus[idx]}">`).insertAfter(this);
+        // $(this).before(`<img src="../resources/image/${imgPlus[idx]}">`);
+        $(`<img src="../resources/image/${imgPlus[idx]}">`).insertBefore(this);
+        // console.log($(this).index());
 
         // 원래 했던거
         // $(`#image1`).append(`<img src="../resources/image/감자튀김.jpg"><br>`);

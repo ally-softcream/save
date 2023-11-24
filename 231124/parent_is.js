@@ -15,12 +15,12 @@ $("p").on("click", function()
         // 첫번째 방법
         // parentEl.append(`<p style="color: orange;">${txt}</p>`)
         // 두번째 방법
-        // parentEl.append(
-        //     $("<p>").prop({
-        //     innerHTML: txt,
-        //     style: "color: orange",
-        // })
-        // );
+        parentEl.append(
+            $("<p>").prop({
+            innerHTML: txt,
+            style: "color: orange",
+        })
+        );
         // 세번째 방법
         parentEl.append(pTag.clone(true).css("color: orange"));
         

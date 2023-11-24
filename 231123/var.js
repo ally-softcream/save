@@ -16,3 +16,12 @@ $("#btnChange").on("click", function () {
         
     });
   });
+
+  $("#btnView").on("click", function () {
+    const name = $("#user").val;
+    const gender = $("[name=gend]:checked").val;
+    const intro = $("textarea").val;
+    const job = $(":selected").val;
+
+    alert(`${name},${gender},${intro},${job}`);
+  });  

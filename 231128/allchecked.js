@@ -21,7 +21,7 @@ $("#chkController").on("click",function(){
         console.log(allCheckbox);
         // 2. 체크된 체크박스만 가져온다.
         // 이 경우 input을 써준다
-        const checkedBox = $("#chkController > input:checked");
+        const checkedBox = $("#chkController").siblings("input:checked");
         console.log(checkedBox);
         // 3. 전체 체크박스의 갯수와 체크된 체크박스의 개수를 비교해서
         // 전체 선택에 매핑되어 있는 체크박스를 checked로 만든다.

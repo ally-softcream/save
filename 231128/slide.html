@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>slide</title>
 </head>
+<style>
+    #flip, #panel {
+        padding: 5px;
+        font-size: 32px;
+        text-align: center;
+        background-color: #555;
+        color: whitesmoke;
+        border: 2px solid #666;
+        border-radius: 3px;
+    }
+    #flip {
+        cursor: pointer;
+    }
+    #panel {
+        display: none;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <body>
-    
+    <button id="stop">stop sliding</button>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div id="flip">여기를 클릭</div>
+    <div id="panel">hello, jQuery</div>
 </body>
+<script src="slide.js"></script>
 </html>

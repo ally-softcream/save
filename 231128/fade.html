@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        display: none;
+    }
+    #div1 {
+        background-color: chartreuse;
+    }
+    #div2 {
+        background-color: yellowgreen;
+    }
+    #div3 {
+        background-color: green;
+    }
+    #div4 {
+        background-color: teal;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<body>
+    <p>fadein 버튼을 누르면 요소가 나타나고, <br>
+        fadeout 버튼을 누르면 요소가 사라집니다!</p>
+        <button id="in">fade_in</button>
+        <button id="out">fade_out</button>
+        <button id="toggle">fade_toggle</button>
+        <button id="fadeTo">fade_to</button>
+
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+</body>
+<script src="fade.js"></script>
+</html>

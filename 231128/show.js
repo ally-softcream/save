@@ -17,6 +17,7 @@ $("#trap").on("click",function(){
     $("#trap").hide(100);
 })
 
+// 투명했다가 다시 보임 opacity가 적용된 상태다
 $("#hide").on("click",function(){
     $("p").hide(100);
 })

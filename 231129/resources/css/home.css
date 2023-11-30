@@ -11,6 +11,40 @@
   color: #464e5e;
   text-align: right;
   border-radius: 80px;
+  /* sticky: 특정 위치에 도달하기 전까진 움직이는 요소로 지정 */
+  position: sticky;
+}
+
+.header > h1 {
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0;
+  border-radius: 32px;
+  font-family: "Pretendard-Regular;
+}
+
+.header > h1 > .accent {
+  font-weight: 800;
+}
+
+.filter {
+  background-color: white;
+  cursor: pointer;
+  /* inline-flex는 width값이 정해진 상태에서 flex를 사용하고 싶을 때 쓴다 */
+  display: inline-flex;
+  align-items: center;
+  /* span과 gap 사이 거리; */
+  gap: 24px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+  font-family: "Pretendard-Regular';
+}
+
+.content {
+  /* grow의 기본값 0 */
+  flex-grow: 1
+  /* shrink의 기본값 1 */
 }
 
 .add-item {
@@ -19,6 +53,12 @@
   border: 2px dashed #dee3ec;
   border-radius: 8px;
   padding: 24px 48px;
+  display: block;
+  text-align: center;
+}
+
+.add-item:hover {
+  background-color: #f4f7fb;
 }
 
 .item {
@@ -30,7 +70,58 @@
   cursor: pointer;
 }
 
+.item:hover {
+  background-color: #f4f7fb;
+}
+
 .item-id {
+  flex-shrink: 0;
   width: 58px;
   margin-right: 40px;
+}
+
+.item-mbti {
+  /* flex-shrink: 0; */
+  width: 76px;
+  background-color: #f0f2f5;
+  color: #464e5e;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  margin-right: 24px;
+}
+
+.item-arrow {
+  /* 여기에는 shrink 넣으면 안됨 */
+  width: 100%;
+  border-bottom: 2px dashed #bfc8da;
+  /* 문서의 일반적인 흐름에서 벗어나려면 position 설정 부여 */
+  position: relative;
+}
+
+.item-arrow-icon {
+  /* relative를 준 부모 혹은 조상의 왼쪽 위가 기준 */
+    flex-shrink: 0;
+
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 8px;
+}
+
+.item-color-chip {
+  flex-shrink: 0;
+  margin: 0 16px;
+  /* 크기 조정 필수 */
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e8e8e8;
+  border-radius: 8px;
+}
+
+.item-color-code {
+  flex-shrink: 0;
+  width: 105px;
+
 }

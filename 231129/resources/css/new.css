@@ -20,7 +20,7 @@
 
 /* a 태그의 클래스 */
 .cancel {
-    background-color: #e8edf5;
+    background-color: #edf1f7;
     border-radius: 50%;
     padding: 18px;
     /* 중앙 정렬 */
@@ -33,6 +33,7 @@
     background-color: #cdd4df;
 }
 
+/* 8의 배수로 사이즈를 지정하면 대충 보기 좋게 나온다 */
 .section-heading {
     font-weight: 500;
     font-size: 24px;
@@ -46,4 +47,46 @@
     margin: 16px 0;
     /* 요소 사이 띄우기 */
     gap: 16px;
+}
+
+.mbti-option {
+    border: 2px solid #e7ebf2;
+    border-radius: 16px;
+    padding: 14px 40px;
+    color: #8892a6;
+    /* 남는 영역 없이 여백 다 채우기 */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.mbti-option:hover {
+    background-color: #f4f7fb;
+    cursor: pointer;
+}
+
+/* mbti-option과 selected가 둘다 있어야 적용되는 css */
+.mbti-option.selected {
+    background-color: #464e5e;
+    border: 2px solid #464e5e;
+    /* color: aliceblue; */
+}
+/* selected일 때 span 태그의 css */
+
+/* mbti 알파벳 */
+/* 본래 span은 인라인 요소라 width 지정이 안 되지만, 
+flex item으로 사용되는 것이라서 지정이 가능 */
+/* 이렇게 세부적으로 쓰는 것이 좋다. 코드 찾기도 쉽고 세부적인 지정도 되니까 */
+.mbti-option.selected > .mbti-char {
+    color: #fff;
+}
+
+.mbti-char {
+    /* 사이즈를 고정시켜 둬야 화면이 줄든 늘든 일정하게 잡힌다 */
+    width: 20px;
+    color: #464e5e;
+    font-size: 40px;
+    text-align: center;
 }

@@ -107,7 +107,7 @@ header {
     border-radius: 16px;
     font-size: 23px;
     color: #ffffff;
-    /* 버튼배경을 뒷배경과 같은 색으로 하려면 */
+    /* 버튼배경을 뒷배경과 같은 색으로 하려면 아래와 같이*/
     background-color: transparent;
     cursor: pointer;
 }
@@ -131,4 +131,37 @@ header {
     border: 2px solid snow;
     border-radius: 16px;
     padding: 56px 96px;
+    text-align: center;
+    /* flex 적용 */
+    display: flex;
+    flex-direction: column;
+    /* 주축의 방향을 바꿔서 아래의 메소드가 수직 정렬이 된다 */
+    justify-content: center;
+    position: relative;
+}
+
+.card h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 16px;
+}
+
+.card.event h3 {
+    color: #7f5fff;
+}
+
+/* 2개 클래스 가진 요소 선택 */
+.card.event {
+    border-color: #7f5fff;
+}
+
+.card.event .event-badge {
+    background-color: #7f5fff;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #000;
 }

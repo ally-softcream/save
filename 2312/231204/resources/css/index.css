@@ -1,62 +1,69 @@
 html {
     font-family: Pretendard;
-}
-
-body {
-    background-color: black;
-    color: white;
-    /* 기본 마진이 8px 항상 들어감, 없애주기 */
+  }
+  
+  body {
+    background-color: #000;
+    color: #ffffff;
     margin: 0;
-}
-
-/* 소스태그 순서대로 작성하는 것이 보기에 좋다 */
-
-header {
+  }
+  
+  header {
     font-weight: 700;
     padding: 16px;
-    /* 위치가 고정되기 때문에 일반적인 문서 흐름에 벗어남 */
     position: fixed;
-    /* 위도붙이고 왼쪽도 오른쪽도 붙인다!(영역을 꽉 채운다) */
     top: 0;
-    /* left-right를 둘다 0으로 주면 영역 전부를 차지하게 된다 */
     left: 0;
     right: 0;
     z-index: 1;
-}
-
-.wrap {
-    /* margin이 동적으로 늘었다 줄었다 하게 만들기 */
+  }
+  
+  .wrap {
     margin: 0 auto;
     max-width: 1080px;
     width: 100%;
     padding: 32px;
-}
-
-.hero {
+  }
+  
+  .hero {
     position: relative;
-}
-
-.bg {
-    /* 화면에 맞게 채우기 */
+  }
+  
+  .bg {
     width: 100%;
-    /* height: auto; */
-    opacity: 0.7;
-}
-
-.hero-heading {
+    opacity: 0.5;
+  }
+  
+  .hero-heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* absolute는 아래와 같이 위치를 정해주어야만 동작한다 */
     position: absolute;
     /* top: 0;
     left: 0;
     right: 0;
     bottom: 0; */
-    /* 이렇게 해도 가운데에 온다 */
     inset: 0;
-};
-
-.hero-heading > h1 {
-    
-}
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+  
+  .hero-heading > h1 {
+    font-weight: 400;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    margin: -160px 0 0;
+  }
+  
+  .small {
+    font-size: 38px;
+    color: rgba(217, 217, 217, 0.5);
+  }
+  
+  .big {
+    font-weight: 700;
+  }
+  

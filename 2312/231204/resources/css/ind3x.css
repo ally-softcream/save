@@ -79,3 +79,56 @@ header {
 .headline-description {
     font-size: 24px;
 }
+
+.promotion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 0;
+    padding: 80px 180px;
+    background-color: #280357;
+    /* background-color: darkcyan; */
+}
+
+/* promotion 태그가 있는 요소의 후손 */
+.promotion h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin: 24px 0;
+}
+
+.promotion p {
+    font-size: 24px;
+}
+
+.promotion-button {
+    border: 1px solid #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    font-size: 23px;
+    color: #ffffff;
+    /* 버튼배경을 뒷배경과 같은 색으로 하려면 */
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.plans-title {
+    font-weight: 500;
+    font-size: 24px;
+    /* 영역 위아래 마진 주기 */
+    margin: 32px 0;
+}
+
+.plans {
+    display: grid;
+    /* 같은 열로 1fr씩 3번에 걸쳐 나누기 */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.card {
+    border: 2px solid snow;
+    border-radius: 16px;
+    padding: 56px 96px;
+}

@@ -1,0 +1,17 @@
+* {
+    /* 이렇게 해야 전체 크기가 우리 눈에 보이는 픽셀과 같아진다! */
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Pretendard;
+    word-break: keep-all; 
+    /* 한국어 기준: keep-all만 유효함 */
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #d9d9d9;
+}

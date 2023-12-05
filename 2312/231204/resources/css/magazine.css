@@ -50,6 +50,7 @@ section {
     color: #868686;
 }
 
+/* 뮤직 매거진 파트 */
 .featured-tag {
     background-color: #18181b;
     border-radius: 16px;
@@ -61,3 +62,30 @@ section {
     width: fit-content;
 }
 
+.playlists {
+    display: flex;
+    gap: 24px;
+}
+
+/* 플리 썸네일 */
+.playlist-thumb {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.playlist-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 16px 0 8px;
+}
+
+.playlist-artist {
+    color: #868686;
+    margin: 0;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 40px 0;
+}

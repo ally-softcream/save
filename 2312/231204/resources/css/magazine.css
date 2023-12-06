@@ -69,7 +69,6 @@ section {
     justify-content: space-between;
 }
 
-
 .playlist {
     flex-basis: 22%;
 }
@@ -198,4 +197,50 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.chart-change {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chart-change.up {
+    color: #d93045;
+}
+
+.chart-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.chart-artist {
+    font-weight: 500;
+    font-size: 24px;
+    color: #868686;
+}
+
+@media screen and (max-width: 780px){
+    .playlist {
+        flex-basis: 30%;
+    }
+
+    .chart-cover {
+        border-radius: 16px;
+        /* 파일 크기가 크면 이렇게 크기 지정을 해주어야 한다 */
+        width: 130px;
+        height: 130px;
+    }
+
+    .chart-title {
+        font-size: 25px;
+        font-weight: 550;
+    }
+
+    .chart-artist {
+        font-size: 19px;
+    }
+
+    .artist-name {
+        font-size: 17px;
+    }
 }

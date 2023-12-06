@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Pretendard;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    margin: 0;
+    font-size: 16px;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: #4d4d54;
+}
+
+.progress {
+    background-color: teal;
+    /* 부모 요소의 70%만 차지 */
+    width: 70%;
+    height: 100%;
+}
+
+.player-main {
+    background-color: rgba(48, 48, 55, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    /* 요소 사이에 여백 주기 */
+    gap: 16px;
+}
+
+.current {
+    border-radius: 14px;
+}
+
+.title {
+    color: #d9d9d9;
+}
+
+.artist {
+    color: #8c8993;
+}
+
+.info,.time {
+    /* 두 요소 간의 기본 영역을 통일하기 */
+    flex-basis: 300px;
+}
+
+.time {
+    text-align: right;
+    /* 아래와 같다 */
+    /* display: flex;
+    justify-content: flex-end; */
+    color: #8c8993;
+}
+
+.ctrl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

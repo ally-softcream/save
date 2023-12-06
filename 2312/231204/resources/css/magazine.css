@@ -242,5 +242,50 @@ section {
 
     .artist-name {
         font-size: 17px;
+        margin: 15px 0 0;
+    }
+    
+    .stations {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px){
+    .playlists {
+        /* display: flex; */
+        gap: 23px;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+    }
+
+    .playlist {
+        flex-basis: 30%;
+    }
+
+    .chart-cover {
+        border-radius: 16px;
+        /* 파일 크기가 크면 이렇게 크기 지정을 해주어야 한다 */
+        width: 130px;
+        height: 130px;
+    }
+
+    .chart-title {
+        font-size: 18px
+    }
+
+    .chart-number {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .chart-change {
+        font-size: 12px;
+    }
+    
+    .stations {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
     }
 }

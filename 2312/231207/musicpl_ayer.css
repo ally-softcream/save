@@ -1,29 +1,58 @@
 * {
-    /* 이렇게 해야 전체 크기가 우리 눈에 보이는 픽셀과 같아진다! */
     box-sizing: border-box;
 }
 
 html {
     font-family: Pretendard;
-    word-break: keep-all; 
-    /* 한국어 기준: keep-all만 유효함 */
+    word-break: keep-all;
     font-size: 16px;
 }
 
 body {
-    margin: 0;
     background-color: #000;
     color: #d9d9d9;
-    display: grid;
-    grid-template-columns: 4fr 8fr 2fr;
+    margin: 0;
 }
 
-main {
-    background-color: #000;
-    color: white;
-    margin: 0;
-    font-size: 16px;
+.sidebar {
+    padding: 16px;
+    background-color: #161519;
+    color: #8c8993;
+    /* 기준이 되는 너비 */
+    width: 240px;
+    /* height: 100%; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
 }
+
+.menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 48px;
+    /* 전체 마진을 0으로 만든 다음 48px만큼 새로 주기 */
+}
+
+.menu-item {
+    padding: 8px 24px;
+    display: flex;
+    /* 수직 정렬 */
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+.menu-item.selected {
+    background-color: rgba(205, 187, 255, 0.1);
+    color: white;
+}
+
+/* 메인 스타일 시작 */
 
 section {
     max-width: 1120px;
@@ -226,172 +255,4 @@ section {
     font-weight: 500;
     font-size: 24px;
     color: #868686;
-}
-
-@media screen and (max-width: 780px){
-    .playlist {
-        flex-basis: 30%;
-    }
-
-    .chart-cover {
-        border-radius: 16px;
-        /* 파일 크기가 크면 이렇게 크기 지정을 해주어야 한다 */
-        width: 130px;
-        height: 130px;
-    }
-
-    .chart-title {
-        font-size: 25px;
-        font-weight: 550;
-    }
-
-    .chart-artist {
-        font-size: 19px;
-    }
-
-    .artist-name {
-        font-size: 17px;
-        margin: 15px 0 0;
-    }
-    
-    .stations {
-        /* display: grid; */
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 650px){
-    .playlists {
-        gap: 23px;
-        justify-content: space-between;
-    }
-
-    .playlist {
-        flex-basis: 30%;
-    }
-
-    .chart-cover {
-        border-radius: 16px;
-        /* 파일 크기가 크면 이렇게 크기 지정을 해주어야 한다 */
-        width: 130px;
-        height: 130px;
-    }
-
-    .chart-title {
-        font-size: 18px
-    }
-
-    .chart-number {
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
-    }
-
-    .chart-change {
-        font-size: 12px;
-    }
-    
-    .stations {
-        /* display: grid; */
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* 옆 */
-
-side {
-    position: fixed;
-    width: 240px;
-    height: 100%;
-    background-color: rgb(24, 24, 27);
-    color: rgb(136, 136, 136);
-    display: flex;
-    align-self: flex-start;
-}
-
-.list {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-item {
-    padding: 8px 24px;
-    display: flex;
-    /* 수직 정렬 */
-    align-items: center;
-    gap: 8px;
-}
-
-.selected {
-    color: white;
-}
-
-/* 재생바 */
-
-.player {
-    position: fixed;
-    /* padding-top: 45%; */
-    top: 90%;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    backdrop-filter: blur(15px);
-}
-
-.progress-bar {
-    height: 6px;
-    background-color: #4d4d54;
-}
-
-.progress {
-    background-color: tomato;
-    /* 부모 요소의 70%만 차지 */
-    width: 70%;
-    height: 100%;
-}
-
-.player-main {
-    background-color: rgba(48, 48, 55, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 40px;
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    /* 요소 사이에 여백 주기 */
-    gap: 16px;
-}
-
-.current {
-    border-radius: 14px;
-}
-
-.title {
-    color: #d9d9d9;
-}
-
-.artist {
-    color: #8c8993;
-}
-
-.info,.time {
-    /* 두 요소 간의 기본 영역을 통일하기 */
-    flex-basis: 300px;
-}
-
-.time {
-    text-align: right;
-    /* 아래와 같다 */
-    /* display: flex;
-    justify-content: flex-end; */
-    color: #8c8993;
-}
-
-.ctrl {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

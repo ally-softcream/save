@@ -1,0 +1,394 @@
+* {
+    /* 이렇게 해야 전체 크기가 우리 눈에 보이는 픽셀과 같아진다! */
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Pretendard;
+    word-break: keep-all; 
+    /* 한국어 기준: keep-all만 유효함 */
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #d9d9d9;
+    display: grid;
+    grid-template-columns: 4fr 8fr 2fr;
+}
+
+main {
+    background-color: #000;
+    color: white;
+    margin: 0;
+    font-size: 16px;
+}
+
+section {
+    max-width: 1120px;
+    width: 100%;
+    margin: 80px auto;
+    padding: 0 36px;
+}
+
+.featured {
+    display: flex;
+    gap: 40px;
+}
+
+.featured-thumb {
+    border-radius: 24px;
+}
+
+.featured-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.featured-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #d9d9d9;
+    margin: 0;
+}
+
+.featured-description {
+    margin: 0;
+    color: #868686;
+}
+
+/* 뮤직 매거진 파트 */
+.featured-tag {
+    background-color: #18181b;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #565662;
+    /* 컨텐츠 너비에 맞춰 자동 조정하는 메소드 */
+    width: fit-content;
+}
+
+.playlists {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.playlist {
+    flex-basis: 22%;
+}
+
+/* 플리 썸네일 */
+.playlist-thumb {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.playlist-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 16px 0 8px;
+}
+
+.playlist-artist {
+    color: #868686;
+    margin: 0;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 40px 0;
+}
+
+/* 3번째 페이지 */
+
+.artists {
+    display: flex;
+    gap: 32px;
+}
+
+.artist {
+    /* width: 120px; */
+    text-align: center;
+    /* 원 만들기 */
+    border-radius: 50%;
+}
+
+.artist-profile {
+    width: 100%;
+}
+
+.artist-name {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 24px 0 0;
+}
+
+.stations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    /* width: 100%; */
+}
+
+.station {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.charts-header {
+    display: flex;
+    justify-content: space-between;
+    /* 수직정렬도 맞춰주지 않으면 앵커태그는 맨 위로 붙어서 정렬이 이상해진다! */
+    align-items: center;
+    margin: 32px 0;
+}
+
+.charts-title {
+    margin: 0;
+}
+
+.charts-see-all {
+    font-weight: 500;
+    font-size: 24px;
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 32px;
+}
+
+.chart {
+    display: flex;
+    /* 세로 정렬 */
+    align-items: center;
+    gap: 30px;
+}
+
+.chart-cover {
+    border-radius: 16px;
+    /* 파일 크기가 크면 이렇게 크기 지정을 해주어야 한다 */
+    /* width: 160px;
+    height: 160px; */
+}
+
+.chart-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chart-rank {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chart-number {
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    /* 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-change {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.chart-change.up {
+    color: #d93045;
+}
+
+.chart-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.chart-artist {
+    font-weight: 500;
+    font-size: 24px;
+    color: #868686;
+}
+
+@media screen and (max-width: 780px){
+    .playlist {
+        flex-basis: 30%;
+    }
+
+    .chart-cover {
+        border-radius: 16px;
+        /* 파일 크기가 크면 이렇게 크기 지정을 해주어야 한다 */
+        width: 130px;
+        height: 130px;
+    }
+
+    .chart-title {
+        font-size: 25px;
+        font-weight: 550;
+    }
+
+    .chart-artist {
+        font-size: 19px;
+    }
+
+    .artist-name {
+        font-size: 17px;
+        margin: 15px 0 0;
+    }
+    
+    .stations {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px){
+    .playlists {
+        gap: 23px;
+        justify-content: space-between;
+    }
+
+    .playlist {
+        flex-basis: 30%;
+    }
+
+    .chart-cover {
+        border-radius: 16px;
+        /* 파일 크기가 크면 이렇게 크기 지정을 해주어야 한다 */
+        width: 130px;
+        height: 130px;
+    }
+
+    .chart-title {
+        font-size: 18px
+    }
+
+    .chart-number {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .chart-change {
+        font-size: 12px;
+    }
+    
+    .stations {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 옆 */
+
+side {
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    background-color: rgb(24, 24, 27);
+    color: rgb(136, 136, 136);
+    display: flex;
+    align-self: flex-start;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list {
+    padding: 20px;
+    /* margin-left: 100px auto; */
+}
+
+.selected {
+    color: white;
+}
+
+/* 재생바 */
+
+.player {
+    position: fixed;
+    /* padding-top: 45%; */
+    top: 90%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    backdrop-filter: blur(15px);
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: #4d4d54;
+}
+
+.progress {
+    background-color: tomato;
+    /* 부모 요소의 70%만 차지 */
+    width: 70%;
+    height: 100%;
+}
+
+.player-main {
+    background-color: rgba(48, 48, 55, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    /* 요소 사이에 여백 주기 */
+    gap: 16px;
+}
+
+.current {
+    border-radius: 14px;
+}
+
+.title {
+    color: #d9d9d9;
+}
+
+.artist {
+    color: #8c8993;
+}
+
+.info,.time {
+    /* 두 요소 간의 기본 영역을 통일하기 */
+    flex-basis: 300px;
+}
+
+.time {
+    text-align: right;
+    /* 아래와 같다 */
+    /* display: flex;
+    justify-content: flex-end; */
+    color: #8c8993;
+}
+
+.ctrl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

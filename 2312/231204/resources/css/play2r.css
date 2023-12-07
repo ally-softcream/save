@@ -11,6 +11,9 @@ body {
     color: white;
     margin: 0;
     font-size: 16px;
+    /* 블러 처리가 되는 필터 */
+    /* background-image: url("../../../../resources/image/pixelback.jpg"); */
+    backdrop-filter: blur(15px);
 }
 
 .progress-bar {
@@ -19,7 +22,7 @@ body {
 }
 
 .progress {
-    background-color: teal;
+    background-color: tomato;
     /* 부모 요소의 70%만 차지 */
     width: 70%;
     height: 100%;

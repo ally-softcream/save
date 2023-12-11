@@ -50,3 +50,46 @@
     position: absolute;
     bottom: 25%;
 }
+
+.container {
+    margin-top: 50px;
+}
+
+.course-img {
+    width: 100%;
+}
+
+.course {
+    /* div처럼 만들어야 box-shadow가 들어간다 */
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.course:hover {
+    text-decoration: underline;
+}
+
+.course .info {
+    padding: 10px;
+}
+
+.lecture > img {
+    width: 20px;
+    height: 20px;
+}
+
+.course .info h4 {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin: 0 0 10px;
+}
+
+.course .info .lecture {
+    font-size: 13px;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

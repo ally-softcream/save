@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokdo</title>
+    <!-- 부트스트랩 사용하기전에  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dokdo.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- 상단바 시작 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">세종특별자치시교육청 | 독도전시관</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  전시관 소개
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">인사말</a></li>
+                  <li><a class="dropdown-item" href="#">전시관 연혁</a></li>
+                  <li><a class="dropdown-item" href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  관람 정보
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">관람예약</a></li>
+                  <li><a class="dropdown-item" href="#">단체예약</a></li>
+                  <li><a class="dropdown-item" href="#">예약확인·취소</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button">전시 안내</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  독도 자료실
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">독도현황</a></li>
+                  <li><a class="dropdown-item" href="#">독도자료</a></li>
+                  <li><a class="dropdown-item" href="#">교육자료실</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  열린광장
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">공지사항</a></li>
+                  <li><a class="dropdown-item" href="#">포토앨범</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- 상단바 끝 -->
+      <!-- 배경 이미지 시작 -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active backgr">
+            <img src="../../resources/image/dokdo_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item backgr">
+            <img src="../../resources/image/dokdo_sunrise.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item backgr">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="main">
+            <!-- <img class="backgr" src="../../resources/image/dokdo.jpg"> -->
+        <!-- 배경 이미지 끝 -->
+            <img class="titleImg" src="../../resources/image/visual_tx.svg">
+      </div>
+</body>
+</html>

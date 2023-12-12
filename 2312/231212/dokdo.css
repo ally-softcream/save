@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dokdo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.4/Dokdo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    /* background-image: url("../../resources/image/dokdo.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat; */
+}
+
+nav {
+    display: inline;
+    background-color: transparent;
+    position: fixed;
+}
+
+/* .main {
+    display: flex;
+    align-items: baseline;
+} */
+
+.backgr {
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    height: 100% auto;
+    opacity: 100%;
+    filter: brightness(95%) saturate(80%);
+    position: fixed;
+}
+
+.titleImg {
+    margin-top: 200px;
+    margin-left: 300px;
+    width: 25%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+/* .title {
+    margin-top: 300px;
+    margin-left: 300px;
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    position: absolute;
+} */
+
+/* .bigger {
+    font-size: 80px;
+    font-family: 'Dokdo';
+} */
+
+.title3 {
+    display: flex;
+    align-self: flex-end;
+}

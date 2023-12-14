@@ -144,48 +144,73 @@ body {
 }
 
 .shortcut-title, .view-info-title {
-    font-weight: 600;
-    font-size: 25px;
+    font-weight: 800;
+    font-size: 30px;
     box-sizing: border-box;
 }
 
+/* 바로가기 */
+/* 바로알기 제목 */
 .view-info-title {
     margin-bottom: 20px;
 }
 
+.shortcut-title {
+    margin-bottom: 20px;
+}
+
+.short-desc {
+    color: #727272;
+}
+
+/* 2번째 레이아웃의 컨텐츠 박스, 
+바로알기/관람안내 */
 .shortcut, .view-info {
-    width: 600px;
-    height: 350px;
+    width: 650px;
+    height: 400px;
     border-radius: 30px;
     padding: 70px;
 }
 
+/* 독도 바로알기 */
 .shortcut {
     background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+/* 독도 물개그림 */
+.shortcut-img {
+    right: 0;
+    position: absolute;
+    margin-top: 3px;
+    border-radius: 0 0 30px 0;
 }
 
 .shortbtn {
     display: flex;
     justify-content: center;
-    /* max-width: max-content; */
     width: 140px;
     border: 2px solid teal;
-    margin: 20px;
+    margin-top: 50px;
     padding: 10px;
     border-radius: 30px;
     background-color: transparent;
     color: teal;
-    position: relative;
+    position: absolute;
     font-size: 15px;
     cursor: pointer;
 }
 
-.shortbtn-img > svg {
+/* .shortbtn-img > svg {
     color: teal;
-}
+} */
 
+/* 전화번호 */
 .info-call-box {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-bottom: 1px dashed #a8a8a8;
 }
 
@@ -205,21 +230,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* 동그라미 리스트가 나와야하는데 안나옴 */
-.info-views {
-    list-style: circle;
-}
-
-.info-views {
+/* 관람 관련 정보 */
+.info-2-view {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
 }
-
-/* .speaker-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 .speaker-circle {
     display: flex;
@@ -234,6 +249,39 @@ body {
 .speaker-1 {
     width: 30px;
     height: 30px;
+}
 
-    /* 관람 관련 정보 */
+.view {
+    margin-top: 14px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #727272;
+    color: white;
+    padding: 0 27px;
+    font-size: 14px;
+}
+
+/* 관람 관련 정보 */
+
+.bold {
+    font-weight: 700;
+}
+
+/* 레이아웃 3번째 */
+/* 공지사항 */
+
+.announce-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.layout-3rd {
+    width: 600px;
+    height: 550px;
+    background-color: #727272;
+}
+
+.info-3-announce {
+    padding: 90px;
 }

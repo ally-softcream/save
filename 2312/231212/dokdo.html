@@ -37,23 +37,25 @@
             <!-- 독도 로고 포함 가운데 -->
             <div class="main">
               <div class="main2">
-                <img class="titleImg" src="../../resources/image/visual_tx.svg">
+                <img src="../../resources/image/visual_tx.svg">
               <span class="subtitle">독도의 의미를 되새기는 특별한 공간,<br>
               독도의 삶과 역사를 잊지 않기 위해 독도전시관이 앞장서겠습니다.</span><br>
               </div>
               <div class="btn1">
                 <button class="mainbtn" type="button" onclick="">전시안내 보기
-                <img class="btnimg" src="../../resources/image/dokdo_source/icon_arrow.svg">
+                <img class="btn-arrow-img" src="../../resources/image/dokdo_source/icon_arrow.svg">
               </button>
               </div>
               
             </div>
             <!-- 캐러샐 이미지 -->
-            <div class="carousel-item active">
-              <img src="../../resources/image/dokdo_sunrise.JPG" class="d-block w-100 imgs backgr">
-            </div>
-            <div class="carousel-item">
-              <img src="../../resources/image/dokdo_2.jpg" class="d-block w-100 imgs backgr" alt="...">
+            <div class="carousel-images">
+              <div class="carousel-item active">
+                <img src="../../resources/image/dokdo_sunrise.JPG" class="d-block w-100 imgs backgr">
+              </div>
+              <div class="carousel-item">
+                <img src="../../resources/image/dokdo_2.jpg" class="d-block w-100 imgs backgr" alt="...">
+              </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -70,20 +72,31 @@
         <!-- 바로가기 버튼 끝 -->
         <!-- 두번째 화면 시작 -->
         <div class="layout-2st">
+          <!-- 바로가기 -->
           <div class="shortcut">
-            <h3>독도 바로알기</h2>
+            <h3 class="shortcut-title">독도 바로알기</h3>
               <p>독도의 역사를 배우고, 자연을 체험하며 독도영토주권<br>
               수호 의지를 다질 수 있는 소중한 시간이 되기를 바랍니다.</p>
-              <button class="shortbtn" type="button" onclick="">바로가기
-                <img class="shortbtn-img" src="../../resources/image/dokdo_source/icon_arrow.svg"></button>
+              <div class="btn2">
+                <button class="shortbtn" type="button" onclick="">바로가기
+                  <img class="btn-arrow-img shortbtn-img" src="../../resources/image/dokdo_source/icon_arrow.svg"></button>
+              </div>
           </div>
+          <!-- 관람안내 -->
           <div class="view-info">
             <div class="info-1">
-              <h3>관람안내</h3>
-            <img src="../../resources/image/">
-            <h3>044-999-6393</h3>
-            <button class="view" type="button">관람 문의하기</button>
+              <h3 class="view-info-title">관람안내</h3>
+              <div class="info-call-box">
+                <div class="info-1-5">
+                    <div class="speaker-circle">
+                      <img class="speaker-1" src="../../resources/image/dokdo_source/icon_speaker.svg">      
+                  </div>           
+                  <h3 class="call" id="call">044-999-6393</h3>
+                  <button class="view" type="button">관람 문의하기</button>
+                </div>
+              </div>
             </div>
+            <!-- 관람 관련 정보 -->
             <div class="info-2">
               <ul class="info-2-view">
                 <li class="info-views"><h6 class="bold">관람시간</h6>

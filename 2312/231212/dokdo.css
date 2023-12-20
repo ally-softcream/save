@@ -232,9 +232,26 @@ body {
 }
 
 /* 관람 관련 정보 */
-.info-2-view {
+
+
+ul, ol, li {
+    /* list-style: none; */
+}
+
+.info-2-view > li {
+    position: relative;
+    /* padding-left: 10%; */
+    word-break: keep-all;
+    text-align: left;
     display: flex;
     align-items: flex-start;
+    gap: 3rem;
+}
+
+.info-2-view > li span {
+    display: block;
+    letter-spacing: -0.02rem;
+    color: #999;
 }
 
 .speaker-circle {
@@ -334,4 +351,72 @@ body {
 a {
     text-decoration: none;
     color: #444;
+}
+/* 4번째 레이아웃 */
+/* 체험존안내 영상관안내 */
+.layout-4th {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.guide {
+    max-width: 1200px;
+    width: 80%;
+    height: 200px;
+    background-color: #09847f;
+    padding: 5rem;
+    border-radius: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-shrink: 0;
+    gap: 80px;
+    position: absolute;
+}
+
+.guide-1, .guide-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.guide-2 {
+    border-left: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+.experience, .map {
+    width: 80px;
+}
+
+.guide-1 > p {
+    margin: 0;
+}
+
+.page-end {
+    width: 100%;
+    height: max-content;
+    background-color: #393846;
+}
+
+/* #footer .dokdo-area img {
+    height: 3rem;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+#dokdo-logo {
+    margin-top: 200px;
+    margin-left: 400px;
+    position: absolute;
+    overflow: clip;
+    width: 10%;
 }

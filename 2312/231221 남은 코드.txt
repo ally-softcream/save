@@ -1,0 +1,91 @@
+.area-notice .announce-content {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    /* transition-property: transform; */
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    /* padding: 5rem; */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    word-break: keep-all;
+}
+
+.area-notice.content-slider a {
+    background-color: #c4c4c4;
+    padding: 5rem 3rem;
+    display: flex;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+<!-- 임시 슬라이드 항목 -->
+          <!-- <div class="announce-content"> -->
+            <!-- <div class="area-notice content-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="width: 391.923px; margin-right: 60px;">
+                  <a href="#">
+                  <span class="notice-img">
+                    <img src="../../resources/image/ebook.jpeg" width="100%">
+                    </span>
+                    <strong>제목 텍스트 어쩌고 저쩌고 어쩌구</strong>
+                    <p>안에 들어갈 항목<br> 어쩌고 저쩌고</p>
+                </a>
+                </div>
+                <div class="area-notice">
+                  <div class="swiper-slide" style="width: 391.923px; margin-right: 60px;">
+                    <a href="#">
+                    <span class="notice-img">
+                      <img src="../../resources/image/ebook.jpeg" width="100%">
+                      </span>
+                      <strong>제목 텍스트 어쩌고 저쩌고 어쩌구</strong>
+                      <p>안에 들어갈 항목<br> 어쩌고 저쩌고</p>
+                  </a>
+                  </div>
+                </div>
+                <div class="area-notice">
+                  <div class="swiper-slide" style="width: 391.923px; margin-right: 60px;">
+                    <a href="#">
+                    <span class="notice-img">
+                      <img src="../../resources/image/ebook.jpeg" width="100%">
+                      </span>
+                      <strong>제목 텍스트 어쩌고 저쩌고 어쩌구</strong>
+                      <p>안에 들어갈 항목<br> 어쩌고 저쩌고</p>
+                  </a>
+                  </div>
+                </div>
+                <div class="area-notice">
+                  <div class="swiper-slide" style="width: 391.923px; margin-right: 60px;">
+                    <a href="#">
+                    <span class="notice-img">
+                      <img src="../../resources/image/ebook.jpeg" width="100%">
+                      </span>
+                      <strong>제목 텍스트 어쩌고 저쩌고 어쩌구</strong>
+                      <p>안에 들어갈 항목<br> 어쩌고 저쩌고</p>
+                  </a>
+                  </div>
+                </div>
+              </div>
+              </div>              
+          </div>  -->

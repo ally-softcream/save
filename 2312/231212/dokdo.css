@@ -233,11 +233,6 @@ body {
 
 /* 관람 관련 정보 */
 
-
-ul, ol, li {
-    /* list-style: none; */
-}
-
 .info-2-view > li {
     position: relative;
     /* padding-left: 10%; */
@@ -298,7 +293,7 @@ ul, ol, li {
 }
 /* 공지사항 */
 .notice-left {
-    width: 100%;
+    width: 25%;
     margin: 1rem 10%;
     padding: 0% 10% 0 0;
     background-color: #858585;
@@ -312,47 +307,8 @@ ul, ol, li {
     font-weight: bold;
 }
 
-.area-notice .announce-content {
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-}
 
-.swiper-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    /* transition-property: transform; */
-    box-sizing: content-box;
-}
 
-.swiper-slide {
-    /* padding: 5rem; */
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-    word-break: keep-all;
-}
-
-.area-notice.content-slider a {
-    background-color: #c4c4c4;
-    padding: 5rem 3rem;
-    display: flex;
-    border-radius: 2rem;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-a {
-    text-decoration: none;
-    color: #444;
-}
 /* 4번째 레이아웃 */
 /* 체험존안내 영상관안내 */
 .layout-4th {
@@ -434,6 +390,8 @@ a {
     width: 10%;
 }
 
-footer {
+.dokdo-area {
+    max-width: 1920px;
+    height: 100vh;
     border-radius: 100px 0 0 0;
 }

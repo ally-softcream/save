@@ -294,6 +294,7 @@ ul, ol, li {
     /* height: 600px; */
     /* background-color: #e0e0e0; */
     display: flex;
+    margin-bottom: 10rem;
 }
 /* 공지사항 */
 .notice-left {
@@ -370,25 +371,32 @@ a {
     width: 80%;
     height: 200px;
     background-color: #09847f;
-    padding: 5rem;
+    padding: 1rem;
     border-radius: 4.5rem;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
     flex-shrink: 0;
     gap: 80px;
     position: absolute;
+    top: -100px;
+    box-shadow: rgba(20, 22, 22, 1);
 }
 
 .guide-1, .guide-2 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
 }
 
 .guide-2 {
-    border-left: 1px solid rgba(255, 255, 255, 0.5)
+    padding-left: 5rem;
+    border-left: 1.5px solid rgba(255, 255, 255, 0.2)
+}
+
+.guide-left, .guide-right {
+    padding: 0;
 }
 
 .experience, .map {
@@ -399,9 +407,14 @@ a {
     margin: 0;
 }
 
+/* 다섯번째 구역 */
+
 .page-end {
+    bottom: 0;
+    position: absolute;
     width: 100%;
-    height: max-content;
+    height: 50px;
+    text-align: center;
     background-color: #393846;
 }
 
@@ -419,4 +432,8 @@ a {
     position: absolute;
     overflow: clip;
     width: 10%;
+}
+
+footer {
+    border-radius: 100px 0 0 0;
 }

@@ -309,6 +309,8 @@ body {
 
 
 
+
+
 /* 4번째 레이아웃 */
 /* 체험존안내 영상관안내 */
 .layout-4th {
@@ -390,8 +392,8 @@ body {
     width: 10%;
 }
 
-.dokdo-area {
-    max-width: 1920px;
+#footer-background {
+    max-width: 100%;
     height: 100vh;
-    border-radius: 100px 0 0 0;
+    border-radius: 200px 0 0 0;
 }

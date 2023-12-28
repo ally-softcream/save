@@ -307,8 +307,37 @@ body {
     font-weight: bold;
 }
 
+.swiper-wrapper {
+    display: flex;
+}
 
+.swiper {
+    gap: 20px;
+}
 
+.swipers {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-slide {
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+a.swipers {
+    text-decoration: none;
+}
+
+.notice-button {
+    max-width: fit-content;
+    background-color: #fff;
+    border-radius: 40%;
+    padding: 0 10px 0;
+}
 
 
 /* 4번째 레이아웃 */
@@ -371,9 +400,11 @@ body {
     bottom: 0;
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 200px;
     text-align: center;
-    background-color: #393846;
+    /* background-color: #393846; */
+    background: linear-gradient(to bottom, rgba(57, 56, 70, 0.8)20%);
+    color: #848388;
 }
 
 /* #footer .dokdo-area img {

@@ -1,5 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    width: 100vh;
+    margin: 0;
+    padding: 0;
     height: 3450px;
     background: #FFF;
 }
+
+/* 헤더 이미지 */
+
+.header-img {
+    width: 100%;
+    height: 600px;    
+    position: relative;
+}
+
+.catchpraise > h1, p {
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    color: #FFF;
+    letter-spacing: -1px;
+}
+
+.catchpraise > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #FBE9D9;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.catchpraise > h1 {
+    font-family: 'Limelight', sans-serif;
+    margin-top: 65px;
+    font-size: 130px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -10.4px;
+    text-shadow: 4px 12px 0px #804814;
+    -webkit-text-stroke: 4px #804814;
+}
+
+.

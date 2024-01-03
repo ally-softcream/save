@@ -1,0 +1,59 @@
+h2 {
+    animation-name: rotate;
+    animation-duration: 2.4s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: inherit;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  h2:first-of-type {
+    animation-timing-function: cubic-bezier(.9,.03,.69,.22);
+  }
+  
+  h2:nth-of-type(2) {
+    animation-timing-function: cubic-bezier(.17,.84,.44,1);
+  }
+  
+  h2:nth-of-type(3) {
+    animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+  }
+  
+  
+  h2:nth-of-type(4) {
+    animation-timing-function: cubic-bezier(.5,-0.53,.14,1.23);
+  }
+  
+  :root {
+    --unit: clamp(1rem, calc(0.5rem + 1.5vw), 3rem);
+  }
+  
+  * {
+    box-sizing: border-box;
+    color: inherit;
+  }
+  
+  body {
+    font-size: var(--unit);
+    margin: 0;
+    padding: calc(var(--unit) * 3);
+    gap: calc(var(--unit) * 3);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    color: chocolate;
+    background: #fcfcfc;
+  }
+  
+  @keyframes rotate {
+    50%, 100% {
+      transform: rotate(1turn);
+    }
+  }

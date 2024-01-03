@@ -132,6 +132,10 @@ flex를 사용하면 f12 개발자도구를 사용해서 봤을 때 보라색영
 문서의 일반적인 흐름에서 벗어나는 position {
     absolute, fixed
     위치 지정을 해줘야 한다
+    예: top:0, right:0, left:0; 등
 }
 
 ctrl+shift+L : 다 똑같은 단어들 선택해서 바꾸는 단축키
+
+애니메이션 관련 참고용 웹사이트: 
+https://ykss.netlify.app/translation/ten_tips_for_better_css_transitions_and_animations/

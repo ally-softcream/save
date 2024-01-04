@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img-animate</title>
+    <!-- <style>
+        /* 초기 이미지 스타일 */
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            width: 200px; /* 초기 이미지 가로 크기 */
+            height: 150px; /* 초기 이미지 세로 크기 */
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease; /* 변환에 대한 애니메이션 효과를 추가합니다. */
+        }
+
+        /* 마우스 오버 시 이미지 확대 스타일 */
+            .img-container:hover img {
+            transform: scale(1.2); /* 이미지를 1.2배 확대합니다. */
+        }
+    </style> -->
+    <!-- <style>
+        /* 초기 이미지 스타일 */
+.img-container {
+  position: relative;
+  overflow: hidden;
+  width: 200px; /* 초기 이미지 가로 크기 */
+  height: 150px; /* 초기 이미지 세로 크기 */
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 컨테이너에 맞게 조정되도록 합니다. */
+  transition: transform 0.3s ease; /* 변환에 대한 애니메이션 효과를 추가합니다. */
+}
+
+/* 마우스 오버 시 이미지 확대 스타일 */
+.img-container:hover img {
+  transform: scale(1.2); /* 이미지를 1.2배 확대합니다. */
+}
+
+    </style> -->
+
+    <style>
+        img {
+            margin: 100px 100px;
+            width: 20%;
+        }
+        
+        .img-container img {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+        }
+        .img-container:hover img {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <img src="../../resources/image/hibiscus.png">
+    </div>
+</body>
+</html>

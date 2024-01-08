@@ -102,6 +102,16 @@ body {
     cursor: pointer;
 }
 
+.nav-item > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item > a:hover {
+    text-decoration: none;
+    color: chocolate;
+}
+
 /* 갈색 영역 */
 .ad-first {
     width: 100%;

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img:not(:first-child) {
+    margin-left: -20%; /* 이미지 간의 중복 부분을 조절할 수 있는 마진 값 */
+  }
+  
+  /* 좌우 화살표를 추가하여 슬라이드를 제어할 수 있습니다. */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  

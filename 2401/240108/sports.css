@@ -14,8 +14,15 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+.orange-line {
+    width: 100%;
+    border: 2px solid orange;
+    z-index: 4;
+    position: absolute;
+}
+
 .navbar {
-    margin: 0 4%;
+    margin: 10px 4%;
     height: fit-content;
     display: flex;
     flex-wrap: nowrap;

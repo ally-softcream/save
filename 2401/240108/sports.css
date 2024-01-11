@@ -32,6 +32,10 @@ body {
     width: 10px;
 }
 
+ul {
+    padding: 0;
+}
+
 li > a, img {
     width: 80%;
 }
@@ -60,8 +64,7 @@ li > a, img {
 }
 
 .navbar-2-items {
-    width: 18%;
-
+    /* margin: 0; */
 }
 
 .nav-item {

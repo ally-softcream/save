@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    margin: 0 16%;
+    margin: 0 4%;
     height: fit-content;
     display: flex;
     flex-wrap: nowrap;
@@ -28,8 +28,11 @@ body {
     width: 10%;
 }
 
+.main-logo {
+    width: 10px;
+}
+
 li > a, img {
-    /* display: flex; */
     width: 80%;
 }
 
@@ -76,4 +79,14 @@ li > a, img {
 .first-car-img {
     width: 100%;
     height: 300px;
+}
+
+.now-jsports {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    letter-spacing: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
 }

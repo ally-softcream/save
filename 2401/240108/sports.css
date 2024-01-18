@@ -32,11 +32,7 @@ body {
 }
 
 .navbar > img {
-    width: 10%;
-}
-
-.main-logo {
-    width: 10px;
+    width: 60px;
 }
 
 ul {
@@ -45,6 +41,10 @@ ul {
 
 li > a, img {
     width: 80%;
+}
+
+a > img {
+    width: 20px;
 }
 
 .backgr {
@@ -71,7 +71,7 @@ li > a, img {
 }
 
 .navbar-2-items {
-    /* margin: 0; */
+    gap: 5px;
 }
 
 .nav-item {

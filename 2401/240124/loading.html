@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+    <div class="circle-container">
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <svg>
+            <defs>
+                <filter id="gooey">
+                    <feGaussinanBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                    <fecolorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" result="goo"/>
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <div class="text-wrapper">
+        <h1>loading...</h1>
+    </div>
+</body>
+</html>

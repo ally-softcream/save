@@ -1,4 +1,7 @@
-/* 부모 영역 잡아주기, body 영역잡기  */
+/* 부모 영역 잡아주기, body 영역잡기 하려면
+html, body 이렇게 적어줘야댐.
+html을 안쓰고 body만 뭐 하려면
+이전에 html이라고 쓴 뭔가가 잇어야한다!  */
 html, body {
     width: 100%;
     height: 100%;
